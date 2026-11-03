@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>منصة تفاعُل للكيمياء</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="شرح مختصر لدروس كتاب الكيمياء 2-1 للصف الثاني الثانوي مع أمثلة وبنك أسئلة واختبارات عشوائية ومسائل تحدٍّ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;600;700&display=swap">
+<script>
+document.documentElement.lang = 'ar'; document.documentElement.dir = 'rtl';
+window.__mjPending = new Set();
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], packages: {'[+]': ['mhchem']} },
+  svg: { fontCache: 'global' },
+  loader: { load: ['[tex]/mhchem'] },
+  options: { enableMenu: false },
+  startup: {
+    typeset: false,
+    ready: function () {
+      MathJax.startup.defaultReady();
+      MathJax.startup.promise.then(function () {
+        var nodes = Array.from(window.__mjPending).filter(function (n) { return n.isConnected && n.getClientRects().length > 0; });
+        window.__mjPending.clear();
+        document.documentElement.classList.add('mj-ready');
+        return MathJax.typesetPromise(nodes);
+      }).catch(function () {});
+    }
+  }
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" async></script>
+<style>
+/* Layout: شريط علوي زجاجي ثابت، وأقسام تتبدّل في صفحة واحدة؛ بطلٌ بنفسجي بلون الخزامى ونقش خلايا سداسية، وشريط سدو يفصل الأقسام */
+:root{
+  --bg:#F6F3F9; --surface:#FFFFFF; --surface-2:#EFE8F6; --ink:#1A1224; --muted:#5E5470; --line:#DDD3E7;
+  --green:#6A3A99; --green-ink:#56287F; --gold:#A57E35; --gold-soft:#F5EDDC;
+  --ok:#157A42; --ok-bg:#E3F4E9; --bad:#B42318; --bad-bg:#FCEAE7;
+  --hero-a:#4A2370; --hero-b:#1F0C33; --on-hero:#FFFFFF; --on-hero-2:rgba(255,255,255,.80); --on-hero-line:rgba(255,255,255,.16); --hero-gold:#E5C57F;
+  --shadow:0 1px 2px rgba(26,18,36,.05),0 10px 30px -16px rgba(26,18,36,.25);
+  --f-display:"Reem Kufi","IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  --f-body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D0814; --surface:#160F20; --surface-2:#21172F; --ink:#ECE5F4; --muted:#A99BBB; --line:#2F2342;
+  --green:#9C6ADB; --green-ink:#C6A6F0; --gold:#D4B068; --gold-soft:#2A2313;
+  --ok:#59CB8C; --ok-bg:#10301E; --bad:#F59482; --bad-bg:#3A1611;
+  --hero-a:#3A1A5C; --hero-b:#100620; --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px -16px rgba(0,0,0,.7);
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0D0814; --surface:#160F20; --surface-2:#21172F; --ink:#ECE5F4; --muted:#A99BBB; --line:#2F2342;
+  --green:#9C6ADB; --green-ink:#C6A6F0; --gold:#D4B068; --gold-soft:#2A2313;
+  --ok:#59CB8C; --ok-bg:#10301E; --bad:#F59482; --bad-bg:#3A1611;
+  --hero-a:#3A1A5C; --hero-b:#100620; --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px -16px rgba(0,0,0,.7);
+  color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;margin:0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--surface)}
+.app{min-height:100%}
+h1,h2,h3,h4{text-wrap:balance}
+button{font:inherit;color:inherit}
+a{color:var(--green-ink)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:8px}
+.wrap{max-width:1140px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+mjx-container{direction:ltr;unicode-bidi:isolate}
+mjx-container[display="true"]{margin:.4em 0!important;max-width:100%;overflow-x:auto;overflow-y:hidden;padding-block:2px}
+
+/* ---------- header */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--surface) 88%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:24px;min-height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0;background:none;border:0;padding:0;cursor:pointer}
+.mark{width:36px;height:36px;flex-shrink:0}
+.mark .m1{fill:var(--green)} .mark .m2{fill:var(--green);opacity:.72} .mark .m3{fill:var(--gold)}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;text-align:start}
+.brand-text b{font-family:var(--f-display);font-weight:700;font-size:1.45rem;color:var(--green-ink)}
+.brand-text small{font-size:.74rem;color:var(--muted)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-inline-start:auto;-webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{position:relative;padding:8px 13px;border-radius:10px;text-decoration:none;color:var(--muted);font-weight:500;white-space:nowrap;font-size:.95rem;transition:color .15s,background .15s}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a[aria-current="page"]{color:var(--green-ink);background:var(--surface-2);font-weight:600}
+@media (max-width:880px){
+  .topbar .wrap{flex-wrap:wrap;gap:2px 12px;padding-block:8px 6px;min-height:0}
+  .nav{width:100%;margin-inline-start:0;padding-bottom:2px}
+  .nav a{padding:7px 11px;font-size:.92rem}
+}
+
+/* ---------- sadu band */
+.sadu{display:block;height:20px;position:relative;background:var(--bg)}
+.sadu::before{content:"";position:absolute;inset:0 0 auto;height:10px;background:var(--green);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='10' viewBox='0 0 24 10'%3E%3Cpath d='M0 10L6 2L12 10Z M12 0L18 8L24 0Z' fill='%23000'/%3E%3C/svg%3E") repeat-x 0 0/24px 10px;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='10' viewBox='0 0 24 10'%3E%3Cpath d='M0 10L6 2L12 10Z M12 0L18 8L24 0Z' fill='%23000'/%3E%3C/svg%3E") repeat-x 0 0/24px 10px}
+.sadu::after{content:"";position:absolute;inset:13px 0 auto;height:3px;background:var(--gold);opacity:.85}
+.sadu.on-hero{background:transparent}
+
+/* ---------- hero */
+.hero{position:relative;color:var(--on-hero);background:linear-gradient(165deg,var(--hero-a),var(--hero-b));overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='97' viewBox='0 0 84 97'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1'%3E%3Cpath d='M42 10L56 18L56 34L42 42L28 34L28 18Z'/%3E%3Ccircle cx='42' cy='26' r='5'/%3E%3Cpath d='M0 58.5L14 66.5L14 82.5L0 90.5M84 58.5L70 66.5L70 82.5L84 90.5'/%3E%3Cpath d='M42 42L42 50M14 66.5L28 58.5M70 66.5L56 58.5'/%3E%3C/g%3E%3C/svg%3E");background-size:84px 97px}
+.hero::after{content:"";position:absolute;inset:auto -10% -40% auto;width:60%;aspect-ratio:1;max-width:100%;background:radial-gradient(closest-side,rgba(229,197,127,.16),transparent);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:64px 56px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;font-weight:600;color:var(--hero-gold);letter-spacing:.01em;margin:0}
+.eyebrow::before{content:"";width:8px;height:8px;background:var(--hero-gold);transform:rotate(45deg)}
+.hero h1{font-family:var(--f-display);font-weight:600;font-size:clamp(2.1rem,5.4vw,3.7rem);line-height:1.2;margin:.35em 0 .3em}
+.hero h1 em{font-style:normal;color:var(--hero-gold)}
+.lead{font-size:clamp(1.02rem,1.6vw,1.16rem);color:var(--on-hero-2);max-width:56ch;margin:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin:28px 0 0;padding:0;list-style:none}
+.stats li{display:flex;align-items:baseline;gap:6px;color:var(--on-hero-2);font-size:.92rem}
+.stats b{font-family:var(--f-display);font-size:1.55rem;color:var(--on-hero);font-weight:600;font-variant-numeric:tabular-nums}
+.plate{background:rgba(255,255,255,.06);border:1px solid var(--on-hero-line);border-radius:18px;padding:22px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.plate-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--on-hero-line)}
+.plate-head p{margin:0;font-size:.8rem;color:var(--hero-gold);font-weight:600}
+.plate-head h2{margin:2px 0 0;font-family:var(--f-display);font-weight:600;font-size:1.35rem;line-height:1.35}
+.plate-head span{font-size:.8rem;color:var(--on-hero-2);text-align:end;line-height:1.5;flex-shrink:0}
+.plate ul{list-style:none;margin:6px 0 0;padding:0}
+.plate-row{width:100%;display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:12px;padding:11px 6px;background:none;border:0;border-bottom:1px dashed var(--on-hero-line);color:var(--on-hero);text-align:start;cursor:pointer;border-radius:8px;transition:background .15s}
+.plate li:last-child .plate-row{border-bottom:0}
+.plate-row:hover{background:rgba(255,255,255,.07)}
+.plate-num{font-family:var(--f-display);font-size:1.25rem;color:var(--hero-gold);text-align:center}
+.plate-title{font-weight:600;line-height:1.45}
+.plate-meta{font-size:.8rem;color:var(--on-hero-2);white-space:nowrap}
+@media (max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr);gap:32px;padding-block:40px 40px}}
+
+/* ---------- buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border-radius:12px;border:1px solid transparent;font-weight:600;font-size:.98rem;cursor:pointer;text-decoration:none;transition:background .15s,border-color .15s,transform .1s,color .15s}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-ink)}
+.btn-gold{background:var(--hero-gold);color:#1d1606}
+.btn-gold:hover{filter:brightness(1.06)}
+.btn-line{background:transparent;color:var(--on-hero);border-color:var(--on-hero-line)}
+.btn-line:hover{background:rgba(255,255,255,.08)}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green-ink)}
+.btn-soft{background:var(--surface-2);color:var(--green-ink)}
+.btn-soft:hover{background:color-mix(in srgb,var(--green) 16%,var(--surface))}
+.btn-sm{min-height:38px;padding:7px 16px;font-size:.92rem;border-radius:10px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* ---------- generic sections */
+.view{padding-bottom:72px}
+.section{padding-block:56px 8px}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.kicker{margin:0 0 4px;color:var(--gold);font-weight:600;font-size:.86rem}
+.section-head h2,.page-title{font-family:var(--f-display);font-weight:600;font-size:clamp(1.65rem,3.6vw,2.35rem);line-height:1.3;margin:0}
+.section-head p,.page-sub{margin:6px 0 0;color:var(--muted);max-width:62ch}
+.page-head{padding-block:44px 8px}
+
+/* ---------- home: chapters */
+.ch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.ch-card{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .2s,box-shadow .2s,transform .2s}
+.ch-card:hover{border-color:color-mix(in srgb,var(--green) 45%,var(--line));box-shadow:var(--shadow);transform:translateY(-2px)}
+.ch-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ch-num{font-family:var(--f-display);font-size:2rem;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
+.ch-count{font-size:.8rem;color:var(--muted);background:var(--surface-2);padding:3px 10px;border-radius:999px}
+.ch-card h3{margin:4px 0 0;font-family:var(--f-display);font-weight:600;font-size:1.28rem;line-height:1.4}
+.ch-card p{margin:0;color:var(--muted);font-size:.94rem}
+.ch-lessons{list-style:none;margin:4px 0 8px;padding:12px 0 0;border-top:1px solid var(--line);display:grid;gap:3px;font-size:.88rem;color:var(--ink)}
+.ch-lessons li{display:flex;gap:8px;line-height:1.55}
+.ch-lessons span{color:var(--green-ink);font-weight:600;font-variant-numeric:tabular-nums;min-width:2.2em}
+.ch-card .btn{margin-top:auto;align-self:flex-start}
+
+.steps-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.steps-strip div{padding:22px;border-inline-start:1px solid var(--line)}
+.steps-strip div:first-child{border-inline-start:0}
+.steps-strip b{display:block;font-family:var(--f-display);font-weight:600;font-size:1.12rem;margin-bottom:4px}
+.steps-strip span.n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--surface-2);color:var(--green-ink);font-weight:700;font-size:.9rem;margin-bottom:10px}
+.steps-strip p{margin:0;color:var(--muted);font-size:.93rem}
+@media (max-width:760px){.steps-strip{grid-template-columns:minmax(0,1fr)}.steps-strip div{border-inline-start:0;border-top:1px solid var(--line)}.steps-strip div:first-child{border-top:0}}
+
+.vision-band{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.vision-band blockquote{margin:0;font-family:var(--f-display);font-weight:500;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.6;color:var(--green-ink)}
+.vision-band .src{margin:10px 0 0;color:var(--muted);font-size:.86rem}
+.youth{border-inline-start:1px solid var(--line);padding-inline-start:28px}
+.youth p{margin:0;font-size:1.02rem;line-height:1.9}
+.youth cite{display:block;margin-top:10px;font-style:normal;color:var(--muted);font-size:.86rem}
+@media (max-width:820px){.vision-band{grid-template-columns:minmax(0,1fr);padding:22px}.youth{border-inline-start:0;border-top:1px solid var(--line);padding:20px 0 0}}
+
+/* ---------- lessons */
+.lessons-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:36px;align-items:start;padding-top:32px}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 82px);max-height:calc(100vh - 100px);overflow-y:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px;scrollbar-width:thin}
+.toc-ch+.toc-ch{border-top:1px solid var(--line);margin-top:6px;padding-top:6px}
+.toc-ch-title{margin:6px 8px 4px;font-family:var(--f-display);font-weight:600;font-size:1rem;line-height:1.5}
+.toc-ch-title span{display:block;font-family:var(--f-body);font-size:.74rem;color:var(--gold);font-weight:600}
+.toc ul{list-style:none;margin:0;padding:0}
+.toc-l{width:100%;display:flex;gap:10px;align-items:flex-start;text-align:start;background:none;border:0;padding:7px 8px;border-radius:9px;cursor:pointer;font-size:.9rem;line-height:1.5;color:var(--ink)}
+.toc-l:hover{background:var(--surface-2)}
+.toc-l.active{background:var(--green);color:#fff}
+.toc-l.active .toc-num{color:#fff}
+.toc-num{color:var(--green-ink);font-weight:700;font-variant-numeric:tabular-nums;min-width:2.3em}
+.lesson-pick{display:none}
+.lesson-pick label{display:block;font-size:.84rem;color:var(--muted);margin-bottom:6px}
+.lesson-pick select{width:100%;min-height:46px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 12px;font:inherit;font-weight:500}
+@media (max-width:920px){.lessons-layout{grid-template-columns:minmax(0,1fr);gap:18px;padding-top:24px}.toc{display:none}.lesson-pick{display:block}}
+
+.lesson{max-width:800px;min-width:0}
+.lesson-head{padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.crumb{display:flex;align-items:center;gap:8px;margin:0 0 6px;color:var(--gold);font-weight:600;font-size:.86rem}
+.crumb .dot{width:5px;height:5px;background:currentColor;transform:rotate(45deg)}
+.lesson-head h2{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0;font-family:var(--f-display);font-weight:600;font-size:clamp(1.55rem,3.6vw,2.2rem);line-height:1.35}
+.lnum{font-size:.62em;color:var(--green-ink);background:var(--surface-2);border-radius:10px;padding:2px 12px;font-variant-numeric:tabular-nums}
+.block{padding-top:26px}
+.block-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.block-title{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-family:var(--f-display);font-weight:600;font-size:1.3rem}
+.block-row .block-title{margin-bottom:14px}
+.block-title::before{content:"";width:10px;height:10px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+.concepts{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.concepts li{position:relative;padding-inline-start:22px}
+.concepts li::before{content:"";position:absolute;inset-inline-start:2px;top:.78em;width:7px;height:7px;border:1.5px solid var(--green);transform:rotate(45deg)}
+.concepts b{color:var(--green-ink)}
+.rule{margin-top:18px;background:var(--surface-2);border:1px solid color-mix(in srgb,var(--green) 22%,var(--line));border-radius:var(--r);padding:16px 18px 10px;position:relative}
+.rule-tag{position:absolute;top:-11px;inset-inline-start:16px;background:var(--green);color:#fff;font-size:.76rem;font-weight:700;padding:1px 10px;border-radius:999px}
+.rule-body{overflow-x:auto;text-align:center;padding-bottom:6px}
+.mini{width:100%;min-width:520px;border-collapse:collapse;font-size:.92rem;margin:4px 0 6px}
+.mini th{background:var(--green);color:#fff;font-weight:600;padding:6px 8px;text-align:center}
+.mini td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:center;line-height:1.5}
+.mini tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface) 70%,var(--surface-2))}
+.kv{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 10px;padding-block:6px;font-size:1.04rem}
+.kv+.kv{border-top:1px dashed color-mix(in srgb,var(--green) 22%,var(--line))}
+.kv-m{direction:ltr;unicode-bidi:isolate}
+.kv-text{margin:4px 0;font-weight:600;font-size:1.04rem;color:var(--green-ink)}
+.examples{display:grid;gap:14px}
+.example{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.ex-tag{display:inline-block;font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:4px}
+.ex-q{margin-bottom:12px;overflow-x:auto}
+.ex-sol{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:10px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--surface-2);color:var(--green-ink);font-weight:700;font-size:.82rem;margin-top:3px}
+.steps li>div{min-width:0;overflow-x:auto}
+.answer-line{margin-top:12px;padding:10px 14px;background:var(--gold-soft);border-radius:10px;overflow-x:auto}
+.lesson-score{font-size:.86rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);padding:3px 12px;border-radius:999px;margin-bottom:14px}
+.lesson-score.full{color:var(--ok);border-color:var(--ok);background:var(--ok-bg)}
+.practice-foot{display:flex;justify-content:flex-end;margin-top:14px}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.pager-btn{display:flex;flex-direction:column;gap:2px;text-align:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;cursor:pointer;line-height:1.5;transition:border-color .15s}
+.pager-btn:hover{border-color:var(--green)}
+.pager-btn small{color:var(--muted);font-size:.8rem}
+.pager-btn span{font-weight:600}
+.pager-btn.next{text-align:end;align-items:flex-end}
+
+/* ---------- MCQ */
+.mcq-list{display:grid;gap:14px}
+.mcq{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;transition:border-color .2s}
+.mcq.is-ok{border-color:color-mix(in srgb,var(--ok) 55%,var(--line))}
+.mcq.is-bad{border-color:color-mix(in srgb,var(--bad) 45%,var(--line))}
+.mcq-stem{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;margin-bottom:14px}
+.qnum{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--surface-2);color:var(--green-ink);font-weight:700;font-size:.88rem;font-variant-numeric:tabular-nums;margin-top:2px}
+.stem{min-width:0;overflow-x:auto;font-weight:500}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:640px){.opts{grid-template-columns:minmax(0,1fr)}}
+.opt{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:center;text-align:start;min-height:52px;padding:9px 12px;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover:not([disabled]){border-color:var(--green)}
+.opt[aria-pressed="true"]{border-color:var(--green);background:var(--surface-2)}
+.let{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);font-weight:700;font-size:.85rem;color:var(--muted);background:var(--surface)}
+.opt[aria-pressed="true"] .let{background:var(--green);border-color:var(--green);color:#fff}
+.otext{min-width:0;overflow-x:auto;padding-block:2px}
+.opt[disabled]{cursor:default}
+.opt.correct{border-color:var(--ok);background:var(--ok-bg)}
+.opt.correct .let{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt.wrong .let{background:var(--bad);border-color:var(--bad);color:#fff}
+.mcq.done .opt:not(.correct):not(.wrong){opacity:.6}
+.feedback{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.fb-head{display:flex;align-items:center;gap:8px;margin:0 0 4px;font-weight:700}
+.is-ok .fb-head{color:var(--ok)} .is-bad .fb-head{color:var(--bad)}
+.fb-head svg{width:20px;height:20px;flex-shrink:0}
+.fb-body{overflow-x:auto}
+.fb-label{display:inline-block;font-size:.78rem;font-weight:700;color:var(--gold);background:var(--gold-soft);border-radius:6px;padding:0 8px;margin-inline-end:6px}
+
+/* ---------- test */
+.test-shell{max-width:820px;margin-inline:auto;padding-top:28px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow)}
+fieldset{border:0;margin:0 0 22px;padding:0;min-width:0}
+legend{font-weight:700;margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;cursor:pointer}
+.chip input,.seg input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.chip span{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);font-size:.92rem;font-weight:500;transition:all .15s}
+.chip span::before{content:"";width:14px;height:14px;border-radius:4px;border:1.5px solid var(--muted);flex-shrink:0}
+.chip input:checked+span{border-color:var(--green);background:var(--surface-2);color:var(--green-ink)}
+.chip input:checked+span::before{background:var(--green);border-color:var(--green);box-shadow:inset 0 0 0 2px var(--surface-2)}
+.chip input:focus-visible+span,.seg input:focus-visible+span{outline:3px solid var(--gold);outline-offset:2px}
+.seg{display:inline-flex;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg label{position:relative;cursor:pointer}
+.seg span{display:block;min-width:56px;text-align:center;padding:7px 12px;border-radius:9px;font-weight:600;font-variant-numeric:tabular-nums}
+.seg input:checked+span{background:var(--green);color:#fff}
+.setup-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.setup-msg{margin:0;color:var(--bad);font-size:.9rem}
+.best{margin:0;color:var(--muted);font-size:.9rem}
+.run-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.run-count{font-weight:700}
+.run-tag{font-size:.82rem;color:var(--muted)}
+.timer{font-variant-numeric:tabular-nums;font-weight:700;color:var(--green-ink);background:var(--surface-2);padding:3px 12px;border-radius:999px;direction:ltr}
+.bar{height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin-bottom:18px}
+.bar span{display:block;height:100%;width:0;background:var(--green);border-radius:999px;transition:width .35s ease}
+#runQ .mcq{border:0;padding:0;background:none}
+.run-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;align-items:center}
+.run-actions .spacer{flex:1}
+.result-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:26px;align-items:center}
+.ring{width:136px;height:136px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .trk{fill:none;stroke:var(--surface-2);stroke-width:10}
+.ring .val{fill:none;stroke:var(--green);stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .8s ease}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-display);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;direction:ltr}
+.result-top h2{margin:0;font-family:var(--f-display);font-weight:600;font-size:1.6rem}
+.result-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin:8px 0 0;padding:0;list-style:none;color:var(--muted);font-size:.93rem}
+.result-meta b{color:var(--ink);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.result-top{grid-template-columns:minmax(0,1fr);justify-items:start}}
+.review{display:grid;gap:12px;margin-top:22px}
+.rv{border:1px solid var(--line);border-radius:var(--r);padding:16px;background:var(--bg)}
+.rv-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.pill{font-size:.78rem;font-weight:700;padding:2px 10px;border-radius:999px}
+.pill.ok{background:var(--ok-bg);color:var(--ok)} .pill.bad{background:var(--bad-bg);color:var(--bad)} .pill.skip{background:var(--surface-2);color:var(--muted)}
+.rv-lesson{font-size:.8rem;color:var(--muted)}
+.rv-q{font-weight:500;overflow-x:auto}
+.rv-a{display:grid;gap:4px;margin:10px 0;font-size:.94rem}
+.rv-a div{overflow-x:auto}
+.rv-a .mine{color:var(--bad)} .rv-a .right{color:var(--ok)}
+.rv-e{font-size:.94rem;overflow-x:auto}
+
+/* ---------- challenges */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filter{padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;font-weight:500;font-size:.92rem}
+.filter[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.chal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;align-items:start}
+@media (max-width:420px){.chal-grid{grid-template-columns:minmax(0,1fr)}}
+.chal{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.chal-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.lvl{font-size:.76rem;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--surface-2);color:var(--green-ink)}
+.lvl.hard{background:var(--gold-soft);color:var(--gold)}
+.lvl.max{background:var(--green);color:#fff}
+.chal-ch{font-size:.8rem;color:var(--muted)}
+.chal h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:1.15rem;line-height:1.45}
+.chal-q{overflow-x:auto}
+.ans-row{display:flex;gap:8px}
+.ans-row input{flex:1;min-width:0;min-height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);padding:8px 12px;font:inherit}
+.ans-row input:focus{border-color:var(--green);outline:none}
+.chal label{font-size:.84rem;color:var(--muted);display:block;margin-bottom:6px}
+.chal-msg{margin:6px 0 0;font-size:.9rem;font-weight:600;min-height:1.4em}
+.chal-msg.ok{color:var(--ok)} .chal-msg.bad{color:var(--bad)} .chal-msg.info{color:var(--muted);font-weight:500}
+.chal-actions{display:flex;gap:8px;flex-wrap:wrap}
+.chal-hint{background:var(--gold-soft);border-radius:10px;padding:10px 14px;font-size:.95rem;overflow-x:auto}
+.chal-sol{border-top:1px dashed var(--line);padding-top:12px}
+
+/* ---------- extra problems */
+.x-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;align-items:start}
+@media (max-width:420px){.x-grid{grid-template-columns:minmax(0,1fr)}}
+.x-card{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;min-width:0}
+.x-card h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:1.3rem;line-height:1.4}
+.x-card p{margin:0;color:var(--muted);font-size:.94rem}
+.x-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.x-badge{font-size:.76rem;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--gold-soft);color:var(--gold)}
+.x-meta{list-style:none;margin:0;padding:10px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.86rem;color:var(--ink)}
+.x-meta li{display:flex;align-items:center;gap:6px}
+.x-meta li::before{content:"";width:6px;height:6px;background:var(--green);transform:rotate(45deg)}
+.x-card .x-prog{font-size:.86rem;color:var(--green-ink);font-weight:600;min-height:1.3em}
+.x-card .btn{align-self:flex-start}
+.x-soon{background:transparent;border-style:dashed}
+.x-soon .x-badge{background:var(--surface-2);color:var(--muted)}
+.x-back{display:inline-flex;align-items:center;gap:6px;margin-top:28px;background:none;border:0;padding:6px 0;color:var(--green-ink);font-weight:600;cursor:pointer}
+.x-back:hover{text-decoration:underline}
+.x-wrap{max-width:860px}
+.x-head{padding-block:10px 18px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.x-head h2{margin:0;font-family:var(--f-display);font-weight:600;font-size:clamp(1.55rem,3.6vw,2.2rem);line-height:1.35}
+.x-src{margin:6px 0 0;color:var(--muted);font-size:.9rem}
+.x-status{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-bottom:16px}
+.x-status-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.x-count{font-weight:700;font-variant-numeric:tabular-nums}
+.x-count.full{color:var(--ok)}
+.x-status .bar{margin:0}
+.x-note{background:var(--gold-soft);border-radius:12px;padding:12px 14px;font-size:.93rem;margin-bottom:16px;overflow-x:auto}
+.x-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.x-callout{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:28px;padding:16px 18px;border:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));border-radius:var(--r);background:var(--surface)}
+.x-callout p{margin:0}
+.x-callout b{font-family:var(--f-display);font-weight:600;font-size:1.08rem}
+
+/* ---------- vision */
+.v-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;min-width:0}
+.card h3{margin:0 0 10px;font-family:var(--f-display);font-weight:600;font-size:1.2rem}
+.card .label{display:block;font-size:.8rem;color:var(--gold);font-weight:700;margin-bottom:6px}
+.span-7{grid-column:span 7}.span-5{grid-column:span 5}.span-12{grid-column:span 12}.span-4{grid-column:span 4}.span-6{grid-column:span 6}
+@media (max-width:860px){.span-7,.span-5,.span-4,.span-6{grid-column:span 12}}
+.vision-quote{font-family:var(--f-display);font-weight:500;font-size:clamp(1.25rem,2.6vw,1.7rem);line-height:1.6;color:var(--green-ink);margin:0}
+.values{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.values li{padding:6px 14px;border-radius:999px;background:var(--surface-2);color:var(--green-ink);font-weight:600;font-size:.93rem}
+.goals{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px}
+.goals li{position:relative;padding-inline-start:20px;line-height:1.6}
+.goals li::before{content:"";position:absolute;inset-inline-start:2px;top:.6em;width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+.goals li.hl{font-weight:700;color:var(--green-ink)}
+@media (max-width:640px){.goals{grid-template-columns:minmax(0,1fr)}}
+.pillar{border-top:3px solid var(--green)}
+.pillar:nth-child(2){border-top-color:var(--gold)}
+.pillar p{margin:0;color:var(--muted)}
+.youth-card{position:relative;overflow:hidden;color:var(--on-hero);background:linear-gradient(160deg,var(--hero-a),var(--hero-b));border:0}
+.youth-card::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='97' viewBox='0 0 84 97'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1'%3E%3Cpath d='M42 10L56 18L56 34L42 42L28 34L28 18Z'/%3E%3Ccircle cx='42' cy='26' r='5'/%3E%3Cpath d='M0 58.5L14 66.5L14 82.5L0 90.5M84 58.5L70 66.5L70 82.5L84 90.5'/%3E%3Cpath d='M42 42L42 50M14 66.5L28 58.5M70 66.5L56 58.5'/%3E%3C/g%3E%3C/svg%3E");background-size:84px 97px;opacity:.9}
+.youth-card>*{position:relative}
+.youth-card blockquote{margin:0;font-family:var(--f-display);font-weight:500;font-size:clamp(1.2rem,2.4vw,1.6rem);line-height:1.7}
+.youth-card cite{display:block;margin-top:12px;font-style:normal;color:var(--hero-gold);font-size:.9rem}
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.path{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg)}
+.path b{display:block;color:var(--green-ink)}
+.path span{font-size:.9rem;color:var(--muted)}
+.src-note{font-size:.84rem;color:var(--muted);margin-top:14px}
+
+/* ---------- about */
+.devs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.dev{display:flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.avatar{position:relative;width:64px;height:64px;flex-shrink:0;display:grid;place-items:center}
+.avatar::before,.avatar::after{content:"";position:absolute;inset:8px;background:var(--green);border-radius:6px}
+.avatar::after{transform:rotate(45deg);opacity:.75}
+.avatar b{position:relative;z-index:1;font-family:var(--f-display);font-size:1.4rem;color:#fff}
+.dev h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:1.2rem;line-height:1.4}
+.dev p{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+
+/* ---------- footer */
+.foot{border-top:1px solid var(--line);background:var(--surface)}
+.foot .wrap{padding-block:28px 32px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px}
+.foot h4{margin:0 0 6px;font-family:var(--f-display);font-weight:600;font-size:1.05rem}
+.foot p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.8}
+.foot .names{color:var(--ink);font-weight:600}
+@media (max-width:720px){.foot .wrap{grid-template-columns:minmax(0,1fr)}}
+
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+
+
+</head>
+<body>
+<div class="app" dir="rtl" lang="ar">
+<header class="topbar">
+  <div class="wrap">
+    <button type="button" class="brand" data-go="home" aria-label="الرئيسية">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><polygon class="m1" points="16,2 28.1,9 28.1,23 16,30 3.9,23 3.9,9"/><polygon class="m2" points="16,7.5 23.4,11.75 23.4,20.25 16,24.5 8.6,20.25 8.6,11.75" style="opacity:.55;fill:#fff"/><circle class="m3" cx="16" cy="16" r="4.4"/></svg>
+      <span class="brand-text"><b>تفاعُل</b><small>كيمياء 2-1 · ثاني ثانوي</small></span>
+    </button>
+    <nav class="nav" aria-label="الأقسام">
+      <a href="#home" data-go="home">الرئيسية</a>
+      <a href="#lessons" data-go="lessons">الدروس</a>
+      <a href="#test" data-go="test">اختبار عشوائي</a>
+      <a href="#challenge" data-go="challenge">مسائل التحدي</a>
+      <a href="#extra" data-go="extra">مسائل إضافية</a>
+      <a href="#vision" data-go="vision">الوطن والرؤية</a>
+      <a href="#about" data-go="about">عن المنصة</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<section class="view" data-view="home">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">الصف الثاني الثانوي · الفصل الدراسي الأول</p>
+        <h1>كيمياءٌ تتفاعلُ<br>مع <em>طموح الوطن</em></h1>
+        <p class="lead">شرحٌ مختصر وواضح لكل دروس كتاب الكيمياء 2-1، وأمثلة محلولة خطوة بخطوة، وبنك أسئلة اختيار من متعدد بالحلول، واختبارات عشوائية، ومسائل تحدٍّ، لجيلٍ يصنع مستقبل الوطن.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-gold" data-go="lessons">ابدأ الدروس</button>
+          <button type="button" class="btn btn-line" data-go="test">اختبر نفسك</button>
+        </div>
+        <ul class="stats">
+          <li><b>7</b>فصول</li>
+          <li><b>28</b>درساً</li>
+          <li><b>149</b>سؤالاً محلولاً</li>
+          <li><b>16</b>مسألة تحدٍّ</li>
+        </ul>
+      </div>
+      <aside class="plate" aria-label="فهرس الكتاب">
+        <div class="plate-head">
+          <div><p>المرجع</p><h2>كتاب الكيمياء 2-1</h2></div>
+          <span>وزارة التعليم<br>المملكة العربية السعودية</span>
+        </div>
+        <ul><li><button type="button" class="plate-row" data-lesson="1-1"><span class="plate-num">1</span><span class="plate-title">الإلكترونات في الذرات</span><span class="plate-meta">3 دروس</span></button></li><li><button type="button" class="plate-row" data-lesson="2-1"><span class="plate-num">2</span><span class="plate-title">الجدول الدوري والتدرج في خواص العناصر</span><span class="plate-meta">3 دروس</span></button></li><li><button type="button" class="plate-row" data-lesson="3-1"><span class="plate-num">3</span><span class="plate-title">المركبات الأيونية والفلزات</span><span class="plate-meta">4 دروس</span></button></li><li><button type="button" class="plate-row" data-lesson="4-1"><span class="plate-num">4</span><span class="plate-title">الروابط التساهمية</span><span class="plate-meta">5 دروس</span></button></li><li><button type="button" class="plate-row" data-lesson="5-1"><span class="plate-num">5</span><span class="plate-title">الحسابات الكيميائية</span><span class="plate-meta">6 دروس</span></button></li><li><button type="button" class="plate-row" data-lesson="6-1"><span class="plate-num">6</span><span class="plate-title">حالات المادة</span><span class="plate-meta">4 دروس</span></button></li><li><button type="button" class="plate-row" data-lesson="7-1"><span class="plate-num">7</span><span class="plate-title">الغازات</span><span class="plate-meta">3 دروس</span></button></li></ul>
+      </aside>
+    </div>
+  </div>
+  <div class="sadu" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="section">
+      <div class="section-head">
+        <div><p class="kicker">محتوى المقرر</p><h2>سبعة فصول، درسٌ درس</h2><p>كل درس فيه الفكرة باختصار، وقاعدة مركّزة، وأمثلة محلولة، وأسئلة تدريب بحلولها.</p></div>
+      </div>
+      <div class="ch-grid"><article class="ch-card"><div class="ch-top"><span class="ch-num">01</span><span class="ch-count">3 دروس · 18 سؤالاً</span></div><h3>الإلكترونات في الذرات</h3><p>الضوء وطاقة الكم، والنموذج الميكانيكي الكمي للذرة، والتوزيع الإلكتروني.</p><ul class="ch-lessons"><li><span>1-1</span>الضوء وطاقة الكم</li><li><span>1-2</span>نظرية الكم والذرة</li><li><span>1-3</span>التوزيع الإلكتروني</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="1-1">ابدأ الفصل</button></article><article class="ch-card"><div class="ch-top"><span class="ch-num">02</span><span class="ch-count">3 دروس · 15 سؤالاً</span></div><h3>الجدول الدوري والتدرج في خواص العناصر</h3><p>تطور الجدول الدوري، وتصنيف العناصر حسب التوزيع الإلكتروني، والتدرج الدوري في الخواص.</p><ul class="ch-lessons"><li><span>2-1</span>تطور الجدول الدوري الحديث</li><li><span>2-2</span>تصنيف العناصر</li><li><span>2-3</span>تدرج خواص العناصر</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="2-1">ابدأ الفصل</button></article><article class="ch-card"><div class="ch-top"><span class="ch-num">03</span><span class="ch-count">4 دروس · 20 سؤالاً</span></div><h3>المركبات الأيونية والفلزات</h3><p>تكوّن الأيونات، والروابط الأيونية وخواصها، وصيغ المركبات الأيونية وأسماؤها، والروابط الفلزية.</p><ul class="ch-lessons"><li><span>3-1</span>تكوّن الأيون</li><li><span>3-2</span>الروابط الأيونية والمركبات الأيونية</li><li><span>3-3</span>صيغ المركبات الأيونية وأسماؤها</li><li><span>3-4</span>الروابط الفلزية وخواص الفلزات</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="3-1">ابدأ الفصل</button></article><article class="ch-card"><div class="ch-top"><span class="ch-num">04</span><span class="ch-count">5 دروس · 28 سؤالاً</span></div><h3>الروابط التساهمية</h3><p>الرابطة التساهمية، وتسمية الجزيئات، وتراكيب لويس، وأشكال الجزيئات، والقطبية.</p><ul class="ch-lessons"><li><span>4-1</span>الرابطة التساهمية</li><li><span>4-2</span>تسمية الجزيئات</li><li><span>4-3</span>التراكيب الجزيئية</li><li><span>4-4</span>أشكال الجزيئات</li><li><span>4-5</span>الكهروسالبية والقطبية</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="4-1">ابدأ الفصل</button></article><article class="ch-card"><div class="ch-top"><span class="ch-num">05</span><span class="ch-count">6 دروس · 31 سؤالاً</span></div><h3>الحسابات الكيميائية</h3><p>النسب المولية، والصيغ الأولية والجزيئية، والأملاح المائية، والمادة المحددة، ونسبة المردود.</p><ul class="ch-lessons"><li><span>5-1</span>المقصود بالحسابات الكيميائية</li><li><span>5-2</span>الصيغة الأولية والصيغة الجزيئية</li><li><span>5-3</span>صيغ الأملاح المائية</li><li><span>5-4</span>حسابات المعادلات الكيميائية</li><li><span>5-5</span>المادة المحددة للتفاعل</li><li><span>5-6</span>نسبة المردود المئوية</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="5-1">ابدأ الفصل</button></article><article class="ch-card"><div class="ch-top"><span class="ch-num">06</span><span class="ch-count">4 دروس · 21 سؤالاً</span></div><h3>حالات المادة</h3><p>نظرية الحركة الجزيئية، والقوى بين الجزيئات، وخواص السوائل والمواد الصلبة، وتغيرات الحالة.</p><ul class="ch-lessons"><li><span>6-1</span>الغازات</li><li><span>6-2</span>قوى التجاذب</li><li><span>6-3</span>السوائل والمواد الصلبة</li><li><span>6-4</span>تغيرات الحالة الفيزيائية</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="6-1">ابدأ الفصل</button></article><article class="ch-card"><div class="ch-top"><span class="ch-num">07</span><span class="ch-count">3 دروس · 16 سؤالاً</span></div><h3>الغازات</h3><p>قوانين بويل وشارل وجاي-لوساك، وقانون الغاز المثالي، والحسابات المتعلقة بالغازات.</p><ul class="ch-lessons"><li><span>7-1</span>قوانين الغازات</li><li><span>7-2</span>قانون الغاز المثالي</li><li><span>7-3</span>الحسابات المتعلقة بالغازات</li></ul><button type="button" class="btn btn-primary btn-sm" data-lesson="7-1">ابدأ الفصل</button></article></div>
+    </div>
+
+    <div class="section">
+      <div class="section-head"><div><p class="kicker">طريقة المذاكرة</p><h2>ثلاث خطوات للإتقان</h2></div></div>
+      <div class="steps-strip">
+        <div><span class="n">1</span><b>افهم الفكرة</b><p>اقرأ الملخص والقاعدة في أقل من دقيقتين.</p></div>
+        <div><span class="n">2</span><b>تتبّع الأمثلة</b><p>حاول حل المثال بنفسك، ثم اكشف الحل خطوة بخطوة.</p></div>
+        <div><span class="n">3</span><b>تدرّب واختبر</b><p>أجب عن أسئلة الدرس، ثم خُض اختباراً عشوائياً ومسائل التحدي.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="vision-band">
+        <div>
+          <p class="kicker">رؤية وزارة التعليم</p>
+          <blockquote>تحقيق تعليم في صدارة المنافسة العالمية، ويُمكّن الأفراد والمجتمعات من اكتساب مهارات ذات جودة عالية.</blockquote>
+          <p class="src"><button type="button" class="btn btn-soft btn-sm" data-go="vision">الرؤية والرسالة والأهداف</button></p>
+        </div>
+        <div class="youth">
+          <p class="kicker">الشباب السعودي</p>
+          <p>«ثروتنا الأولى التي لا تعادلها ثروة مهما بلغت: شعبٌ طموحٌ، معظمُه من الشباب، هو فخر بلادنا وضمانُ مستقبلها بعون الله»</p>
+          <cite>صاحب السمو الملكي الأمير محمد بن سلمان، ولي العهد، من كلمته في رؤية السعودية 2030</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LESSONS ================= -->
+<section class="view" data-view="lessons" hidden>
+  <div class="wrap">
+    <div class="lessons-layout">
+      <aside class="toc" id="toc" aria-label="قائمة الدروس"><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 1</span>الإلكترونات في الذرات</p><ul><li><button type="button" class="toc-l" data-lesson="1-1"><span class="toc-num">1-1</span><span class="toc-name">الضوء وطاقة الكم</span></button></li><li><button type="button" class="toc-l" data-lesson="1-2"><span class="toc-num">1-2</span><span class="toc-name">نظرية الكم والذرة</span></button></li><li><button type="button" class="toc-l" data-lesson="1-3"><span class="toc-num">1-3</span><span class="toc-name">التوزيع الإلكتروني</span></button></li></ul></div><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 2</span>الجدول الدوري والتدرج في خواص العناصر</p><ul><li><button type="button" class="toc-l" data-lesson="2-1"><span class="toc-num">2-1</span><span class="toc-name">تطور الجدول الدوري الحديث</span></button></li><li><button type="button" class="toc-l" data-lesson="2-2"><span class="toc-num">2-2</span><span class="toc-name">تصنيف العناصر</span></button></li><li><button type="button" class="toc-l" data-lesson="2-3"><span class="toc-num">2-3</span><span class="toc-name">تدرج خواص العناصر</span></button></li></ul></div><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 3</span>المركبات الأيونية والفلزات</p><ul><li><button type="button" class="toc-l" data-lesson="3-1"><span class="toc-num">3-1</span><span class="toc-name">تكوّن الأيون</span></button></li><li><button type="button" class="toc-l" data-lesson="3-2"><span class="toc-num">3-2</span><span class="toc-name">الروابط الأيونية والمركبات الأيونية</span></button></li><li><button type="button" class="toc-l" data-lesson="3-3"><span class="toc-num">3-3</span><span class="toc-name">صيغ المركبات الأيونية وأسماؤها</span></button></li><li><button type="button" class="toc-l" data-lesson="3-4"><span class="toc-num">3-4</span><span class="toc-name">الروابط الفلزية وخواص الفلزات</span></button></li></ul></div><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 4</span>الروابط التساهمية</p><ul><li><button type="button" class="toc-l" data-lesson="4-1"><span class="toc-num">4-1</span><span class="toc-name">الرابطة التساهمية</span></button></li><li><button type="button" class="toc-l" data-lesson="4-2"><span class="toc-num">4-2</span><span class="toc-name">تسمية الجزيئات</span></button></li><li><button type="button" class="toc-l" data-lesson="4-3"><span class="toc-num">4-3</span><span class="toc-name">التراكيب الجزيئية</span></button></li><li><button type="button" class="toc-l" data-lesson="4-4"><span class="toc-num">4-4</span><span class="toc-name">أشكال الجزيئات</span></button></li><li><button type="button" class="toc-l" data-lesson="4-5"><span class="toc-num">4-5</span><span class="toc-name">الكهروسالبية والقطبية</span></button></li></ul></div><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 5</span>الحسابات الكيميائية</p><ul><li><button type="button" class="toc-l" data-lesson="5-1"><span class="toc-num">5-1</span><span class="toc-name">المقصود بالحسابات الكيميائية</span></button></li><li><button type="button" class="toc-l" data-lesson="5-2"><span class="toc-num">5-2</span><span class="toc-name">الصيغة الأولية والصيغة الجزيئية</span></button></li><li><button type="button" class="toc-l" data-lesson="5-3"><span class="toc-num">5-3</span><span class="toc-name">صيغ الأملاح المائية</span></button></li><li><button type="button" class="toc-l" data-lesson="5-4"><span class="toc-num">5-4</span><span class="toc-name">حسابات المعادلات الكيميائية</span></button></li><li><button type="button" class="toc-l" data-lesson="5-5"><span class="toc-num">5-5</span><span class="toc-name">المادة المحددة للتفاعل</span></button></li><li><button type="button" class="toc-l" data-lesson="5-6"><span class="toc-num">5-6</span><span class="toc-name">نسبة المردود المئوية</span></button></li></ul></div><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 6</span>حالات المادة</p><ul><li><button type="button" class="toc-l" data-lesson="6-1"><span class="toc-num">6-1</span><span class="toc-name">الغازات</span></button></li><li><button type="button" class="toc-l" data-lesson="6-2"><span class="toc-num">6-2</span><span class="toc-name">قوى التجاذب</span></button></li><li><button type="button" class="toc-l" data-lesson="6-3"><span class="toc-num">6-3</span><span class="toc-name">السوائل والمواد الصلبة</span></button></li><li><button type="button" class="toc-l" data-lesson="6-4"><span class="toc-num">6-4</span><span class="toc-name">تغيرات الحالة الفيزيائية</span></button></li></ul></div><div class="toc-ch"><p class="toc-ch-title"><span>الفصل 7</span>الغازات</p><ul><li><button type="button" class="toc-l" data-lesson="7-1"><span class="toc-num">7-1</span><span class="toc-name">قوانين الغازات</span></button></li><li><button type="button" class="toc-l" data-lesson="7-2"><span class="toc-num">7-2</span><span class="toc-name">قانون الغاز المثالي</span></button></li><li><button type="button" class="toc-l" data-lesson="7-3"><span class="toc-num">7-3</span><span class="toc-name">الحسابات المتعلقة بالغازات</span></button></li></ul></div></aside>
+      <div class="lesson-area" style="min-width:0">
+        <div class="lesson-pick"><label for="lessonSelect">اختر الدرس</label><select id="lessonSelect"><optgroup label="الفصل 1: الإلكترونات في الذرات"><option value="1-1">1-1 الضوء وطاقة الكم</option><option value="1-2">1-2 نظرية الكم والذرة</option><option value="1-3">1-3 التوزيع الإلكتروني</option></optgroup><optgroup label="الفصل 2: الجدول الدوري والتدرج في خواص العناصر"><option value="2-1">2-1 تطور الجدول الدوري الحديث</option><option value="2-2">2-2 تصنيف العناصر</option><option value="2-3">2-3 تدرج خواص العناصر</option></optgroup><optgroup label="الفصل 3: المركبات الأيونية والفلزات"><option value="3-1">3-1 تكوّن الأيون</option><option value="3-2">3-2 الروابط الأيونية والمركبات الأيونية</option><option value="3-3">3-3 صيغ المركبات الأيونية وأسماؤها</option><option value="3-4">3-4 الروابط الفلزية وخواص الفلزات</option></optgroup><optgroup label="الفصل 4: الروابط التساهمية"><option value="4-1">4-1 الرابطة التساهمية</option><option value="4-2">4-2 تسمية الجزيئات</option><option value="4-3">4-3 التراكيب الجزيئية</option><option value="4-4">4-4 أشكال الجزيئات</option><option value="4-5">4-5 الكهروسالبية والقطبية</option></optgroup><optgroup label="الفصل 5: الحسابات الكيميائية"><option value="5-1">5-1 المقصود بالحسابات الكيميائية</option><option value="5-2">5-2 الصيغة الأولية والصيغة الجزيئية</option><option value="5-3">5-3 صيغ الأملاح المائية</option><option value="5-4">5-4 حسابات المعادلات الكيميائية</option><option value="5-5">5-5 المادة المحددة للتفاعل</option><option value="5-6">5-6 نسبة المردود المئوية</option></optgroup><optgroup label="الفصل 6: حالات المادة"><option value="6-1">6-1 الغازات</option><option value="6-2">6-2 قوى التجاذب</option><option value="6-3">6-3 السوائل والمواد الصلبة</option><option value="6-4">6-4 تغيرات الحالة الفيزيائية</option></optgroup><optgroup label="الفصل 7: الغازات"><option value="7-1">7-1 قوانين الغازات</option><option value="7-2">7-2 قانون الغاز المثالي</option><option value="7-3">7-3 الحسابات المتعلقة بالغازات</option></optgroup></select></div>
+        <article class="lesson" id="lessonArticle"></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEST ================= -->
+<section class="view" data-view="test" hidden>
+  <div class="wrap">
+    <div class="test-shell">
+      <div class="page-head" style="padding-top:16px">
+        <p class="kicker">بنك الأسئلة</p>
+        <h2 class="page-title">اختبار عشوائي</h2>
+        <p class="page-sub">أسئلة اختيار من متعدد تُسحب عشوائياً من الفصول التي تختارها، مع الحل والتفسير بعد كل إجابة.</p>
+      </div>
+
+      <div class="panel" id="testSetup">
+        <fieldset><legend>الفصول المشمولة</legend><div class="chips"><label class="chip"><input type="checkbox" name="tch" value="1" id="tch1" checked><span>الفصل 1: الإلكترونات في الذرات</span></label><label class="chip"><input type="checkbox" name="tch" value="2" id="tch2" checked><span>الفصل 2: الجدول الدوري والتدرج في خواص العناصر</span></label><label class="chip"><input type="checkbox" name="tch" value="3" id="tch3" checked><span>الفصل 3: المركبات الأيونية والفلزات</span></label><label class="chip"><input type="checkbox" name="tch" value="4" id="tch4" checked><span>الفصل 4: الروابط التساهمية</span></label><label class="chip"><input type="checkbox" name="tch" value="5" id="tch5" checked><span>الفصل 5: الحسابات الكيميائية</span></label><label class="chip"><input type="checkbox" name="tch" value="6" id="tch6" checked><span>الفصل 6: حالات المادة</span></label><label class="chip"><input type="checkbox" name="tch" value="7" id="tch7" checked><span>الفصل 7: الغازات</span></label></div></fieldset>
+        <fieldset><legend>عدد الأسئلة</legend>
+          <div class="seg" role="radiogroup">
+            <label><input type="radio" name="tcount" value="5" id="tc5"><span>5</span></label>
+            <label><input type="radio" name="tcount" value="10" id="tc10" checked><span>10</span></label>
+            <label><input type="radio" name="tcount" value="15" id="tc15"><span>15</span></label>
+            <label><input type="radio" name="tcount" value="20" id="tc20"><span>20</span></label>
+          </div>
+        </fieldset>
+        <div class="setup-foot">
+          <button type="button" class="btn btn-primary" id="startTest">ابدأ الاختبار</button>
+          <p class="best" id="bestScore"></p>
+          <p class="setup-msg" id="setupMsg" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="panel" id="testRun" hidden>
+        <div class="run-head">
+          <div><div class="run-count" id="runCount"></div><div class="run-tag" id="runTag"></div></div>
+          <span class="timer" id="runTimer" aria-label="الوقت المنقضي">00:00</span>
+        </div>
+        <div class="bar"><span id="runBar"></span></div>
+        <div id="runQ"></div>
+        <div class="run-actions">
+          <button type="button" class="btn btn-primary" id="runConfirm" disabled>تأكيد الإجابة</button>
+          <button type="button" class="btn btn-primary" id="runNext" hidden>السؤال التالي</button>
+          <span class="spacer"></span>
+          <button type="button" class="btn btn-ghost btn-sm" id="runQuit">إنهاء الاختبار</button>
+        </div>
+      </div>
+
+      <div class="panel" id="testResult" hidden>
+        <div class="result-top">
+          <div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="52"/><circle class="val" id="ringVal" cx="60" cy="60" r="52" stroke-dasharray="326.73" stroke-dashoffset="326.73"/></svg><b id="resPct">0%</b></div>
+          <div>
+            <h2 id="resMsg"></h2>
+            <ul class="result-meta">
+              <li>الإجابات الصحيحة: <b id="resCorrect"></b></li>
+              <li>الوقت: <b id="resTime"></b></li>
+            </ul>
+            <div class="run-actions">
+              <button type="button" class="btn btn-primary" id="resNew">اختبار جديد</button>
+              <button type="button" class="btn btn-ghost" id="resRetry">أعد الأسئلة الخاطئة</button>
+            </div>
+          </div>
+        </div>
+        <div class="review" id="resReview"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHALLENGES ================= -->
+<section class="view" data-view="challenge" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="kicker">إجابات مفتوحة</p>
+      <h2 class="page-title">مسائل التحدي</h2>
+      <p class="page-sub">مسائل أعمق تجمع أكثر من مهارة، بلا خيارات. حلّها في دفترك، واكتب الناتج للتحقق إن كان عددياً، ثم اطّلع على التلميح أو الحل التفصيلي.</p>
+    </div>
+    <div class="filters" id="chalFilters"><button type="button" class="filter" data-filter="all" aria-pressed="true">الكل</button><button type="button" class="filter" data-filter="1" aria-pressed="false">الفصل 1</button><button type="button" class="filter" data-filter="2" aria-pressed="false">الفصل 2</button><button type="button" class="filter" data-filter="3" aria-pressed="false">الفصل 3</button><button type="button" class="filter" data-filter="4" aria-pressed="false">الفصل 4</button><button type="button" class="filter" data-filter="5" aria-pressed="false">الفصل 5</button><button type="button" class="filter" data-filter="6" aria-pressed="false">الفصل 6</button><button type="button" class="filter" data-filter="7" aria-pressed="false">الفصل 7</button></div>
+    <div class="chal-grid" id="chalGrid"></div>
+  </div>
+</section>
+
+<!-- ================= EXTRA ================= -->
+<section class="view" data-view="extra" hidden>
+  <div class="wrap">
+    <div id="xList">
+      <div class="page-head">
+        <p class="kicker">ملفات المسائل</p>
+        <h2 class="page-title">مسائل إضافية</h2>
+        <p class="page-sub">ملفات مسائل إضافية يضيفها فريق المنصة، محوّلة إلى أسئلة تفاعلية: اختر إجابتك لترى الصحيحة وتفسيرها فوراً، ويُحفظ تقدّمك على جهازك.</p>
+      </div>
+      <div class="x-grid"><div class="x-card x-soon"><span class="x-badge">قريباً</span><h3>ملفات جديدة</h3><p>تُضاف هنا ملفات مسائل جديدة لكل فصل تباعاً، وتظهر في هذه الصفحة مباشرة.</p></div></div>
+    </div>
+    <div id="xSet" hidden></div>
+  </div>
+</section>
+
+<!-- ================= VISION ================= -->
+<section class="view" data-view="vision" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="kicker">التعليم والوطن</p>
+      <h2 class="page-title">وزارة التعليم ورؤية السعودية 2030</h2>
+      <p class="page-sub">نتعلّم الكيمياء لأنها أساس الصناعة والطاقة والدواء والمياه التي تبني بها المملكة مستقبلها، ولأن الطالب المتمكن هو جوهر رؤية الوطن.</p>
+    </div>
+    <div class="v-grid">
+      <div class="card span-7">
+        <span class="label">رؤية وزارة التعليم</span>
+        <p class="vision-quote">تحقيق تعليم في صدارة المنافسة العالمية، ويُمكّن الأفراد والمجتمعات من اكتساب مهارات ذات جودة عالية.</p>
+      </div>
+      <div class="card span-5">
+        <span class="label">رسالة الوزارة</span>
+        <p style="margin:0">تقديم تعليم ذي جودة عالية يعزّز القيم، معزّز بكوادر مؤهلة، متاح للجميع، ضمن بيئة آمنة ومحفّزة، لإعداد أفراد فاعلين في المجتمع ومساهمين في صناعة وطن رائد.</p>
+      </div>
+      <div class="card span-12">
+        <span class="label">القيم</span>
+        <ul class="values"><li>الالتزام</li><li>التعلم المستمر</li><li>الإبداع</li><li>روح الفريق</li><li>الجودة</li></ul>
+      </div>
+      <div class="card span-7">
+        <h3>الأهداف الاستراتيجية للوزارة</h3>
+        <ul class="goals">
+          <li>الارتقاء بمستوى التجربة الرقمية</li>
+          <li>تعزيز الحوكمة والالتزام وإدارة المخاطر</li>
+          <li>تطوير بيئة مدرسية آمنة وابتكارية</li>
+          <li>رفع كفاءة الإنفاق وتعزيز الاستدامة المالية</li>
+          <li>تحسين أداء المدارس، وتعزيز الشراكات مع المجتمع</li>
+          <li>تحسين تجربة المستفيدين</li>
+          <li class="hl">الاستثمار في الطالب والمعلم أولاً بالرعاية</li>
+          <li>ضمان وصول التعليم للجميع</li>
+          <li class="hl">تعزيز القيم والهوية الوطنية</li>
+          <li>تطوير كفاءات الموارد البشرية وتعزيز ثقافة المؤسسة</li>
+        </ul>
+      </div>
+      <div class="card span-5">
+        <h3>محاور الوزارة</h3>
+        <ul class="values"><li>التعليم للجميع</li><li>رحلة التعليم</li><li>جودة التعليم</li><li>الاستدامة المالية</li><li>التميز للمؤسسة</li></ul>
+        <p class="src-note">المصدر: صفحة «الرؤية والرسالة والأهداف» في الموقع الرسمي لوزارة التعليم <a href="https://www.moe.gov.sa/ar/aboutus/aboutministry/Pages/visionmissiongoals.aspx" target="_blank" rel="noopener">moe.gov.sa</a> (الرسالة بتصرف يسير).</p>
+      </div>
+
+      <div class="card span-4 pillar"><span class="label">رؤية 2030</span><h3>مجتمع حيوي</h3><p>مجتمع يعتز بقيمه وهويته الوطنية، وينعم ببيئة إيجابية وحياة عامرة.</p></div>
+      <div class="card span-4 pillar"><span class="label">رؤية 2030</span><h3>اقتصاد مزدهر</h3><p>اقتصاد متنوع يستثمر في التعليم والمهارات ويفتح الفرص أمام الجميع.</p></div>
+      <div class="card span-4 pillar"><span class="label">رؤية 2030</span><h3>وطن طموح</h3><p>حكومة فاعلة ومواطن مسؤول يسهم بعلمه وعمله في بناء وطنه.</p></div>
+
+      <div class="card span-12 youth-card">
+        <span class="label" style="color:var(--hero-gold)">الشباب السعودي</span>
+        <blockquote>«ثروتنا الأولى التي لا تعادلها ثروة مهما بلغت: شعبٌ طموحٌ، معظمُه من الشباب، هو فخر بلادنا وضمانُ مستقبلها بعون الله»</blockquote>
+        <cite>صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز، ولي العهد، من كلمته في رؤية السعودية 2030</cite>
+      </div>
+
+      <div class="card span-12">
+        <h3>كيمياء هذا الفصل في طريق طموحك</h3>
+        <div class="paths">
+          <div class="path"><b>البتروكيماويات</b><span>الحسابات الكيميائية والمادة المحددة ونسب المردود في الصناعات التحويلية الكبرى.</span></div>
+          <div class="path"><b>تحلية المياه</b><span>تغيرات الحالة والضغط البخاري في محطات التحلية التي تزوّد المدن بالمياه.</span></div>
+          <div class="path"><b>الصناعات الدوائية</b><span>الروابط التساهمية وأشكال الجزيئات وقطبيتها في تصميم الأدوية.</span></div>
+          <div class="path"><b>التعدين والسبائك</b><span>الروابط الفلزية والسبائك في صناعة المعادن والفولاذ.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="view" data-view="about" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="kicker">عن المنصة</p>
+      <h2 class="page-title">منصة تفاعُل للكيمياء</h2>
+      <p class="page-sub">مشروع تعليمي يساعد طلاب الصف الثاني الثانوي على فهم مقرر الكيمياء وإتقانه بالشرح المختصر والتدريب المكثف.</p>
+    </div>
+    <div class="section" style="padding-top:8px">
+      <div class="section-head"><div><p class="kicker">فريق الإعداد والتطوير</p><h2>المطوّران</h2></div></div>
+      <div class="devs">
+        <div class="dev"><span class="avatar" aria-hidden="true"><b>ح</b></span><div><h3>حسن زكي السبع</h3><p>إعداد وتطوير المنصة</p></div></div>
+        <div class="dev"><span class="avatar" aria-hidden="true"><b>م</b></span><div><h3>محمد عبدالخالق البطاط</h3><p>إعداد وتطوير المنصة</p></div></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="v-grid">
+        <div class="card span-6">
+          <span class="label">المرجع</span>
+          <h3>كتاب الكيمياء 2-1</h3>
+          <p style="margin:0">الصف الثاني الثانوي، الفصل الدراسي الأول، وزارة التعليم في المملكة العربية السعودية. يغطي فصول: الإلكترونات في الذرات، والجدول الدوري والتدرج في خواص العناصر، والمركبات الأيونية والفلزات، والروابط التساهمية، والحسابات الكيميائية، وحالات المادة، والغازات.</p>
+        </div>
+        <div class="card span-6">
+          <span class="label">ملاحظة</span>
+          <p style="margin:0">الشرح والأمثلة والأسئلة مُعدّة وفق دروس الكتاب لأغراض تعليمية، وجميع حقوق الكتاب محفوظة لوزارة التعليم. هذه المنصة مشروع طلابي مستقل، وليست موقعاً رسمياً لوزارة التعليم.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="sadu" aria-hidden="true" style="background:var(--surface)"></div>
+  <div class="wrap">
+    <div>
+      <h4>منصة تفاعُل للكيمياء</h4>
+      <p>إعداد وتطوير: <span class="names">حسن زكي السبع</span> و<span class="names">محمد عبدالخالق البطاط</span></p>
+    </div>
+    <div>
+      <p>المرجع: كتاب الكيمياء 2-1، الصف الثاني الثانوي، الفصل الدراسي الأول، وزارة التعليم، المملكة العربية السعودية.</p>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script type="application/json" id="appdata">{"chapters": [{"n": 1, "title": "الإلكترونات في الذرات", "lessons": [{"id": "1-1", "title": "الضوء وطاقة الكم", "concept": ["الضوء <b>إشعاع كهرومغناطيسي<\/b> ينتقل في الفراغ بسرعة ثابتة \\(c=3.00\\times10^{8}\\ \\text{m/s}\\).", "<b>الطول الموجي<\/b> \\(\\lambda\\): المسافة بين قمتين متتاليتين، و<b>التردد<\/b> \\(\\nu\\): عدد الموجات التي تعبر نقطة في الثانية بوحدة \\(\\text{Hz}=\\text{s}^{-1}\\). والعلاقة بينهما عكسية: \\(c=\\lambda\\nu\\).", "<b>الطيف الكهرومغناطيسي<\/b> يتدرج من موجات الراديو (أقل طاقة) إلى أشعة جاما (أعلى طاقة)، والضوء المرئي جزء صغير منه، والأحمر فيه أقل طاقة من البنفسجي.", "<b>الكم<\/b>: أقل كمية من الطاقة يمكن أن تكسبها الذرة أو تفقدها، و\\(E=h\\nu\\) حيث ثابت بلانك \\(h=6.626\\times10^{-34}\\ \\text{J}\\cdot\\text{s}\\). و<b>الفوتون<\/b> جسيم لا كتلة له يحمل كماً من الطاقة.", "<b>التأثير الكهروضوئي<\/b>: انبعاث إلكترونات من سطح فلز عند سقوط ضوء تردده يساوي تردد العتبة أو يزيد عليه، مهما كانت شدة الضوء الأقل تردداً.", "<b>طيف الانبعاث الذري<\/b>: مجموعة الترددات التي تبعثها ذرات العنصر، وهو طيف خطي مميز لكل عنصر كبصمة الإصبع."], "key": "\\[c=\\lambda\\nu\\qquad\\qquad E_{\\text{photon}}=h\\nu\\]", "examples": [{"q": "احسب تردد موجة ميكروويف طولها الموجي \\(1.00\\times10^{-2}\\ \\text{m}\\).", "steps": ["من \\(c=\\lambda\\nu\\): \\(\\nu=\\dfrac{c}{\\lambda}=\\dfrac{3.00\\times10^{8}}{1.00\\times10^{-2}}\\).", "\\(\\nu=3.00\\times10^{10}\\ \\text{Hz}\\)."]}, {"q": "احسب طاقة فوتون من ضوء تردده \\(7.00\\times10^{14}\\ \\text{Hz}\\).", "steps": ["\\(E=h\\nu=(6.626\\times10^{-34})(7.00\\times10^{14})\\).", "\\(E=4.64\\times10^{-19}\\ \\text{J}\\)."]}], "mcq": [{"q": "العلاقة بين الطول الموجي للضوء وتردده:", "o": ["عكسية", "طردية", "لا توجد علاقة بينهما", "تربيعية"], "a": 0, "e": "\\(c=\\lambda\\nu\\) و\\(c\\) ثابتة، فكلما زاد الطول الموجي قلّ التردد."}, {"q": "أعلى الإشعاعات الآتية طاقة:", "o": ["أشعة جاما", "موجات الراديو", "الضوء الأحمر", "الأشعة تحت الحمراء"], "a": 0, "e": "لأشعة جاما أعلى تردد في الطيف الكهرومغناطيسي، والطاقة \\(E=h\\nu\\) تتناسب طردياً مع التردد."}, {"q": "تردد ضوء طوله الموجي \\(6.00\\times10^{-7}\\ \\text{m}\\) هو:", "o": ["\\(5.00\\times10^{14}\\ \\text{Hz}\\)", "\\(1.80\\times10^{2}\\ \\text{Hz}\\)", "\\(2.00\\times10^{-15}\\ \\text{Hz}\\)", "\\(5.00\\times10^{-14}\\ \\text{Hz}\\)"], "a": 0, "e": "\\(\\nu=\\dfrac{c}{\\lambda}=\\dfrac{3.00\\times10^{8}}{6.00\\times10^{-7}}=5.00\\times10^{14}\\ \\text{Hz}\\)."}, {"q": "طاقة فوتون تردده \\(5.00\\times10^{14}\\ \\text{Hz}\\) تساوي:", "o": ["\\(3.31\\times10^{-19}\\ \\text{J}\\)", "\\(1.33\\times10^{-48}\\ \\text{J}\\)", "\\(7.55\\times10^{47}\\ \\text{J}\\)", "\\(3.31\\times10^{-20}\\ \\text{J}\\)"], "a": 0, "e": "\\(E=h\\nu=(6.626\\times10^{-34})(5.00\\times10^{14})=3.31\\times10^{-19}\\ \\text{J}\\)."}, {"q": "يحدث التأثير الكهروضوئي عندما:", "o": ["يكون تردد الضوء الساقط مساوياً لتردد العتبة أو أكبر منه", "تكون شدة الضوء عالية بأي تردد", "يُسخّن الفلز إلى درجة الانصهار", "يسقط ضوء أحمر خافت على أي فلز"], "a": 0, "e": "انبعاث الإلكترونات يعتمد على طاقة الفوتون الواحد \\(h\\nu\\)، لا على شدة الضوء؛ فلا بد أن يبلغ التردد تردد العتبة."}, {"q": "طيف الانبعاث الذري لعنصر ما:", "o": ["خطي ومميز لذلك العنصر", "متصل يشبه طيف الشمس", "متطابق لجميع العناصر", "يحتوي على اللون الأحمر فقط"], "a": 0, "e": "تبعث ذرات كل عنصر ترددات محددة تظهر خطوطاً، ولذلك يستعمل الطيف لتمييز العناصر."}]}, {"id": "1-2", "title": "نظرية الكم والذرة", "concept": ["<b>نموذج بور<\/b>: يدور إلكترون ذرة الهيدروجين في مستويات طاقة محددة، وأدناها الحالة المستقرة. ويُبعث فوتون عندما ينتقل الإلكترون من مستوى أعلى إلى أدنى، وطاقته تساوي فرق الطاقة بين المستويين.", "لم يفسّر نموذج بور أطياف الذرات متعددة الإلكترونات، فظهر النموذج الميكانيكي الكمي.", "<b>دي برولي<\/b>: للجسيمات المتحركة خصائص موجية \\(\\lambda=\\dfrac{h}{mv}\\). و<b>مبدأ عدم التحديد لهايزنبرج<\/b>: يستحيل تحديد سرعة الإلكترون وموقعه بدقة في الوقت نفسه.", "<b>النموذج الميكانيكي الكمي<\/b> (شرودنجر): يصف الإلكترون بمعادلة موجية، و<b>الفلك الذري<\/b> منطقة ثلاثية الأبعاد حول النواة يُحتمل وجود الإلكترون فيها.", "<b>عدد الكم الرئيس<\/b> \\(n\\) يحدد مستوى الطاقة وحجم الفلك. في المستوى \\(n\\) عدد \\(n\\) من المستويات الثانوية (s, p, d, f)، وعدد أفلاكه \\(n^2\\)، ويتسع لـ \\(2n^2\\) إلكتروناً.", "عدد الأفلاك: s فلك واحد كروي، p ثلاثة أفلاك على شكل دمبل، d خمسة أفلاك، f سبعة أفلاك."], "key": "<div class=\"kv\"><span>عدد الأفلاك في المستوى<\/span><span class=\"kv-m\">\\(n^2\\)<\/span><span>· أقصى عدد إلكترونات<\/span><span class=\"kv-m\">\\(2n^2\\)<\/span><\/div>\\[\\lambda=\\frac{h}{mv}\\]", "examples": [{"q": "كم فلكاً وكم إلكتروناً على الأكثر في مستوى الطاقة الثالث؟", "steps": ["\\(n=3\\): عدد الأفلاك \\(n^2=9\\)، وهي 3s (1) و3p (3) و3d (5).", "أقصى عدد إلكترونات \\(2n^2=18\\) إلكتروناً."]}, {"q": "احسب طول موجة دي برولي لإلكترون كتلته \\(9.11\\times10^{-31}\\ \\text{kg}\\) يتحرك بسرعة \\(2.00\\times10^{6}\\ \\text{m/s}\\).", "steps": ["\\(\\lambda=\\dfrac{h}{mv}=\\dfrac{6.626\\times10^{-34}}{(9.11\\times10^{-31})(2.00\\times10^{6})}\\).", "\\(\\lambda=3.64\\times10^{-10}\\ \\text{m}\\)."]}], "mcq": [{"q": "عدد الأفلاك في المستوى الثانوي d:", "o": ["\\(5\\)", "\\(3\\)", "\\(7\\)", "\\(1\\)"], "a": 0, "e": "المستوى الثانوي d يضم خمسة أفلاك، تتسع لعشرة إلكترونات."}, {"q": "أقصى عدد من الإلكترونات في مستوى الطاقة الرئيس \\(n=4\\):", "o": ["\\(32\\)", "\\(16\\)", "\\(18\\)", "\\(8\\)"], "a": 0, "e": "\\(2n^2=2(4)^2=32\\). (الخيار 16 هو عدد الأفلاك \\(n^2\\).)"}, {"q": "شكل الفلك s:", "o": ["كروي", "دمبل", "حلقي", "مستوٍ"], "a": 0, "e": "الفلك s كروي الشكل، ويكبر حجمه بزيادة عدد الكم الرئيس."}, {"q": "وفق نموذج بور، ينبعث فوتون عندما:", "o": ["ينتقل الإلكترون من مستوى طاقة أعلى إلى أدنى", "ينتقل الإلكترون من مستوى أدنى إلى أعلى", "يبقى الإلكترون في الحالة المستقرة", "تفقد النواة بروتوناً"], "a": 0, "e": "الانتقال إلى مستوى أدنى يطلق الفرق في الطاقة على شكل فوتون، أما الانتقال إلى أعلى فيتطلب امتصاص طاقة."}, {"q": "ينص مبدأ عدم التحديد لهايزنبرج على أنه:", "o": ["يستحيل تحديد سرعة الإلكترون وموقعه بدقة في الوقت نفسه", "تدور الإلكترونات في مدارات دائرية ثابتة", "لا يتسع الفلك لأكثر من إلكترونين", "الطاقة متصلة وغير مكماة"], "a": 0, "e": "قياس موقع الإلكترون يغيّر سرعته والعكس، ولذلك نتحدث عن احتمال وجوده في الفلك."}, {"q": "المستويات الثانوية في مستوى الطاقة الرئيس الثالث:", "o": ["3s و3p و3d", "3s و3p فقط", "3s و3p و3d و3f", "3p و3d و3f"], "a": 0, "e": "عدد المستويات الثانوية يساوي \\(n\\)؛ ففي المستوى الثالث ثلاثة: s و p و d."}]}, {"id": "1-3", "title": "التوزيع الإلكتروني", "concept": ["<b>التوزيع الإلكتروني<\/b>: ترتيب الإلكترونات في الذرة، وتتخذ الذرة الترتيب الأقل طاقة والأكثر استقراراً.", "<b>مبدأ أوفباو<\/b>: يشغل كل إلكترون الفلك الأقل طاقة المتاح، وفق الترتيب في القاعدة أدناه.", "<b>مبدأ باولي<\/b>: يتسع الفلك الواحد لإلكترونين على الأكثر بغزلين متعاكسين. و<b>قاعدة هوند<\/b>: تشغل الإلكترونات الأفلاك المتساوية الطاقة منفردةً بالغزل نفسه قبل أن تزدوج.", "<b>ترميز الغاز النبيل<\/b>: نكتب رمز الغاز النبيل السابق بين قوسين ثم بقية التوزيع، مثل الصوديوم \\(\\mathrm{[Ne]}\\,3s^1\\). ويشذ الكروم \\(\\mathrm{[Ar]}\\,4s^1 3d^5\\) والنحاس \\(\\mathrm{[Ar]}\\,4s^1 3d^{10}\\) لاستقرار المستوى d نصف الممتلئ أو الممتلئ.", "<b>إلكترونات التكافؤ<\/b>: إلكترونات المستوى الرئيس الخارجي، وهي التي تحدد الخواص الكيميائية، وتمثَّل بالتمثيل النقطي للإلكترونات (لويس)."], "key": "\\[1s\\;2s\\;2p\\;3s\\;3p\\;4s\\;3d\\;4p\\;5s\\;4d\\;5p\\;6s\\]", "examples": [{"q": "اكتب التوزيع الإلكتروني للفوسفور (\\(Z=15\\)) وحدد عدد إلكترونات التكافؤ والإلكترونات المنفردة.", "steps": ["\\(1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^3\\)، أي \\(\\mathrm{[Ne]}\\,3s^2 3p^3\\).", "إلكترونات التكافؤ في المستوى الثالث: \\(2+3=5\\).", "حسب قاعدة هوند تتوزع إلكترونات \\(3p^3\\) منفردة على الأفلاك الثلاثة، فعدد الإلكترونات المنفردة 3."]}, {"q": "اكتب ترميز الغاز النبيل للحديد (\\(Z=26\\)).", "steps": ["الغاز النبيل السابق الأرجون (\\(Z=18\\))، ويتبقى \\(26-18=8\\) إلكترونات.", "تملأ 4s أولاً ثم 3d: \\(\\mathrm{[Ar]}\\,4s^2 3d^6\\)."]}], "mcq": [{"q": "التوزيع الإلكتروني للأكسجين (\\(Z=8\\)):", "o": ["\\(1s^2\\,2s^2\\,2p^4\\)", "\\(1s^2\\,2s^2\\,2p^6\\)", "\\(1s^2\\,2s^4\\,2p^2\\)", "\\(1s^2\\,2s^2\\,2p^3\\,3s^1\\)"], "a": 0, "e": "ثمانية إلكترونات: \\(1s^2\\) ثم \\(2s^2\\) ثم الأربعة الباقية في \\(2p\\). ولا يتسع \\(2s\\) لأكثر من إلكترونين."}, {"q": "ترميز الغاز النبيل للكالسيوم (\\(Z=20\\)):", "o": ["\\(\\mathrm{[Ar]}\\,4s^2\\)", "\\(\\mathrm{[Ne]}\\,3s^2\\)", "\\(\\mathrm{[Ar]}\\,3d^2\\)", "\\(\\mathrm{[Kr]}\\,4s^2\\)"], "a": 0, "e": "بعد الأرجون (18) يبقى إلكترونان يشغلان \\(4s\\) لأنه أقل طاقة من \\(3d\\)."}, {"q": "عدد إلكترونات التكافؤ في ذرة الكلور (\\(Z=17\\)):", "o": ["\\(7\\)", "\\(17\\)", "\\(5\\)", "\\(1\\)"], "a": 0, "e": "\\(\\mathrm{[Ne]}\\,3s^2 3p^5\\): في المستوى الخارجي \\(2+5=7\\) إلكترونات."}, {"q": "المبدأ الذي ينص على أن الفلك الواحد يتسع لإلكترونين على الأكثر بغزلين متعاكسين:", "o": ["مبدأ باولي", "مبدأ أوفباو", "قاعدة هوند", "مبدأ هايزنبرج"], "a": 0, "e": "هذا نص مبدأ الاستبعاد لباولي. أما أوفباو فيحدد ترتيب الامتلاء، وهوند تحدد توزيع الإلكترونات في الأفلاك المتساوية الطاقة."}, {"q": "أقل المستويات الثانوية الآتية طاقة:", "o": ["4s", "3d", "4p", "4d"], "a": 0, "e": "حسب مخطط أوفباو يمتلئ 4s قبل 3d و4p و4d."}, {"q": "التوزيع الإلكتروني الصحيح للنحاس (\\(Z=29\\)):", "o": ["\\(\\mathrm{[Ar]}\\,4s^1 3d^{10}\\)", "\\(\\mathrm{[Ar]}\\,4s^2 3d^9\\)", "\\(\\mathrm{[Ar]}\\,4s^2 3d^{10}\\)", "\\(\\mathrm{[Ar]}\\,3d^{11}\\)"], "a": 0, "e": "النحاس يشذ عن الترتيب المتوقع؛ ينتقل إلكترون من 4s إلى 3d ليصبح ممتلئاً بعشرة إلكترونات، وهو ترتيب أكثر استقراراً."}]}]}, {"n": 2, "title": "الجدول الدوري والتدرج في خواص العناصر", "lessons": [{"id": "2-1", "title": "تطور الجدول الدوري الحديث", "concept": ["رتّب <b>مندليف<\/b> العناصر تصاعدياً حسب الكتلة الذرية، وترك فراغات لعناصر لم تكتشف بعد وتنبأ بخواصها.", "رتّب <b>موزلي<\/b> العناصر حسب <b>العدد الذري<\/b>، فظهر <b>القانون الدوري<\/b>: تتكرر الخواص الكيميائية والفيزيائية للعناصر دورياً عند ترتيبها تصاعدياً حسب أعدادها الذرية.", "الجدول الدوري الحديث: صفوف أفقية تسمى <b>الدورات<\/b> (7)، وأعمدة رأسية تسمى <b>المجموعات<\/b> (18).", "<b>العناصر الممثلة<\/b>: المجموعات 1 و2 و13–18، و<b>العناصر الانتقالية<\/b>: المجموعات 3–12.", "<b>الفلزات<\/b>: لامعة، موصلة للحرارة والكهرباء، قابلة للطرق والسحب؛ ومنها الفلزات القلوية (1) والقلوية الأرضية (2). <b>اللافلزات<\/b>: غازات أو مواد صلبة هشة رديئة التوصيل؛ ومنها الهالوجينات (17) والغازات النبيلة (18). <b>أشباه الفلزات<\/b> مثل السيليكون لها خواص بين الاثنين."], "key": "<p class=\"kv-text\">القانون الدوري: تتكرر خواص العناصر دورياً عند ترتيبها حسب العدد الذري<\/p><div class=\"kv\"><span>7 دورات أفقية<\/span><span>·<\/span><span>18 مجموعة رأسية<\/span><\/div>", "examples": [{"q": "حدد الدورة والمجموعة ونوع العنصر الذي توزيعه \\(\\mathrm{[Ne]}\\,3s^2 3p^4\\).", "steps": ["أعلى مستوى طاقة \\(n=3\\)، فالعنصر في الدورة الثالثة.", "إلكترونات التكافؤ \\(2+4=6\\) في القطاع p، فالمجموعة 16.", "إنه الكبريت S، وهو لا فلز."]}, {"q": "صنّف العناصر: Na، Cl، Si، Ar، Fe.", "steps": ["Na فلز قلوي (المجموعة 1)، وCl هالوجين (17)، وSi شبه فلز.", "Ar غاز نبيل (18)، وFe عنصر انتقالي (المجموعة 8)."]}], "mcq": [{"q": "رتّب موزلي العناصر في الجدول الدوري حسب:", "o": ["العدد الذري", "الكتلة الذرية", "الكثافة", "نصف القطر الذري"], "a": 0, "e": "ترتيب موزلي حسب العدد الذري حلّ مشكلات ترتيب مندليف حسب الكتلة الذرية، وعليه بُني القانون الدوري."}, {"q": "الهالوجينات هي عناصر المجموعة:", "o": ["\\(17\\)", "\\(1\\)", "\\(2\\)", "\\(18\\)"], "a": 0, "e": "الهالوجينات (F, Cl, Br, I) في المجموعة 17، والغازات النبيلة في 18."}, {"q": "عدد المجموعات في الجدول الدوري الحديث:", "o": ["\\(18\\)", "\\(7\\)", "\\(8\\)", "\\(16\\)"], "a": 0, "e": "في الجدول الحديث 18 مجموعة رأسية و7 دورات أفقية."}, {"q": "أي العناصر الآتية شبه فلز؟", "o": ["السيليكون", "الصوديوم", "الكلور", "الأرجون"], "a": 0, "e": "السيليكون شبه فلز يُستعمل في صناعة الرقائق الإلكترونية، والصوديوم فلز، والكلور والأرجون لا فلزان."}, {"q": "تقع الفلزات القلوية الأرضية في المجموعة:", "o": ["\\(2\\)", "\\(1\\)", "\\(13\\)", "\\(17\\)"], "a": 0, "e": "المجموعة 1 للفلزات القلوية، والمجموعة 2 للفلزات القلوية الأرضية مثل Mg وCa."}]}, {"id": "2-2", "title": "تصنيف العناصر", "concept": ["لعناصر المجموعة الواحدة عدد إلكترونات التكافؤ نفسه، ولذلك تتشابه خواصها الكيميائية. ورقم الدورة يساوي رقم مستوى الطاقة الخارجي.", "عدد إلكترونات التكافؤ للعناصر الممثلة: يساوي رقم المجموعة في المجموعتين 1 و2، ويساوي رقم المجموعة ناقص 10 في المجموعات 13–18 (ما عدا الهيليوم).", "<b>القطاع s<\/b>: المجموعتان 1 و2 والهيليوم. <b>القطاع p<\/b>: المجموعات 13–18. <b>القطاع d<\/b>: العناصر الانتقالية. <b>القطاع f<\/b>: العناصر الانتقالية الداخلية (اللانثانيدات والأكتينيدات).", "الغازات النبيلة مستقرة جداً لأن مستوياتها الثانوية s و p ممتلئة."], "key": "\\[ns^1\\quad ns^2\\quad ns^2np^1\\ \\cdots\\ ns^2np^6\\]<p class=\"kv-text\">توزيع إلكترونات التكافؤ يحدد المجموعة والقطاع<\/p>", "examples": [{"q": "عنصر توزيعه \\(\\mathrm{[Kr]}\\,5s^2 4d^{10} 5p^3\\). حدد قطاعه ومجموعته ودورته.", "steps": ["آخر إلكترون في 5p، فهو من القطاع p.", "إلكترونات التكافؤ \\(5s^2 5p^3\\) عددها 5، فالمجموعة \\(10+5=15\\).", "أعلى مستوى \\(n=5\\)، فالدورة الخامسة، وهو الأنتيمون Sb."]}, {"q": "لماذا تتشابه خواص الليثيوم والصوديوم والبوتاسيوم؟", "steps": ["توزيعها الخارجي جميعاً \\(ns^1\\): إلكترون تكافؤ واحد.", "فهي في المجموعة 1 وتتشابه في تفاعلاتها، إذ يفقد كل منها إلكتروناً واحداً."]}], "mcq": [{"q": "عنصر توزيعه \\(\\mathrm{[Ar]}\\,4s^2 3d^5\\) يقع في القطاع:", "o": ["d", "s", "p", "f"], "a": 0, "e": "آخر الإلكترونات يدخل المستوى الثانوي 3d، فهو عنصر انتقالي من القطاع d (المنجنيز)."}, {"q": "عدد إلكترونات التكافؤ لعناصر المجموعة 15:", "o": ["\\(5\\)", "\\(15\\)", "\\(3\\)", "\\(7\\)"], "a": 0, "e": "للمجموعات 13–18: رقم المجموعة ناقص 10، أي \\(15-10=5\\)، وتوزيعها \\(ns^2np^3\\)."}, {"q": "توزيع إلكترونات التكافؤ لعناصر المجموعة 2:", "o": ["\\(ns^2\\)", "\\(ns^1\\)", "\\(ns^2np^2\\)", "\\(ns^2np^6\\)"], "a": 0, "e": "عناصر المجموعة 2 لها إلكترونا تكافؤ في المستوى الثانوي s."}, {"q": "العنصر الذي يقع في الدورة 3 والمجموعة 13:", "o": ["الألومنيوم Al", "البورون B", "الغاليوم Ga", "الماغنيسيوم Mg"], "a": 0, "e": "توزيعه \\(\\mathrm{[Ne]}\\,3s^2 3p^1\\): الدورة 3 وثلاثة إلكترونات تكافؤ في المجموعة 13."}, {"q": "تقع اللانثانيدات والأكتينيدات في القطاع:", "o": ["f", "d", "p", "s"], "a": 0, "e": "هي العناصر الانتقالية الداخلية، وتمتلئ فيها أفلاك المستوى الثانوي f."}]}, {"id": "2-3", "title": "تدرج خواص العناصر", "concept": ["<b>نصف القطر الذري<\/b> يقل عبر الدورة من اليسار إلى اليمين (لزيادة شحنة النواة مع ثبات المستوى الخارجي)، ويزداد في المجموعة من أعلى إلى أسفل (لإضافة مستويات طاقة).", "<b>نصف قطر الأيون<\/b>: الأيون الموجب أصغر من ذرته، والأيون السالب أكبر من ذرته.", "<b>طاقة التأين<\/b>: الطاقة اللازمة لنزع إلكترون من ذرة في الحالة الغازية؛ تزداد عبر الدورة وتقل في المجموعة. وتزداد طاقات التأين المتتالية، وتحدث قفزة كبيرة بعد نزع جميع إلكترونات التكافؤ.", "<b>قاعدة الثمانية<\/b>: تكسب الذرات الإلكترونات أو تفقدها أو تشارك فيها لتصل إلى ثمانية إلكترونات تكافؤ.", "<b>الكهروسالبية<\/b>: قدرة الذرة على جذب إلكترونات الرابطة؛ تزداد عبر الدورة وتقل في المجموعة، وأعلاها الفلور (3.98)."], "key": "<div class=\"kv\"><span>عبر الدورة:<\/span><span>نصف القطر يقل، وطاقة التأين والكهروسالبية تزدادان<\/span><\/div><div class=\"kv\"><span>في المجموعة:<\/span><span>نصف القطر يزداد، وطاقة التأين والكهروسالبية تقلان<\/span><\/div>", "examples": [{"q": "رتّب Na وMg وK تصاعدياً حسب نصف القطر الذري.", "steps": ["Na وMg في الدورة الثالثة، وMg على يمين Na فهو أصغر.", "K تحت Na في المجموعة 1 فهو أكبر منه.", "الترتيب: Mg ثم Na ثم K."]}, {"q": "عنصر طاقات تأينه المتتالية بوحدة kJ/mol: 738، 1451، 7733. إلى أي مجموعة ينتمي؟", "steps": ["القفزة الكبيرة بين الطاقة الثانية (1451) والثالثة (7733).", "فللعنصر إلكترونا تكافؤ فقط، وهو في المجموعة 2 (الماغنيسيوم)."]}], "mcq": [{"q": "أكبر العناصر الآتية نصف قطر ذري:", "o": ["Cs", "Li", "Na", "K"], "a": 0, "e": "العناصر الأربعة في المجموعة 1، ونصف القطر يزداد إلى أسفل المجموعة، والسيزيوم أسفلها."}, {"q": "أعلى العناصر الآتية كهروسالبية:", "o": ["F", "Cl", "O", "N"], "a": 0, "e": "الفلور أعلى العناصر كهروسالبية (3.98)، لأنه في أعلى يمين الجدول (عدا الغازات النبيلة)."}, {"q": "مقارنة بذرة الصوديوم، يكون أيون \\(\\ce{Na+}\\):", "o": ["أصغر حجماً", "أكبر حجماً", "مساوياً لها", "ضعفها تماماً"], "a": 0, "e": "بفقد إلكترون التكافؤ يفقد الأيون المستوى الخارجي كله، فيصغر حجمه."}, {"q": "تتغير طاقة التأين في الدورة الواحدة من اليسار إلى اليمين بحيث:", "o": ["تزداد بوجه عام", "تقل بوجه عام", "تبقى ثابتة", "تنعدم في الغازات النبيلة"], "a": 0, "e": "تزداد شحنة النواة الفعالة عبر الدورة فيصعب نزع الإلكترون."}, {"q": "عنصر طاقات تأينه المتتالية (kJ/mol): 496، 4562، 6910، 9543. عدد إلكترونات تكافئه:", "o": ["\\(1\\)", "\\(2\\)", "\\(3\\)", "\\(4\\)"], "a": 0, "e": "القفزة الكبيرة بعد الطاقة الأولى، فللعنصر إلكترون تكافؤ واحد (الصوديوم)."}]}]}, {"n": 3, "title": "المركبات الأيونية والفلزات", "lessons": [{"id": "3-1", "title": "تكوّن الأيون", "concept": ["<b>الرابطة الكيميائية<\/b>: القوة التي تربط بين ذرتين. و<b>الأيون<\/b>: ذرة أو مجموعة ذرات تحمل شحنة كهربائية.", "<b>الأيون الموجب<\/b>: ينتج عن فقد إلكترون أو أكثر، وتكوّنه الفلزات عادة، مثل \\(\\ce{Na -> Na+ + e-}\\).", "<b>الأيون السالب<\/b>: ينتج عن كسب إلكترون أو أكثر، وتكوّنه اللافلزات عادة، ويُضاف إلى اسمه المقطع «يد»، مثل الكلوريد \\(\\ce{Cl-}\\) والأكسيد \\(\\ce{O^2-}\\).", "تميل الذرات إلى الوصول إلى توزيع الغاز النبيل. وبعض العناصر الانتقالية تكوّن أيونات بتوزيع «شبه الغاز النبيل» مثل \\(\\ce{Zn^2+}\\).", "شحنات أيونات العناصر الممثلة: المجموعة 1: \\(+1\\)، 2: \\(+2\\)، 13: \\(+3\\)، 15: \\(-3\\)، 16: \\(-2\\)، 17: \\(-1\\)."], "key": "\\[\\ce{Mg -> Mg^2+ + 2e-}\\qquad\\qquad \\ce{Cl + e- -> Cl-}\\]", "examples": [{"q": "اكتب التوزيع الإلكتروني لأيون \\(\\ce{Mg^2+}\\) (\\(Z=12\\))، وما الغاز النبيل الذي يشابهه؟", "steps": ["ذرة Mg: \\(1s^2\\,2s^2\\,2p^6\\,3s^2\\).", "تفقد إلكترونَي 3s فيصبح الأيون \\(1s^2\\,2s^2\\,2p^6\\)، وهو توزيع النيون Ne."]}, {"q": "كم إلكتروناً يكسب النيتروجين ليكوّن أيوناً مستقراً؟ وما شحنته واسمه؟", "steps": ["النيتروجين في المجموعة 15 وله 5 إلكترونات تكافؤ.", "يكسب 3 إلكترونات ليكمل الثمانية، فيتكون أيون النيتريد \\(\\ce{N^3-}\\)."]}], "mcq": [{"q": "الأيون الذي يكوّنه الكالسيوم:", "o": ["\\(\\ce{Ca^2+}\\)", "\\(\\ce{Ca+}\\)", "\\(\\ce{Ca^2-}\\)", "\\(\\ce{Ca-}\\)"], "a": 0, "e": "الكالسيوم في المجموعة 2، يفقد إلكترونَي التكافؤ فيصبح \\(\\ce{Ca^2+}\\)."}, {"q": "الأيون المستقر للكبريت:", "o": ["\\(\\ce{S^2-}\\)", "\\(\\ce{S^2+}\\)", "\\(\\ce{S^6+}\\)", "\\(\\ce{S-}\\)"], "a": 0, "e": "الكبريت في المجموعة 16 بستة إلكترونات تكافؤ، يكسب إلكترونين ليصل إلى الثمانية."}, {"q": "يسمى الأيون السالب للفلور:", "o": ["فلوريد", "فلور", "فلورات", "فلوريت"], "a": 0, "e": "الأيونات السالبة أحادية الذرة يضاف إلى اسمها المقطع «يد»: فلوريد \\(\\ce{F-}\\)."}, {"q": "تفقد الفلزات القلوية إلكتروناً واحداً:", "o": ["لتصل إلى توزيع الغاز النبيل", "لتصبح أيونات سالبة", "لأن نواتها سالبة الشحنة", "لتزيد نصف قطرها"], "a": 0, "e": "بفقد إلكترون \\(ns^1\\) يصبح توزيع الأيون مماثلاً للغاز النبيل السابق، وهو توزيع مستقر."}, {"q": "عدد الإلكترونات في أيون الأكسيد \\(\\ce{O^2-}\\) (\\(Z=8\\)):", "o": ["\\(10\\)", "\\(8\\)", "\\(6\\)", "\\(16\\)"], "a": 0, "e": "ذرة الأكسجين 8 إلكترونات، وتكسب إلكترونين فيصبح العدد 10."}]}, {"id": "3-2", "title": "الروابط الأيونية والمركبات الأيونية", "concept": ["<b>الرابطة الأيونية<\/b>: قوة تجاذب كهروستاتيكية بين أيونات مختلفة الشحنة، وتتكون غالباً بين فلز ولا فلز، ويسمى الناتج <b>مركباً أيونياً<\/b>.", "تترتب الأيونات في <b>شبكة بلورية<\/b> ثلاثية الأبعاد، وأبسط نسبة بين الأيونات فيها تسمى <b>وحدة الصيغة<\/b>.", "خواص المركبات الأيونية: درجات انصهار وغليان مرتفعة، صلبة وقاسية وهشة، توصل الكهرباء في الحالة المنصهرة أو في المحلول (إلكتروليتات)، ولا توصلها في الحالة الصلبة.", "<b>طاقة الشبكة البلورية<\/b>: الطاقة اللازمة لفصل أيونات مول واحد من المركب الأيوني، وتزداد كلما صغر حجم الأيونات وزادت شحناتها.", "تكوين المركب الأيوني من عناصره عملية طاردة للطاقة غالباً."], "key": "<p class=\"kv-text\">تزداد طاقة الشبكة البلورية بزيادة شحنات الأيونات وصغر حجمها<\/p><div class=\"kv\"><span class=\"kv-m\">\\(\\ce{MgO}\\)<\/span><span>طاقة شبكته أكبر من<\/span><span class=\"kv-m\">\\(\\ce{NaF}\\)<\/span><\/div>", "examples": [{"q": "لماذا لا يوصل ملح الطعام الصلب الكهرباء بينما يوصلها مصهوره؟", "steps": ["في الحالة الصلبة تكون الأيونات مثبتة في الشبكة البلورية فلا تتحرك.", "عند الانصهار تتحرر الأيونات وتتحرك فتنقل الشحنة الكهربائية."]}, {"q": "أيهما طاقة شبكته البلورية أكبر: \\(\\ce{KCl}\\) أم \\(\\ce{CaO}\\)؟", "steps": ["أيونا \\(\\ce{CaO}\\) شحنتاهما \\(+2\\) و\\(-2\\)، بينما شحنتا أيوني \\(\\ce{KCl}\\) \\(+1\\) و\\(-1\\).", "والأيونات في \\(\\ce{CaO}\\) أصغر حجماً، فطاقة شبكته أكبر."]}], "mcq": [{"q": "تتكون الرابطة الأيونية غالباً بين:", "o": ["فلز ولا فلز", "لا فلزين", "فلزين", "غازين نبيلين"], "a": 0, "e": "الفلز يفقد إلكترونات واللافلز يكسبها، فتتكون أيونات مختلفة الشحنة تتجاذب."}, {"q": "توصل المركبات الأيونية التيار الكهربائي عندما تكون:", "o": ["منصهرة أو مذابة في الماء", "صلبة فقط", "في جميع الحالات", "مبردة إلى درجة منخفضة"], "a": 0, "e": "التوصيل يحتاج إلى أيونات حرة الحركة، وهذا لا يتحقق في الشبكة الصلبة."}, {"q": "أكبر المركبات الآتية طاقة شبكة بلورية:", "o": ["\\(\\ce{MgO}\\)", "\\(\\ce{NaCl}\\)", "\\(\\ce{KBr}\\)", "\\(\\ce{CsI}\\)"], "a": 0, "e": "أيونا \\(\\ce{MgO}\\) ثنائيا الشحنة وصغيرا الحجم، بينما أيونات بقية المركبات أحادية الشحنة."}, {"q": "من خواص المركبات الأيونية:", "o": ["درجات انصهار مرتفعة", "لينة وقابلة للطرق", "توصل الكهرباء في الحالة الصلبة", "درجات غليان منخفضة جداً"], "a": 0, "e": "قوة التجاذب بين الأيونات في الشبكة كبيرة، فتحتاج إلى طاقة عالية لصهرها."}, {"q": "أبسط نسبة بين الأيونات في المركب الأيوني تسمى:", "o": ["وحدة الصيغة", "الجزيء", "الفلك", "الأيون متعدد الذرات"], "a": 0, "e": "المركبات الأيونية لا تتكون من جزيئات، ونعبّر عنها بوحدة الصيغة مثل \\(\\ce{NaCl}\\)."}]}, {"id": "3-3", "title": "صيغ المركبات الأيونية وأسماؤها", "concept": ["<b>الأيون أحادي الذرة<\/b> يتكون من ذرة واحدة، وعدد تأكسده يساوي شحنته.", "عند كتابة الصيغة: يُكتب الأيون الموجب أولاً، ويجب أن يكون مجموع الشحنات صفراً، وتدل الأرقام السفلية على عدد الأيونات، مثل \\(\\ce{Al2O3}\\).", "<b>الأيونات متعددة الذرات<\/b>: \\(\\ce{NO3-}\\) النترات، \\(\\ce{SO4^2-}\\) الكبريتات، \\(\\ce{CO3^2-}\\) الكربونات، \\(\\ce{PO4^3-}\\) الفوسفات، \\(\\ce{OH-}\\) الهيدروكسيد، \\(\\ce{NH4+}\\) الأمونيوم. وتوضع بين قوسين إذا تكررت، مثل \\(\\ce{Ca(NO3)2}\\).", "<b>التسمية<\/b>: يُذكر اسم الأيون السالب ثم الأيون الموجب، مثل كلوريد الصوديوم \\(\\ce{NaCl}\\). وللفلزات التي لها أكثر من عدد تأكسد يُكتب عدد التأكسد بالأرقام الرومانية، مثل أكسيد الحديد III \\(\\ce{Fe2O3}\\).", "<b>الأيونات الأكسجينية<\/b>: المقطع «ات» للأيون الأكثر أكسجيناً، و«يت» للأقل، مثل النترات \\(\\ce{NO3-}\\) والنتريت \\(\\ce{NO2-}\\)."], "key": "<p class=\"kv-text\">مجموع شحنات الأيونات في الصيغة يساوي صفراً<\/p>\\[2(+3)+3(-2)=0\\ \\Rightarrow\\ \\ce{Al2O3}\\]", "examples": [{"q": "اكتب صيغة فوسفات الكالسيوم.", "steps": ["الأيونان \\(\\ce{Ca^2+}\\) و\\(\\ce{PO4^3-}\\).", "\\(3(+2)+2(-3)=0\\)، فالصيغة \\(\\ce{Ca3(PO4)2}\\)."]}, {"q": "سمِّ المركب \\(\\ce{CuSO4}\\) علماً بأن للنحاس أكثر من عدد تأكسد.", "steps": ["شحنة الكبريتات \\(-2\\)، فشحنة النحاس \\(+2\\).", "الاسم: كبريتات النحاس II."]}], "mcq": [{"q": "صيغة كلوريد الماغنيسيوم:", "o": ["\\(\\ce{MgCl2}\\)", "\\(\\ce{MgCl}\\)", "\\(\\ce{Mg2Cl}\\)", "\\(\\ce{Mg2Cl3}\\)"], "a": 0, "e": "\\(\\ce{Mg^2+}\\) يحتاج إلى أيونين \\(\\ce{Cl-}\\) ليصبح المجموع صفراً."}, {"q": "صيغة كبريتات الألومنيوم:", "o": ["\\(\\ce{Al2(SO4)3}\\)", "\\(\\ce{AlSO4}\\)", "\\(\\ce{Al3(SO4)2}\\)", "\\(\\ce{Al2SO4}\\)"], "a": 0, "e": "\\(2(+3)+3(-2)=0\\)، والكبريتات أيون متعدد الذرات يوضع بين قوسين."}, {"q": "اسم المركب \\(\\ce{Fe2O3}\\):", "o": ["أكسيد الحديد III", "أكسيد الحديد II", "ثالث أكسيد الحديد", "أكسيد ثنائي الحديد"], "a": 0, "e": "شحنة الأكسيد \\(-2\\)؛ ثلاثة أيونات مجموعها \\(-6\\)، فشحنة كل أيون حديد \\(+3\\)."}, {"q": "يسمى الأيون \\(\\ce{NO2-}\\):", "o": ["النتريت", "النترات", "النيتريد", "ثاني أكسيد النيتروجين"], "a": 0, "e": "النترات \\(\\ce{NO3-}\\) أكثر أكسجيناً، والنتريت \\(\\ce{NO2-}\\) أقل أكسجيناً."}, {"q": "صيغة هيدروكسيد الكالسيوم:", "o": ["\\(\\ce{Ca(OH)2}\\)", "\\(\\ce{CaOH}\\)", "\\(\\ce{CaOH2}\\)", "\\(\\ce{Ca2OH}\\)"], "a": 0, "e": "يحتاج \\(\\ce{Ca^2+}\\) إلى أيوني هيدروكسيد، ويوضع الأيون متعدد الذرات بين قوسين."}]}, {"id": "3-4", "title": "الروابط الفلزية وخواص الفلزات", "concept": ["<b>نموذج بحر الإلكترونات<\/b>: تتشارك ذرات الفلز إلكترونات التكافؤ، فتتحرك بحرية بين الأيونات الموجبة وتسمى <b>إلكترونات غير متمركزة<\/b>.", "<b>الرابطة الفلزية<\/b>: تجاذب بين الأيونات الفلزية الموجبة والإلكترونات غير المتمركزة المحيطة بها.", "خواص الفلزات: درجات غليان مرتفعة، قابلة للطرق والسحب لأن الأيونات تنزلق دون كسر الرابطة، موصلة جيدة للحرارة والكهرباء، ولامعة. وتزداد صلابتها بزيادة عدد الإلكترونات غير المتمركزة.", "<b>السبيكة<\/b>: خليط من عناصر له خواص فلزية. <b>الإحلالية<\/b>: تحل فيها ذرات محل ذرات متقاربة الحجم (النحاس الأصفر: نحاس وخارصين). <b>البينية<\/b>: تملأ فيها ذرات صغيرة الفراغات بين الذرات الكبيرة (الفولاذ الكربوني)."], "key": "<p class=\"kv-text\">الرابطة الفلزية: أيونات موجبة في بحر من الإلكترونات غير المتمركزة<\/p>", "examples": [{"q": "فسّر قابلية الفلزات للطرق بينما تتكسر البلورات الأيونية عند الطرق.", "steps": ["في الفلز تنزلق الأيونات الموجبة داخل بحر الإلكترونات دون أن تنكسر الرابطة.", "في البلورة الأيونية تؤدي الإزاحة إلى تقابل الأيونات المتشابهة الشحنة فتتنافر وتتكسر البلورة."]}, {"q": "صنّف سبيكتي الفولاذ الكربوني (حديد وكربون) والنحاس الأصفر (نحاس وخارصين).", "steps": ["ذرات الكربون صغيرة تملأ الفراغات بين ذرات الحديد: سبيكة بينية.", "ذرات الخارصين قريبة من حجم ذرات النحاس فتحل محلها: سبيكة إحلالية."]}], "mcq": [{"q": "الإلكترونات في نموذج بحر الإلكترونات:", "o": ["غير متمركزة وتتحرك بحرية", "مقيدة بين ذرتين محددتين", "مرتبطة بقوة بنواة واحدة", "منتقلة إلى ذرات لا فلزية"], "a": 0, "e": "إلكترونات التكافؤ في الفلز لا تنتمي إلى ذرة بعينها، بل تتحرك بحرية بين الأيونات."}, {"q": "يرجع توصيل الفلزات للكهرباء إلى:", "o": ["حركة الإلكترونات غير المتمركزة", "حركة الأيونات الموجبة", "وجود روابط أيونية", "وجود فراغات في الشبكة"], "a": 0, "e": "الإلكترونات الحرة تتحرك عند تطبيق فرق جهد فتنقل التيار."}, {"q": "السبيكة التي تحل فيها ذرات الخارصين محل ذرات النحاس:", "o": ["إحلالية", "بينية", "أيونية", "تساهمية"], "a": 0, "e": "الذرتان متقاربتان في الحجم، فتحل إحداهما محل الأخرى في الشبكة."}, {"q": "الفولاذ الكربوني مثال على سبيكة:", "o": ["بينية", "إحلالية", "أيونية", "نقية"], "a": 0, "e": "ذرات الكربون الصغيرة تملأ الفراغات بين ذرات الحديد الكبيرة."}, {"q": "الخاصية التي تعني إمكانية تشكيل الفلز على هيئة أسلاك:", "o": ["قابلية السحب", "قابلية الطرق", "اللمعان", "الصلابة"], "a": 0, "e": "قابلية السحب تعني سحبه أسلاكاً، وقابلية الطرق تعني تشكيله صفائح."}]}]}, {"n": 4, "title": "الروابط التساهمية", "lessons": [{"id": "4-1", "title": "الرابطة التساهمية", "concept": ["<b>الرابطة التساهمية<\/b>: رابطة تنتج عن مشاركة ذرتين بإلكترونات التكافؤ، وتتكون غالباً بين اللافلزات، ويسمى الناتج <b>جزيئاً<\/b>.", "<b>الأحادية<\/b>: زوج مشترك واحد وتسمى سيجما \\(\\sigma\\). <b>الثنائية<\/b>: زوجان (\\(\\sigma\\) و\\(\\pi\\)). <b>الثلاثية<\/b>: ثلاثة أزواج (\\(\\sigma\\) و\\(2\\pi\\)).", "كلما زاد عدد الأزواج المشتركة قصر <b>طول الرابطة<\/b> وزادت قوتها.", "<b>طاقة تفكك الرابطة<\/b>: الطاقة اللازمة لكسر رابطة تساهمية، وهي موجبة دائماً. ويكون التفاعل <b>طارداً للطاقة<\/b> إذا كانت الطاقة المنطلقة عند تكوين الروابط الجديدة أكبر من الطاقة اللازمة لكسر روابط المتفاعلات، و<b>ماصاً للطاقة<\/b> في الحالة العكسية."], "key": "\\[\\ce{C-C}\\ \\gt\\ \\ce{C=C}\\ \\gt\\ \\ce{C#C}\\]<p class=\"kv-text\">ترتيب طول الرابطة: الأقصر هي الأقوى<\/p>", "examples": [{"q": "كم رابطة سيجما وكم رابطة باي في جزيء النيتروجين \\(\\ce{N2}\\)؟", "steps": ["ترتبط ذرتا النيتروجين برابطة ثلاثية \\(\\ce{N#N}\\).", "الرابطة الثلاثية: رابطة \\(\\sigma\\) واحدة ورابطتا \\(\\pi\\)."]}, {"q": "حدد عدد روابط \\(\\sigma\\) و\\(\\pi\\) في \\(\\ce{CO2}\\).", "steps": ["التركيب \\(\\ce{O=C=O}\\): رابطتان ثنائيتان.", "كل رابطة ثنائية فيها \\(\\sigma\\) واحدة و\\(\\pi\\) واحدة، فالمجموع \\(2\\sigma\\) و\\(2\\pi\\)."]}], "mcq": [{"q": "عدد أزواج الإلكترونات المشتركة في الرابطة الثنائية:", "o": ["\\(2\\)", "\\(1\\)", "\\(3\\)", "\\(4\\)"], "a": 0, "e": "الرابطة الثنائية زوجان مشتركان، أي أربعة إلكترونات."}, {"q": "تتكون الرابطة الثلاثية من:", "o": ["\\(\\sigma\\) واحدة و\\(\\pi\\) اثنتين", "ثلاث روابط \\(\\sigma\\)", "\\(\\sigma\\) اثنتين و\\(\\pi\\) واحدة", "ثلاث روابط \\(\\pi\\)"], "a": 0, "e": "أول رابطة بين ذرتين هي دائماً \\(\\sigma\\)، وما زاد عليها روابط \\(\\pi\\)."}, {"q": "أقصر الروابط الآتية:", "o": ["\\(\\ce{C#C}\\)", "\\(\\ce{C=C}\\)", "\\(\\ce{C-C}\\)", "الروابط الثلاث متساوية"], "a": 0, "e": "زيادة عدد الأزواج المشتركة تقرّب الذرتين، فالثلاثية أقصر وأقوى."}, {"q": "تتكون الروابط التساهمية غالباً بين:", "o": ["اللافلزات", "فلز ولا فلز", "الفلزات", "الغازات النبيلة"], "a": 0, "e": "اللافلزات متقاربة في ميلها لكسب الإلكترونات فتشارك فيها بدلاً من نقلها."}, {"q": "يكون التفاعل طارداً للطاقة عندما تكون الطاقة المنطلقة عند تكوين الروابط:", "o": ["أكبر من الطاقة اللازمة لكسر روابط المتفاعلات", "أقل من الطاقة اللازمة لكسر الروابط", "مساوية تماماً للطاقة اللازمة لكسر الروابط", "صفراً"], "a": 0, "e": "الفرق بين الطاقة المنطلقة والطاقة الممتصة يخرج إلى الوسط المحيط."}, {"q": "عدد روابط \\(\\sigma\\) و\\(\\pi\\) في الإيثين \\(\\ce{H2C=CH2}\\):", "o": ["\\(5\\sigma\\) و\\(1\\pi\\)", "\\(4\\sigma\\) و\\(2\\pi\\)", "\\(6\\sigma\\) ولا توجد \\(\\pi\\)", "\\(5\\sigma\\) و\\(2\\pi\\)"], "a": 0, "e": "أربع روابط \\(\\ce{C-H}\\) أحادية (\\(4\\sigma\\))، والرابطة الثنائية \\(\\ce{C=C}\\) فيها \\(\\sigma\\) و\\(\\pi\\)."}]}, {"id": "4-2", "title": "تسمية الجزيئات", "concept": ["<b>الجزيء الثنائي<\/b>: يتكون من عنصرين لا فلزيين. نذكر اسم العنصر الثاني أولاً مع المقطع «يد»، ثم اسم العنصر الأول.", "نسبق اسم العنصر الثاني بعدد ذراته (أول، ثاني، ثالث، رابع، خامس، سادس...)، ونسبق اسم العنصر الأول بالبادئة (ثنائي، ثلاثي...) إذا كان فيه أكثر من ذرة: \\(\\ce{CO}\\) أول أكسيد الكربون، \\(\\ce{CO2}\\) ثاني أكسيد الكربون، \\(\\ce{N2O4}\\) رابع أكسيد ثنائي النيتروجين.", "لبعض الجزيئات أسماء شائعة: \\(\\ce{H2O}\\) الماء، \\(\\ce{NH3}\\) الأمونيا، \\(\\ce{N2H4}\\) الهيدرازين.", "<b>الأحماض الثنائية<\/b> (هيدروجين وعنصر آخر في محلول مائي): «حمض الهيدرو...يك»، مثل \\(\\ce{HCl}\\) حمض الهيدروكلوريك.", "<b>الأحماض الأكسجينية<\/b>: إذا انتهى اسم الأيون بـ «ات» يصبح اسم الحمض «...يك»، وإذا انتهى بـ «يت» يصبح «...وز»، مثل \\(\\ce{HNO3}\\) حمض النيتريك و\\(\\ce{HNO2}\\) حمض النيتروز."], "key": "<p class=\"kv-text\">اسم العنصر الثاني مع «يد» وعدد ذراته، ثم اسم العنصر الأول<\/p><div class=\"kv\"><span class=\"kv-m\">\\(\\ce{SF6}\\)<\/span><span>سادس فلوريد الكبريت<\/span><\/div>", "examples": [{"q": "سمِّ الجزيئين \\(\\ce{N2O4}\\) و\\(\\ce{SF6}\\).", "steps": ["\\(\\ce{N2O4}\\): أربع ذرات أكسجين وذرتا نيتروجين، فاسمه رابع أكسيد ثنائي النيتروجين.", "\\(\\ce{SF6}\\): ست ذرات فلور وذرة كبريت واحدة، فاسمه سادس فلوريد الكبريت."]}, {"q": "سمِّ الحمضين \\(\\ce{H2SO4}\\) و\\(\\ce{HBr}\\) (في محلول مائي).", "steps": ["\\(\\ce{H2SO4}\\) يحتوي على أيون الكبريتات، و«ات» تصبح «يك»: حمض الكبريتيك.", "\\(\\ce{HBr}\\) حمض ثنائي: حمض الهيدروبروميك."]}], "mcq": [{"q": "اسم الجزيء \\(\\ce{CCl4}\\):", "o": ["رابع كلوريد الكربون", "كلوريد الكربون", "كلوريد الكربون IV", "رباعي الكربون كلوريد"], "a": 0, "e": "أربع ذرات كلور مع ذرة كربون واحدة: رابع كلوريد الكربون. ولا تستعمل الأرقام الرومانية في تسمية الجزيئات."}, {"q": "صيغة ثالث أكسيد الكبريت:", "o": ["\\(\\ce{SO3}\\)", "\\(\\ce{S3O}\\)", "\\(\\ce{SO2}\\)", "\\(\\ce{S2O3}\\)"], "a": 0, "e": "«ثالث أكسيد» تعني ثلاث ذرات أكسجين مع ذرة كبريت واحدة."}, {"q": "اسم المحلول المائي لـ \\(\\ce{HCl}\\):", "o": ["حمض الهيدروكلوريك", "حمض الكلوريك", "حمض الكلوروز", "حمض البيركلوريك"], "a": 0, "e": "حمض ثنائي من الهيدروجين والكلور: حمض الهيدروكلوريك."}, {"q": "اسم الحمض \\(\\ce{HNO2}\\):", "o": ["حمض النيتروز", "حمض النيتريك", "حمض الهيدرونيتريك", "حمض النيتريد"], "a": 0, "e": "يحتوي على أيون النتريت \\(\\ce{NO2-}\\)، و«يت» تصبح «وز»: حمض النيتروز."}, {"q": "الاسم الشائع للجزيء \\(\\ce{NH3}\\):", "o": ["الأمونيا", "الهيدرازين", "الأمونيوم", "النيتريد"], "a": 0, "e": "\\(\\ce{NH3}\\) الأمونيا، أما الأمونيوم فهو الأيون \\(\\ce{NH4+}\\) والهيدرازين \\(\\ce{N2H4}\\)."}]}, {"id": "4-3", "title": "التراكيب الجزيئية", "concept": ["<b>تركيب لويس<\/b>: تمثيل لترتيب الذرات في الجزيء، تُرسم فيه الروابط خطوطاً والأزواج غير المرتبطة نقاطاً.", "خطوات رسمه: (1) حدد الذرة المركزية، وهي الأقل كهروسالبية غالباً ولا تكون الهيدروجين. (2) اجمع إلكترونات التكافؤ (أضف إلكتروناً لكل شحنة سالبة، واطرح لكل موجبة). (3) عدد الأزواج = المجموع ÷ 2. (4) ضع رابطة أحادية بين الذرات، ثم وزّع الباقي لإكمال الثمانية، وكوّن روابط متعددة عند الحاجة.", "<b>الرنين<\/b>: وجود أكثر من تركيب لويس صحيح للجزيء أو الأيون، مثل \\(\\ce{O3}\\) و\\(\\ce{NO3-}\\)، والتركيب الحقيقي متوسط بينها.", "<b>استثناءات قاعدة الثمانية<\/b>: عدد فردي من الإلكترونات \\(\\ce{NO2}\\)، وأقل من ثمانية \\(\\ce{BF3}\\)، وأكثر من ثمانية (توسع الثمانية) \\(\\ce{PCl5}\\) و\\(\\ce{SF6}\\).", "<b>الرابطة التساهمية التناسقية<\/b>: تقدم فيها إحدى الذرتين زوج الإلكترونات كاملاً، كما في \\(\\ce{NH4+}\\)."], "key": "<p class=\"kv-text\">عدد أزواج الإلكترونات = مجموع إلكترونات التكافؤ ÷ 2<\/p>", "examples": [{"q": "صف تركيب لويس لجزيء الأمونيا \\(\\ce{NH3}\\).", "steps": ["إلكترونات التكافؤ: \\(5+3(1)=8\\)، أي 4 أزواج.", "ثلاث روابط أحادية \\(\\ce{N-H}\\) (3 أزواج)، ويبقى زوج غير مرتبط على ذرة النيتروجين."]}, {"q": "صف تركيب لويس لجزيء \\(\\ce{CO2}\\).", "steps": ["إلكترونات التكافؤ: \\(4+2(6)=16\\)، أي 8 أزواج.", "لتكتمل الثمانية لكل ذرة: رابطتان ثنائيتان \\(\\ce{O=C=O}\\) (4 أزواج)، وزوجان غير مرتبطين على كل ذرة أكسجين."]}], "mcq": [{"q": "مجموع إلكترونات التكافؤ في جزيء \\(\\ce{CH4}\\):", "o": ["\\(8\\)", "\\(10\\)", "\\(6\\)", "\\(4\\)"], "a": 0, "e": "الكربون 4 والهيدروجين \\(4\\times1\\)، فالمجموع 8."}, {"q": "عدد الأزواج غير المرتبطة على ذرة الأكسجين في جزيء \\(\\ce{H2O}\\):", "o": ["\\(2\\)", "\\(1\\)", "\\(0\\)", "\\(3\\)"], "a": 0, "e": "للأكسجين 6 إلكترونات تكافؤ؛ يشارك باثنين في رابطتين، ويبقى 4 إلكترونات أي زوجان."}, {"q": "الجزيء الذي يحيط بذرته المركزية أقل من ثمانية إلكترونات:", "o": ["\\(\\ce{BF3}\\)", "\\(\\ce{CH4}\\)", "\\(\\ce{NH3}\\)", "\\(\\ce{H2O}\\)"], "a": 0, "e": "البورون له 3 إلكترونات تكافؤ، فيحيط به 6 إلكترونات فقط في \\(\\ce{BF3}\\)."}, {"q": "مجموع إلكترونات التكافؤ في أيون النترات \\(\\ce{NO3-}\\):", "o": ["\\(24\\)", "\\(23\\)", "\\(22\\)", "\\(18\\)"], "a": 0, "e": "\\(5+3(6)+1=24\\)؛ نضيف إلكتروناً واحداً للشحنة السالبة."}, {"q": "الرابطة التي تقدم فيها ذرة واحدة زوج الإلكترونات المشترك كاملاً:", "o": ["تساهمية تناسقية", "أيونية", "فلزية", "تساهمية غير قطبية"], "a": 0, "e": "مثالها أيون الأمونيوم: يقدم النيتروجين زوجه غير المرتبط إلى أيون الهيدروجين."}, {"q": "الجزيء الذي يحيط بذرته المركزية أكثر من ثمانية إلكترونات:", "o": ["\\(\\ce{SF6}\\)", "\\(\\ce{NH3}\\)", "\\(\\ce{CO2}\\)", "\\(\\ce{BF3}\\)"], "a": 0, "e": "يرتبط الكبريت بست ذرات فلور، فيحيط به 12 إلكتروناً (توسع الثمانية)."}]}, {"id": "4-4", "title": "أشكال الجزيئات", "concept": ["<b>نموذج VSEPR<\/b> (تنافر أزواج إلكترونات التكافؤ): تتنافر أزواج الإلكترونات حول الذرة المركزية فتتباعد إلى أقصى حد ممكن، فيتحدد شكل الجزيء وزوايا روابطه.", "الأزواج غير المرتبطة تشغل حيزاً أكبر من الأزواج المرتبطة، فتقلل زوايا الروابط: \\(109.5^\\circ\\) في \\(\\ce{CH4}\\)، و\\(107^\\circ\\) في \\(\\ce{NH3}\\)، و\\(104.5^\\circ\\) في \\(\\ce{H2O}\\).", "<b>التهجين<\/b>: اختلاط أفلاك ذرية لتكوين أفلاك مهجنة متماثلة، وعددها يساوي عدد مناطق الإلكترونات حول الذرة المركزية (الرابطة المتعددة تُحسب منطقة واحدة)."], "key": "<table class=\"mini\"><thead><tr><th>مناطق الإلكترونات<\/th><th>الشكل<\/th><th>الزاوية<\/th><th>التهجين<\/th><th>مثال<\/th><\/tr><\/thead><tbody><tr><td>2<\/td><td>خطي<\/td><td>\\(180^\\circ\\)<\/td><td>\\(sp\\)<\/td><td>\\(\\ce{CO2}\\)<\/td><\/tr><tr><td>3<\/td><td>مثلث مستوٍ<\/td><td>\\(120^\\circ\\)<\/td><td>\\(sp^2\\)<\/td><td>\\(\\ce{BF3}\\)<\/td><\/tr><tr><td>4<\/td><td>رباعي الأوجه<\/td><td>\\(109.5^\\circ\\)<\/td><td>\\(sp^3\\)<\/td><td>\\(\\ce{CH4}\\)<\/td><\/tr><tr><td>4 (زوج غير مرتبط)<\/td><td>هرم ثلاثي<\/td><td>\\(107^\\circ\\)<\/td><td>\\(sp^3\\)<\/td><td>\\(\\ce{NH3}\\)<\/td><\/tr><tr><td>4 (زوجان غير مرتبطين)<\/td><td>منحنٍ<\/td><td>\\(104.5^\\circ\\)<\/td><td>\\(sp^3\\)<\/td><td>\\(\\ce{H2O}\\)<\/td><\/tr><tr><td>5<\/td><td>ثنائي الهرم الثلاثي<\/td><td>\\(90^\\circ\\)، \\(120^\\circ\\)<\/td><td>\\(sp^3d\\)<\/td><td>\\(\\ce{PCl5}\\)<\/td><\/tr><tr><td>6<\/td><td>ثماني الأوجه<\/td><td>\\(90^\\circ\\)<\/td><td>\\(sp^3d^2\\)<\/td><td>\\(\\ce{SF6}\\)<\/td><\/tr><\/tbody><\/table>", "examples": [{"q": "حدد شكل جزيء \\(\\ce{PH3}\\) وزاويته التقريبية وتهجين ذرته المركزية.", "steps": ["للفوسفور 5 إلكترونات تكافؤ: ثلاث روابط وزوج غير مرتبط، أي 4 مناطق.", "الشكل هرم ثلاثي، والزاوية قرابة \\(107^\\circ\\)، والتهجين \\(sp^3\\)."]}, {"q": "حدد شكل جزيء \\(\\ce{BeCl2}\\) وتهجين البريليوم.", "steps": ["للبريليوم إلكترونا تكافؤ يكوّن بهما رابطتين، ولا أزواج غير مرتبطة: منطقتان.", "الشكل خطي بزاوية \\(180^\\circ\\)، والتهجين \\(sp\\)."]}], "mcq": [{"q": "شكل جزيء الميثان \\(\\ce{CH4}\\):", "o": ["رباعي الأوجه", "مثلث مستوٍ", "هرم ثلاثي", "منحنٍ"], "a": 0, "e": "أربعة أزواج مرتبطة دون أزواج غير مرتبطة تتباعد إلى زوايا \\(109.5^\\circ\\)."}, {"q": "زاوية الرابطة في جزيء الماء تقريباً:", "o": ["\\(104.5^\\circ\\)", "\\(109.5^\\circ\\)", "\\(120^\\circ\\)", "\\(180^\\circ\\)"], "a": 0, "e": "زوجا الإلكترونات غير المرتبطين على الأكسجين يضغطان الرابطتين فتقل الزاوية عن \\(109.5^\\circ\\)."}, {"q": "تهجين الذرة المركزية في \\(\\ce{BF3}\\):", "o": ["\\(sp^2\\)", "\\(sp\\)", "\\(sp^3\\)", "\\(sp^3d\\)"], "a": 0, "e": "ثلاث مناطق إلكترونية حول البورون، فالتهجين \\(sp^2\\) والشكل مثلث مستوٍ."}, {"q": "شكل جزيء الأمونيا \\(\\ce{NH3}\\):", "o": ["هرم ثلاثي", "مثلث مستوٍ", "رباعي الأوجه", "خطي"], "a": 0, "e": "أربع مناطق منها زوج غير مرتبط، فتأخذ الذرات شكل هرم قاعدته مثلث."}, {"q": "شكل جزيء ثاني أكسيد الكربون \\(\\ce{CO2}\\):", "o": ["خطي", "منحنٍ", "مثلث مستوٍ", "رباعي الأوجه"], "a": 0, "e": "منطقتان إلكترونيتان (رابطتان ثنائيتان) حول الكربون دون أزواج غير مرتبطة: زاوية \\(180^\\circ\\)."}, {"q": "عدد الأفلاك المهجنة الناتجة عن التهجين \\(sp^3d^2\\):", "o": ["\\(6\\)", "\\(5\\)", "\\(4\\)", "\\(3\\)"], "a": 0, "e": "فلك s وثلاثة p واثنان d: المجموع 6 أفلاك، كما في \\(\\ce{SF6}\\)."}]}, {"id": "4-5", "title": "الكهروسالبية والقطبية", "concept": ["يحدد فرق الكهروسالبية \\(\\Delta\\chi\\) بين الذرتين نوع الرابطة كما في القاعدة أدناه.", "<b>الرابطة التساهمية القطبية<\/b>: مشاركة غير متساوية للإلكترونات؛ تحمل الذرة الأعلى كهروسالبية شحنة جزئية سالبة \\(\\delta^-\\)، والأخرى شحنة جزئية موجبة \\(\\delta^+\\).", "<b>قطبية الجزيء<\/b> تعتمد على قطبية روابطه وشكله: الجزيئات المتماثلة مثل \\(\\ce{CO2}\\) و\\(\\ce{CH4}\\) و\\(\\ce{CCl4}\\) غير قطبية رغم قطبية روابطها، وغير المتماثلة مثل \\(\\ce{H2O}\\) و\\(\\ce{NH3}\\) قطبية.", "<b>الذوبانية<\/b>: «الشبيه يذيب الشبيه»؛ تذوب المواد القطبية في المذيبات القطبية، وغير القطبية في غير القطبية.", "القوى بين الجزيئات أضعف من الروابط داخلها: قوى التشتت، والقوى ثنائية القطبية، والروابط الهيدروجينية. أما المواد الصلبة التساهمية الشبكية مثل الألماس فصلبة جداً ودرجة انصهارها مرتفعة."], "key": "\\[\\Delta\\chi=\\left|\\chi_A-\\chi_B\\right|\\]<div class=\"kv\"><span class=\"kv-m\">\\(\\Delta\\chi\\lt 0.4\\)<\/span><span>تساهمية غير قطبية<\/span><\/div><div class=\"kv\"><span class=\"kv-m\">\\(0.4\\le\\Delta\\chi\\le 1.7\\)<\/span><span>تساهمية قطبية<\/span><\/div><div class=\"kv\"><span class=\"kv-m\">\\(\\Delta\\chi\\gt 1.7\\)<\/span><span>أيونية غالباً<\/span><\/div>", "examples": [{"q": "حدد نوع الرابطة في \\(\\ce{H-Cl}\\) علماً بأن كهروسالبية H تساوي 2.20 وCl تساوي 3.16.", "steps": ["\\(\\Delta\\chi=3.16-2.20=0.96\\).", "القيمة بين 0.4 و1.7، فالرابطة تساهمية قطبية، والشحنة الجزئية السالبة على الكلور."]}, {"q": "لماذا يكون \\(\\ce{CCl4}\\) غير قطبي مع أن روابط \\(\\ce{C-Cl}\\) قطبية؟", "steps": ["الجزيء رباعي الأوجه متماثل، وأقطاب روابطه الأربع متساوية.", "تُلغي الأقطاب بعضها بعضاً، فمحصلة القطبية صفر."]}], "mcq": [{"q": "نوع الرابطة بين Na (0.93) وCl (3.16):", "o": ["أيونية", "تساهمية غير قطبية", "تساهمية قطبية", "فلزية"], "a": 0, "e": "\\(\\Delta\\chi=3.16-0.93=2.23\\)، وهو أكبر من 1.7."}, {"q": "أي الجزيئات الآتية قطبي؟", "o": ["\\(\\ce{H2O}\\)", "\\(\\ce{CO2}\\)", "\\(\\ce{CH4}\\)", "\\(\\ce{CCl4}\\)"], "a": 0, "e": "الماء منحنٍ غير متماثل، فلا تلغي أقطاب روابطه بعضها. أما بقية الجزيئات فمتماثلة."}, {"q": "نوع الرابطة بين ذرتي الكلور في \\(\\ce{Cl2}\\):", "o": ["تساهمية غير قطبية", "تساهمية قطبية", "أيونية", "فلزية"], "a": 0, "e": "الذرتان متماثلتان، \\(\\Delta\\chi=0\\)، فالمشاركة متساوية."}, {"q": "تنشأ الرابطة الهيدروجينية بين ذرة هيدروجين مرتبطة بذرة:", "o": ["F أو O أو N", "C أو Si", "Na أو K", "He أو Ne"], "a": 0, "e": "هذه الذرات صغيرة وعالية الكهروسالبية، فتجعل الهيدروجين موجباً جزئياً بقوة."}, {"q": "نوع الرابطة بين C (2.55) وO (3.44):", "o": ["تساهمية قطبية", "تساهمية غير قطبية", "أيونية", "فلزية"], "a": 0, "e": "\\(\\Delta\\chi=0.89\\)، وهو بين 0.4 و1.7."}]}]}, {"n": 5, "title": "الحسابات الكيميائية", "lessons": [{"id": "5-1", "title": "المقصود بالحسابات الكيميائية", "concept": ["<b>الحسابات الكيميائية<\/b>: دراسة العلاقات الكمية بين كميات المواد المتفاعلة والناتجة في التفاعل الكيميائي، وتقوم على <b>قانون حفظ الكتلة<\/b>.", "تعبّر المعادلة الموزونة عن العلاقات بين الجسيمات والمولات والكتل؛ ففي \\(\\ce{2H2 + O2 -> 2H2O}\\) يتفاعل 2 mol من \\(\\ce{H2}\\) مع 1 mol من \\(\\ce{O2}\\) لإنتاج 2 mol من الماء، والكتلة محفوظة: \\(4.0+32.0=36.0\\ \\text{g}\\).", "<b>النسبة المولية<\/b>: نسبة بين أعداد مولات أي مادتين في المعادلة الموزونة، وتؤخذ من المعاملات.", "عدد النسب المولية الممكنة في تفاعل يضم \\(n\\) من المواد يساوي \\(n(n-1)\\)."], "key": "\\[n_B=n_A\\times\\frac{b}{a}\\]<p class=\"kv-text\">حيث a و b معاملا المادتين A و B في المعادلة الموزونة<\/p>", "examples": [{"q": "اكتب النسب المولية الممكنة للتفاعل \\(\\ce{4Al + 3O2 -> 2Al2O3}\\).", "steps": ["ثلاث مواد، فعدد النسب \\(3\\times2=6\\).", "\\(\\dfrac{4\\ \\ce{Al}}{3\\ \\ce{O2}}\\)، \\(\\dfrac{4\\ \\ce{Al}}{2\\ \\ce{Al2O3}}\\)، \\(\\dfrac{3\\ \\ce{O2}}{4\\ \\ce{Al}}\\)، \\(\\dfrac{3\\ \\ce{O2}}{2\\ \\ce{Al2O3}}\\)، \\(\\dfrac{2\\ \\ce{Al2O3}}{4\\ \\ce{Al}}\\)، \\(\\dfrac{2\\ \\ce{Al2O3}}{3\\ \\ce{O2}}\\)."]}, {"q": "في التفاعل \\(\\ce{N2 + 3H2 -> 2NH3}\\)، كم مولاً من \\(\\ce{NH3}\\) ينتج من 6.0 mol من \\(\\ce{H2}\\)؟", "steps": ["النسبة المولية \\(\\dfrac{2\\ \\ce{NH3}}{3\\ \\ce{H2}}\\).", "\\(6.0\\times\\dfrac{2}{3}=4.0\\ \\text{mol}\\) من \\(\\ce{NH3}\\)."]}], "mcq": [{"q": "عدد النسب المولية الممكنة لتفاعل يضم أربع مواد:", "o": ["\\(12\\)", "\\(4\\)", "\\(6\\)", "\\(8\\)"], "a": 0, "e": "\\(n(n-1)=4\\times3=12\\)."}, {"q": "في التفاعل \\(\\ce{2H2 + O2 -> 2H2O}\\)، النسبة المولية بين \\(\\ce{O2}\\) و\\(\\ce{H2O}\\):", "o": ["\\(1:2\\)", "\\(2:1\\)", "\\(1:1\\)", "\\(1:3\\)"], "a": 0, "e": "معامل \\(\\ce{O2}\\) هو 1 ومعامل \\(\\ce{H2O}\\) هو 2."}, {"q": "تقوم الحسابات الكيميائية على قانون:", "o": ["حفظ الكتلة", "بويل", "شارل", "دالتون للضغوط الجزئية"], "a": 0, "e": "الكتلة لا تفنى ولا تستحدث في التفاعل، ولذلك نستطيع ربط كميات المتفاعلات بالنواتج."}, {"q": "في التفاعل \\(\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}\\)، عدد مولات \\(\\ce{O2}\\) اللازمة لحرق 2 mol من البروبان:", "o": ["\\(10\\)", "\\(5\\)", "\\(2.5\\)", "\\(7\\)"], "a": 0, "e": "\\(2\\times\\dfrac{5}{1}=10\\ \\text{mol}\\)."}, {"q": "في التفاعل \\(\\ce{N2 + 3H2 -> 2NH3}\\)، عدد مولات \\(\\ce{N2}\\) اللازمة لإنتاج 10 mol من \\(\\ce{NH3}\\):", "o": ["\\(5\\)", "\\(10\\)", "\\(20\\)", "\\(15\\)"], "a": 0, "e": "\\(10\\times\\dfrac{1}{2}=5\\ \\text{mol}\\)."}, {"q": "في التفاعل \\(\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}\\)، عدد مولات الأكسجين اللازمة لحرق 5 mol من البيوتان:", "o": ["\\(32.5\\)", "\\(65\\)", "\\(13\\)", "\\(26\\)"], "a": 0, "e": "\\(5\\times\\dfrac{13}{2}=32.5\\ \\text{mol}\\)."}]}, {"id": "5-2", "title": "الصيغة الأولية والصيغة الجزيئية", "concept": ["<b>النسبة المئوية بالكتلة<\/b> لعنصر = (كتلة العنصر ÷ كتلة المركب) × 100.", "<b>الصيغة الأولية<\/b>: أبسط نسبة عددية صحيحة بين مولات العناصر في المركب.", "لإيجادها: افترض 100 g من المركب فتصبح النسب المئوية كتلاً بالجرام، حوّل الكتل إلى مولات، اقسم على أصغر عدد مولات، ثم اضرب في عدد صحيح صغير عند الحاجة.", "<b>الصيغة الجزيئية<\/b>: العدد الفعلي لذرات كل عنصر في الجزيء، وهي مضاعف صحيح للصيغة الأولية: \\(n=\\dfrac{M}{M_{\\text{emp}}}\\)، حيث \\(M\\) الكتلة المولية للمركب و\\(M_{\\text{emp}}\\) كتلة الصيغة الأولية."], "key": "\\[\\%X=\\frac{m_X}{m_{\\text{total}}}\\times100\\qquad n=\\frac{M}{M_{\\text{emp}}}\\]", "examples": [{"q": "مركب يحتوي على 40.0% C و6.7% H و53.3% O، وكتلته المولية 180 g/mol. أوجد صيغتيه الأولية والجزيئية (C = 12، H = 1، O = 16).", "steps": ["المولات في 100 g: \\(\\ce{C}\\): \\(40.0\\div12=3.33\\)، \\(\\ce{H}\\): \\(6.7\\div1=6.7\\)، \\(\\ce{O}\\): \\(53.3\\div16=3.33\\).", "بالقسمة على 3.33 تصبح النسبة \\(1:2:1\\)، فالصيغة الأولية \\(\\ce{CH2O}\\) وكتلتها 30 g/mol.", "\\(n=180\\div30=6\\)، فالصيغة الجزيئية \\(\\ce{C6H12O6}\\)."]}, {"q": "احسب النسبة المئوية للأكسجين في الماء (H = 1، O = 16).", "steps": ["الكتلة المولية للماء \\(2(1)+16=18\\ \\text{g/mol}\\).", "\\(\\%\\ce{O}=\\dfrac{16}{18}\\times100=88.9\\%\\)."]}], "mcq": [{"q": "الصيغة الأولية للجلوكوز \\(\\ce{C6H12O6}\\):", "o": ["\\(\\ce{CH2O}\\)", "\\(\\ce{C6H12O6}\\)", "\\(\\ce{C2H4O2}\\)", "\\(\\ce{CHO}\\)"], "a": 0, "e": "نقسم الأرقام السفلية على العامل المشترك الأكبر 6."}, {"q": "مركب صيغته الأولية \\(\\ce{CH2}\\) وكتلته المولية 42 g/mol (C = 12، H = 1). صيغته الجزيئية:", "o": ["\\(\\ce{C3H6}\\)", "\\(\\ce{C2H4}\\)", "\\(\\ce{CH2}\\)", "\\(\\ce{C6H12}\\)"], "a": 0, "e": "كتلة \\(\\ce{CH2}\\) تساوي 14، و\\(n=42\\div14=3\\)."}, {"q": "النسبة المئوية للكربون في \\(\\ce{CO2}\\) (C = 12، O = 16):", "o": ["\\(27.3\\%\\)", "\\(42.9\\%\\)", "\\(72.7\\%\\)", "\\(12.0\\%\\)"], "a": 0, "e": "\\(\\dfrac{12}{44}\\times100=27.3\\%\\). (الخيار 42.9% هو نسبته في \\(\\ce{CO}\\).)"}, {"q": "مركب يحتوي على 75% C و25% H بالكتلة (C = 12، H = 1). صيغته الأولية:", "o": ["\\(\\ce{CH4}\\)", "\\(\\ce{CH3}\\)", "\\(\\ce{C3H}\\)", "\\(\\ce{CH2}\\)"], "a": 0, "e": "\\(75\\div12=6.25\\) و\\(25\\div1=25\\)، والنسبة \\(1:4\\)."}, {"q": "أي الزوجين الآتيين لهما الصيغة الأولية نفسها؟", "o": ["\\(\\ce{C2H2}\\) و\\(\\ce{C6H6}\\)", "\\(\\ce{CH4}\\) و\\(\\ce{C2H6}\\)", "\\(\\ce{CO}\\) و\\(\\ce{CO2}\\)", "\\(\\ce{H2O}\\) و\\(\\ce{H2O2}\\)"], "a": 0, "e": "صيغة كل من الإيثاين والبنزين الأولية \\(\\ce{CH}\\)."}]}, {"id": "5-3", "title": "صيغ الأملاح المائية", "concept": ["<b>الملح المائي<\/b>: مركب أيوني ترتبط بكل وحدة صيغة منه عدد محدد من جزيئات الماء يسمى <b>ماء التبلور<\/b>.", "يكتب بنقطة بين صيغة الملح وجزيئات الماء، مثل \\(\\ce{CuSO4*5H2O}\\) كبريتات النحاس II خماسية الماء.", "عند تسخين الملح المائي يفقد ماء التبلور ويتحول إلى <b>ملح لا مائي<\/b>.", "لإيجاد عدد جزيئات الماء \\(x\\): كتلة الماء = كتلة الملح المائي − كتلة الملح اللامائي، ثم حوّل كلاً منهما إلى مولات واقسم مولات الماء على مولات الملح اللامائي."], "key": "\\[x=\\frac{n_{\\ce{H2O}}}{n_{\\text{salt}}}\\]<div class=\"kv\"><span class=\"kv-m\">\\(\\ce{CuSO4*5H2O}\\)<\/span><span>كبريتات النحاس II خماسية الماء<\/span><\/div>", "examples": [{"q": "سُخّنت عينة كتلتها 5.00 g من \\(\\ce{BaCl2*xH2O}\\) فبقي 4.26 g من الملح اللامائي. أوجد \\(x\\) (\\(\\ce{BaCl2}\\) = 208.2 g/mol، \\(\\ce{H2O}\\) = 18.0 g/mol).", "steps": ["كتلة الماء \\(5.00-4.26=0.74\\ \\text{g}\\)، أي \\(0.74\\div18.0=0.0411\\ \\text{mol}\\).", "مولات \\(\\ce{BaCl2}\\): \\(4.26\\div208.2=0.0205\\ \\text{mol}\\).", "\\(x=0.0411\\div0.0205\\approx2\\)، فالصيغة \\(\\ce{BaCl2*2H2O}\\)."]}, {"q": "احسب النسبة المئوية للماء في \\(\\ce{CuSO4*5H2O}\\) (\\(\\ce{CuSO4}\\) = 159.6 g/mol، \\(\\ce{H2O}\\) = 18.0 g/mol).", "steps": ["كتلة الماء \\(5\\times18.0=90.0\\) والكتلة الكلية \\(159.6+90.0=249.6\\ \\text{g/mol}\\).", "\\(\\dfrac{90.0}{249.6}\\times100=36.1\\%\\)."]}], "mcq": [{"q": "اسم الملح \\(\\ce{MgSO4*7H2O}\\):", "o": ["كبريتات الماغنيسيوم سباعية الماء", "كبريتات الماغنيسيوم سداسية الماء", "كبريتات الماغنيسيوم ثنائية الماء", "كبريتات الماغنيسيوم اللامائية"], "a": 0, "e": "الرقم 7 قبل \\(\\ce{H2O}\\) يعني سبع جزيئات ماء: «سباعية الماء»."}, {"q": "عند تسخين الملح المائي فإنه:", "o": ["يفقد ماء التبلور", "يكتسب جزيئات ماء إضافية", "تتغير صيغة أيوناته", "يتحول إلى فلز"], "a": 0, "e": "الحرارة تفصل جزيئات الماء المرتبطة فيبقى الملح اللامائي."}, {"q": "عينة من \\(\\ce{CaSO4*xH2O}\\) تحتوي على 0.020 mol ماء و0.010 mol من \\(\\ce{CaSO4}\\). قيمة \\(x\\):", "o": ["\\(2\\)", "\\(1\\)", "\\(0.5\\)", "\\(4\\)"], "a": 0, "e": "\\(x=0.020\\div0.010=2\\)، فالصيغة \\(\\ce{CaSO4*2H2O}\\) (الجبس)."}, {"q": "سُخّن 10.0 g من ملح مائي فبقي 6.4 g من الملح اللامائي. كتلة الماء المفقود:", "o": ["\\(3.6\\ \\text{g}\\)", "\\(16.4\\ \\text{g}\\)", "\\(6.4\\ \\text{g}\\)", "\\(10.0\\ \\text{g}\\)"], "a": 0, "e": "\\(10.0-6.4=3.6\\ \\text{g}\\)."}, {"q": "عدد جزيئات الماء في ملح «سداسي الماء»:", "o": ["\\(6\\)", "\\(5\\)", "\\(7\\)", "\\(8\\)"], "a": 0, "e": "سداسي تعني ستة، مثل \\(\\ce{CoCl2*6H2O}\\)."}]}, {"id": "5-4", "title": "حسابات المعادلات الكيميائية", "concept": ["خطوات الحل: (1) اكتب المعادلة الموزونة. (2) حوّل الكمية المعلومة إلى مولات: \\(n=m\\div M\\). (3) استعمل النسبة المولية لإيجاد مولات المادة المطلوبة. (4) حوّل المولات إلى الوحدة المطلوبة: \\(m=n\\times M\\).", "<b>مول إلى مول<\/b>: نضرب في النسبة المولية مباشرة.", "<b>مول إلى كتلة<\/b>: نضرب في النسبة المولية ثم في الكتلة المولية للمادة المطلوبة.", "<b>كتلة إلى كتلة<\/b>: كتلة ← مولات ← مولات ← كتلة."], "key": "\\[m_B=\\frac{m_A}{M_A}\\times\\frac{b}{a}\\times M_B\\]", "examples": [{"q": "كم جراماً من الماء ينتج عن احتراق 4.0 g من \\(\\ce{H2}\\) في التفاعل \\(\\ce{2H2 + O2 -> 2H2O}\\)؟ (H = 1، O = 16)", "steps": ["\\(n_{\\ce{H2}}=4.0\\div2.0=2.0\\ \\text{mol}\\).", "النسبة \\(2:2\\)، فمولات الماء 2.0 mol.", "\\(m=2.0\\times18=36\\ \\text{g}\\)."]}, {"q": "كم جراماً من \\(\\ce{NaCl}\\) ينتج عن تفاعل 46 g من Na مع وفرة من الكلور: \\(\\ce{2Na + Cl2 -> 2NaCl}\\)؟ (Na = 23، Cl = 35.5)", "steps": ["\\(n_{\\ce{Na}}=46\\div23=2.0\\ \\text{mol}\\)، والنسبة \\(2:2\\).", "\\(m_{\\ce{NaCl}}=2.0\\times58.5=117\\ \\text{g}\\)."]}], "mcq": [{"q": "كتلة \\(\\ce{CO2}\\) الناتجة عن حرق 1 mol من الميثان: \\(\\ce{CH4 + 2O2 -> CO2 + 2H2O}\\) (C = 12، O = 16):", "o": ["\\(44\\ \\text{g}\\)", "\\(22\\ \\text{g}\\)", "\\(88\\ \\text{g}\\)", "\\(16\\ \\text{g}\\)"], "a": 0, "e": "1 mol من \\(\\ce{CH4}\\) ينتج 1 mol من \\(\\ce{CO2}\\) كتلته 44 g."}, {"q": "عدد مولات \\(\\ce{O2}\\) اللازمة لإنتاج 4 mol من الماء في \\(\\ce{2H2 + O2 -> 2H2O}\\):", "o": ["\\(2\\)", "\\(4\\)", "\\(1\\)", "\\(8\\)"], "a": 0, "e": "\\(4\\times\\dfrac{1}{2}=2\\ \\text{mol}\\)."}, {"q": "كتلة \\(\\ce{O2}\\) اللازمة لحرق 24 g من الكربون: \\(\\ce{C + O2 -> CO2}\\) (C = 12، O = 16):", "o": ["\\(64\\ \\text{g}\\)", "\\(32\\ \\text{g}\\)", "\\(24\\ \\text{g}\\)", "\\(88\\ \\text{g}\\)"], "a": 0, "e": "\\(n_{\\ce{C}}=24\\div12=2\\ \\text{mol}\\)، ويلزم 2 mol من \\(\\ce{O2}\\)، أي \\(2\\times32=64\\ \\text{g}\\)."}, {"q": "في التفاعل \\(\\ce{2KClO3 -> 2KCl + 3O2}\\)، عدد مولات \\(\\ce{O2}\\) الناتجة من 4 mol من \\(\\ce{KClO3}\\):", "o": ["\\(6\\)", "\\(4\\)", "\\(3\\)", "\\(8\\)"], "a": 0, "e": "\\(4\\times\\dfrac{3}{2}=6\\ \\text{mol}\\)."}, {"q": "كتلة \\(\\ce{MgO}\\) الناتجة من 12 g من Mg: \\(\\ce{2Mg + O2 -> 2MgO}\\) (Mg = 24، O = 16):", "o": ["\\(20\\ \\text{g}\\)", "\\(40\\ \\text{g}\\)", "\\(10\\ \\text{g}\\)", "\\(24\\ \\text{g}\\)"], "a": 0, "e": "\\(n_{\\ce{Mg}}=0.5\\ \\text{mol}\\) تنتج 0.5 mol من \\(\\ce{MgO}\\)، أي \\(0.5\\times40=20\\ \\text{g}\\)."}]}, {"id": "5-5", "title": "المادة المحددة للتفاعل", "concept": ["<b>المادة المحددة للتفاعل<\/b>: المادة التي تُستهلك كلياً أولاً، فتتوقف كمية الناتج عليها. و<b>المادة الفائضة<\/b>: التي يتبقى منها جزء بعد انتهاء التفاعل.", "لتحديدها: حوّل كمية كل متفاعل إلى مولات، ثم احسب كمية الناتج من كل متفاعل؛ فالمتفاعل الذي يعطي ناتجاً أقل هو المادة المحددة.", "تُحسب كمية الناتج دائماً من المادة المحددة. والمتبقي من المادة الفائضة = الكمية الابتدائية − الكمية المستهلكة.", "تستعمل الصناعة أحد المتفاعلات بكمية فائضة لضمان استهلاك المتفاعل الأغلى كلياً."], "key": "<p class=\"kv-text\">الناتج يُحسب من المادة المحددة، لا من المادة الفائضة<\/p>", "examples": [{"q": "تفاعل 4.0 mol من \\(\\ce{H2}\\) مع 3.0 mol من \\(\\ce{O2}\\): \\(\\ce{2H2 + O2 -> 2H2O}\\). حدد المادة المحددة وكمية الناتج والفائض.", "steps": ["4.0 mol من \\(\\ce{H2}\\) تحتاج إلى \\(4.0\\div2=2.0\\ \\text{mol}\\) من \\(\\ce{O2}\\)، والمتوفر 3.0 mol، فالأكسجين فائض.", "المادة المحددة \\(\\ce{H2}\\)، وينتج 4.0 mol من الماء.", "المتبقي من \\(\\ce{O2}\\): \\(3.0-2.0=1.0\\ \\text{mol}\\)."]}, {"q": "تفاعل 6.0 g من \\(\\ce{H2}\\) مع 32 g من \\(\\ce{O2}\\). احسب كتلة الماء الناتج (H = 1، O = 16).", "steps": ["\\(n_{\\ce{H2}}=3.0\\ \\text{mol}\\) و\\(n_{\\ce{O2}}=1.0\\ \\text{mol}\\). يحتاج 3.0 mol من \\(\\ce{H2}\\) إلى 1.5 mol من \\(\\ce{O2}\\)، والمتوفر 1.0 mol فقط.", "المادة المحددة \\(\\ce{O2}\\): تنتج \\(1.0\\times2=2.0\\ \\text{mol}\\) من الماء، أي 36 g.", "يتبقى من \\(\\ce{H2}\\): \\(3.0-2.0=1.0\\ \\text{mol}\\)، أي 2.0 g."]}], "mcq": [{"q": "المادة المحددة للتفاعل هي المادة التي:", "o": ["تُستهلك كلياً أولاً", "يتبقى منها جزء بعد التفاعل", "كتلتها هي الأكبر دائماً", "تنتج أولاً في التفاعل"], "a": 0, "e": "عندما تنفد المادة المحددة يتوقف التفاعل، فهي التي تحدد كمية الناتج."}, {"q": "في التفاعل \\(\\ce{N2 + 3H2 -> 2NH3}\\)، تفاعل 2 mol من \\(\\ce{N2}\\) مع 3 mol من \\(\\ce{H2}\\). المادة المحددة:", "o": ["\\(\\ce{H2}\\)", "\\(\\ce{N2}\\)", "المادتان معاً", "لا توجد مادة محددة"], "a": 0, "e": "2 mol من \\(\\ce{N2}\\) تحتاج إلى 6 mol من \\(\\ce{H2}\\)، والمتوفر 3 mol فقط."}, {"q": "في السؤال السابق، عدد مولات \\(\\ce{NH3}\\) الناتجة:", "o": ["\\(2\\)", "\\(4\\)", "\\(3\\)", "\\(6\\)"], "a": 0, "e": "نحسب من المادة المحددة: \\(3\\times\\dfrac{2}{3}=2\\ \\text{mol}\\). (الخيار 4 خطأ لأنه محسوب من \\(\\ce{N2}\\) الفائض.)"}, {"q": "في التفاعل \\(\\ce{2Na + Cl2 -> 2NaCl}\\)، تفاعل 4 mol من Na مع 3 mol من \\(\\ce{Cl2}\\). المتبقي من \\(\\ce{Cl2}\\):", "o": ["\\(1\\ \\text{mol}\\)", "\\(2\\ \\text{mol}\\)", "\\(3\\ \\text{mol}\\)", "\\(0\\ \\text{mol}\\)"], "a": 0, "e": "4 mol من Na تستهلك 2 mol من \\(\\ce{Cl2}\\)، فيتبقى \\(3-2=1\\ \\text{mol}\\)."}, {"q": "في التفاعل \\(\\ce{Zn + 2HCl -> ZnCl2 + H2}\\)، تفاعل 1 mol من Zn مع 1 mol من HCl. المادة المحددة:", "o": ["\\(\\ce{HCl}\\)", "\\(\\ce{Zn}\\)", "المادتان معاً", "\\(\\ce{ZnCl2}\\)"], "a": 0, "e": "1 mol من Zn يحتاج إلى 2 mol من HCl، والمتوفر 1 mol فقط."}]}, {"id": "5-6", "title": "نسبة المردود المئوية", "concept": ["<b>المردود النظري<\/b>: أكبر كمية من الناتج يمكن الحصول عليها من كمية معينة من المادة المحددة، وتحسب من المعادلة.", "<b>المردود الفعلي<\/b>: كمية الناتج التي نحصل عليها فعلاً من التجربة، وتكون غالباً أقل من النظري بسبب التفاعلات الجانبية أو فقد جزء من الناتج أو عدم اكتمال التفاعل.", "<b>نسبة المردود المئوية<\/b> = (المردود الفعلي ÷ المردود النظري) × 100.", "رفع نسبة المردود في الصناعة يخفض التكلفة ويقلل الهدر."], "key": "\\[\\%Y=\\frac{Y_{\\text{actual}}}{Y_{\\text{theoretical}}}\\times100\\]", "examples": [{"q": "المردود النظري لتفاعل 25.0 g، والمردود الفعلي 20.0 g. احسب نسبة المردود المئوية.", "steps": ["\\(\\%Y=\\dfrac{20.0}{25.0}\\times100=80.0\\%\\)."]}, {"q": "تحلل 50.0 g من \\(\\ce{CaCO3}\\) وفق \\(\\ce{CaCO3 -> CaO + CO2}\\) فنتج 26.0 g من CaO. احسب نسبة المردود (\\(\\ce{CaCO3}\\) = 100، CaO = 56).", "steps": ["\\(n_{\\ce{CaCO3}}=50.0\\div100=0.500\\ \\text{mol}\\) تنتج 0.500 mol من CaO.", "المردود النظري \\(0.500\\times56=28.0\\ \\text{g}\\).", "\\(\\%Y=\\dfrac{26.0}{28.0}\\times100=92.9\\%\\)."]}], "mcq": [{"q": "المردود النظري 40 g والمردود الفعلي 30 g. نسبة المردود المئوية:", "o": ["\\(75\\%\\)", "\\(133\\%\\)", "\\(25\\%\\)", "\\(70\\%\\)"], "a": 0, "e": "\\(\\dfrac{30}{40}\\times100=75\\%\\). (133% ناتجة عن قلب الكسر.)"}, {"q": "المردود الذي يُحسب من المعادلة الموزونة:", "o": ["المردود النظري", "المردود الفعلي", "نسبة المردود المئوية", "كمية المادة الفائضة"], "a": 0, "e": "النظري حسابي، أما الفعلي فيُقاس من التجربة."}, {"q": "المردود النظري 50 g ونسبة المردود 90%. المردود الفعلي:", "o": ["\\(45\\ \\text{g}\\)", "\\(55.6\\ \\text{g}\\)", "\\(50\\ \\text{g}\\)", "\\(40\\ \\text{g}\\)"], "a": 0, "e": "\\(0.90\\times50=45\\ \\text{g}\\)."}, {"q": "المردود النظري لـ \\(\\ce{CO2}\\) من تحلل 10.0 g من \\(\\ce{CaCO3}\\) وفق \\(\\ce{CaCO3 -> CaO + CO2}\\) (\\(\\ce{CaCO3}\\) = 100، \\(\\ce{CO2}\\) = 44):", "o": ["\\(4.4\\ \\text{g}\\)", "\\(10.0\\ \\text{g}\\)", "\\(5.6\\ \\text{g}\\)", "\\(44\\ \\text{g}\\)"], "a": 0, "e": "\\(0.100\\ \\text{mol}\\) من \\(\\ce{CaCO3}\\) تنتج 0.100 mol من \\(\\ce{CO2}\\)، أي 4.4 g. (5.6 g هي كتلة CaO.)"}, {"q": "يكون المردود الفعلي عادة أقل من النظري بسبب:", "o": ["التفاعلات الجانبية أو فقد جزء من الناتج", "زيادة كتلة المادة المحددة أثناء التفاعل", "عدم صحة قانون حفظ الكتلة", "تحول المادة الفائضة إلى ناتج"], "a": 0, "e": "في التجربة الحقيقية قد لا يكتمل التفاعل، وقد يتكون ناتج غير مرغوب، أو يضيع جزء عند الفصل."}]}]}, {"n": 6, "title": "حالات المادة", "lessons": [{"id": "6-1", "title": "الغازات", "concept": ["<b>نظرية الحركة الجزيئية<\/b>: جسيمات الغاز صغيرة جداً والمسافات بينها كبيرة، وفي حركة عشوائية مستمرة، وتصادماتها مرنة لا تُفقد فيها الطاقة، ولا تجاذب بينها تقريباً.", "الطاقة الحركية \\(KE=\\tfrac{1}{2}mv^2\\)، و<b>درجة الحرارة<\/b> مقياس لمتوسط الطاقة الحركية لجسيمات المادة.", "خواص الغازات: كثافة منخفضة، وقابلية للانضغاط والتمدد، و<b>الانتشار<\/b> (تحرك مادة خلال أخرى)، و<b>التدفق<\/b> (خروج الغاز من ثقب صغير).", "<b>قانون جراهام<\/b>: معدل انتشار الغاز يتناسب عكسياً مع الجذر التربيعي لكتلته المولية؛ فالغاز الأخف أسرع.", "<b>الضغط<\/b>: القوة المؤثرة على وحدة المساحة، و\\(1\\ \\text{atm}=101.3\\ \\text{kPa}=760\\ \\text{mmHg}\\). و<b>قانون دالتون<\/b>: الضغط الكلي لخليط غازات يساوي مجموع ضغوطها الجزئية."], "key": "\\[\\frac{r_A}{r_B}=\\sqrt{\\frac{M_B}{M_A}}\\qquad P_{\\text{total}}=P_1+P_2+P_3+\\cdots\\]", "examples": [{"q": "احسب نسبة معدل انتشار الهيليوم (4.0 g/mol) إلى الأكسجين (32.0 g/mol).", "steps": ["\\(\\dfrac{r_{\\ce{He}}}{r_{\\ce{O2}}}=\\sqrt{\\dfrac{32.0}{4.0}}=\\sqrt{8}\\).", "النسبة \\(2.83\\)، أي إن الهيليوم ينتشر أسرع بنحو ثلاث مرات تقريباً."]}, {"q": "خليط من \\(\\ce{O2}\\) و\\(\\ce{N2}\\) ضغطه الكلي 1.50 atm، وضغط \\(\\ce{O2}\\) الجزئي 0.40 atm. احسب ضغط \\(\\ce{N2}\\) الجزئي.", "steps": ["\\(P_{\\ce{N2}}=P_{\\text{total}}-P_{\\ce{O2}}=1.50-0.40\\).", "\\(P_{\\ce{N2}}=1.10\\ \\text{atm}\\)."]}], "mcq": [{"q": "أسرع الغازات الآتية انتشاراً عند الظروف نفسها:", "o": ["\\(\\ce{H2}\\)", "\\(\\ce{He}\\)", "\\(\\ce{N2}\\)", "\\(\\ce{CO2}\\)"], "a": 0, "e": "الهيدروجين أقلها كتلة مولية (2 g/mol)، والغاز الأخف أسرع انتشاراً."}, {"q": "يساوي 1 atm بوحدة kPa:", "o": ["\\(101.3\\)", "\\(760\\)", "\\(1.013\\)", "\\(1000\\)"], "a": 0, "e": "\\(1\\ \\text{atm}=101.3\\ \\text{kPa}=760\\ \\text{mmHg}\\)."}, {"q": "نسبة معدل انتشار \\(\\ce{CH4}\\) (16 g/mol) إلى \\(\\ce{O2}\\) (32 g/mol):", "o": ["\\(1.41\\)", "\\(2\\)", "\\(0.71\\)", "\\(0.5\\)"], "a": 0, "e": "\\(\\sqrt{32\\div16}=\\sqrt{2}=1.41\\)."}, {"q": "خليط غازات ضغوطها الجزئية 30 kPa و45 kPa و25 kPa. الضغط الكلي:", "o": ["\\(100\\ \\text{kPa}\\)", "\\(45\\ \\text{kPa}\\)", "\\(33.3\\ \\text{kPa}\\)", "\\(75\\ \\text{kPa}\\)"], "a": 0, "e": "حسب قانون دالتون: \\(30+45+25=100\\ \\text{kPa}\\)."}, {"q": "حسب نظرية الحركة الجزيئية، تصادمات جسيمات الغاز:", "o": ["مرنة", "غير مرنة", "لا تحدث", "تفقد فيها الطاقة كلياً"], "a": 0, "e": "لا تُفقد الطاقة الحركية الكلية في التصادمات المرنة، بل تنتقل بين الجسيمات."}, {"q": "يساوي الضغط 380 mmHg بوحدة atm:", "o": ["\\(0.500\\)", "\\(2.00\\)", "\\(0.380\\)", "\\(1.00\\)"], "a": 0, "e": "\\(380\\div760=0.500\\ \\text{atm}\\)."}]}, {"id": "6-2", "title": "قوى التجاذب", "concept": ["القوى بين الجزيئات أضعف بكثير من الروابط داخلها (الأيونية والتساهمية والفلزية).", "<b>قوى التشتت<\/b>: قوى ضعيفة تنشأ عن ثنائيات أقطاب مؤقتة، وتوجد بين جميع الجزيئات، وتزداد بزيادة حجم الجزيء وعدد إلكتروناته؛ ولذلك \\(\\ce{F2}\\) غاز و\\(\\ce{I2}\\) صلب.", "<b>القوى ثنائية القطبية<\/b>: تجاذب بين المناطق المختلفة الشحنة في الجزيئات القطبية، وهي أقوى من قوى التشتت في الجزيئات المتقاربة الكتلة.", "<b>الرابطة الهيدروجينية<\/b>: قوة ثنائية القطبية قوية بين ذرة هيدروجين مرتبطة بذرة F أو O أو N وزوج إلكترونات غير مرتبط على ذرة صغيرة عالية الكهروسالبية في جزيء آخر؛ وهي سبب ارتفاع درجة غليان الماء."], "key": "<p class=\"kv-text\">الرابطة الهيدروجينية هي الأقوى، تليها القوى ثنائية القطبية، ثم قوى التشتت<\/p>", "examples": [{"q": "حدد أقوى القوى بين جزيئات كل من: \\(\\ce{CH4}\\) و\\(\\ce{HCl}\\) و\\(\\ce{H2O}\\).", "steps": ["\\(\\ce{CH4}\\) غير قطبي: قوى تشتت فقط.", "\\(\\ce{HCl}\\) قطبي: قوى ثنائية القطبية.", "\\(\\ce{H2O}\\): روابط هيدروجينية لأن الهيدروجين مرتبط بالأكسجين."]}, {"q": "لماذا درجة غليان \\(\\ce{H2O}\\) (100°C) أعلى بكثير من \\(\\ce{H2S}\\) (−60°C) مع أن كتلته المولية أقل؟", "steps": ["بين جزيئات الماء روابط هيدروجينية قوية، بينما الكبريت ليس من الذرات F أو O أو N.", "فيحتاج الماء إلى طاقة أكبر للتغلب على قوى التجاذب بين جزيئاته."]}], "mcq": [{"q": "القوى الوحيدة بين جزيئات الميثان \\(\\ce{CH4}\\):", "o": ["قوى التشتت", "الروابط الهيدروجينية", "القوى ثنائية القطبية", "الروابط الأيونية"], "a": 0, "e": "الميثان جزيء غير قطبي، فلا يوجد بين جزيئاته إلا قوى التشتت."}, {"q": "المادة التي توجد بين جزيئاتها روابط هيدروجينية:", "o": ["\\(\\ce{NH3}\\)", "\\(\\ce{CH4}\\)", "\\(\\ce{CO2}\\)", "\\(\\ce{H2}\\)"], "a": 0, "e": "في الأمونيا يرتبط الهيدروجين بالنيتروجين، وعلى النيتروجين زوج غير مرتبط."}, {"q": "يعود ارتفاع درجة غليان الماء إلى:", "o": ["الروابط الهيدروجينية بين جزيئاته", "قوى التشتت وحدها", "كتلته المولية الكبيرة", "الروابط الأيونية بين جزيئاته"], "a": 0, "e": "كتلة الماء المولية صغيرة (18 g/mol)، لكن الروابط الهيدروجينية ترفع درجة غليانه."}, {"q": "تزداد قوى التشتت بزيادة:", "o": ["حجم الجزيء وعدد إلكتروناته", "قطبية الرابطة", "سرعة الجزيئات", "عدد الروابط الهيدروجينية"], "a": 0, "e": "السحابة الإلكترونية الأكبر أسهل استقطاباً، فتتكون ثنائيات أقطاب مؤقتة أقوى."}, {"q": "أضعف أنواع القوى بين الجزيئات:", "o": ["قوى التشتت", "الروابط الهيدروجينية", "القوى ثنائية القطبية", "الروابط التساهمية"], "a": 0, "e": "قوى التشتت أضعف القوى بين الجزيئات، أما الرابطة التساهمية فرابطة داخل الجزيء وهي قوية."}]}, {"id": "6-3", "title": "السوائل والمواد الصلبة", "concept": ["<b>السوائل<\/b>: كثافتها أكبر بكثير من الغازات، وهي غير قابلة للانضغاط تقريباً، وتنساب وتأخذ شكل الإناء.", "<b>اللزوجة<\/b>: مقاومة السائل للتدفق، وتزداد بزيادة قوى التجاذب وحجم الجزيئات، وتقل بارتفاع درجة الحرارة.", "<b>التوتر السطحي<\/b>: الطاقة اللازمة لزيادة مساحة سطح السائل بمقدار معين، وهو كبير في الماء بسبب الروابط الهيدروجينية، ويقلّله الصابون.", "<b>الخاصية الشعرية<\/b>: ارتفاع السائل في أنبوب ضيق عندما تكون <b>قوى التلاصق<\/b> (بين السائل والزجاج) أكبر من <b>قوى التماسك<\/b> (بين جزيئات السائل).", "<b>المواد الصلبة البلورية<\/b>: جسيماتها في نمط متكرر، وأنواعها: ذرية، وجزيئية، وتساهمية شبكية (الألماس)، وأيونية، وفلزية. أما <b>غير المتبلورة<\/b> كالزجاج والمطاط فجسيماتها غير منتظمة."], "key": "<p class=\"kv-text\">تزداد اللزوجة والتوتر السطحي بزيادة قوى التجاذب، وتقلان بارتفاع درجة الحرارة<\/p>", "examples": [{"q": "لماذا لزوجة الجليسرين أعلى من لزوجة الماء؟", "steps": ["في جزيء الجليسرين ثلاث مجموعات OH تكوّن روابط هيدروجينية كثيرة.", "وجزيئاته أكبر حجماً، فتزداد مقاومته للتدفق."]}, {"q": "صنّف المواد الصلبة: الألماس، الجليد، كلوريد الصوديوم، النحاس، الزجاج.", "steps": ["الألماس: تساهمية شبكية. الجليد: جزيئية. كلوريد الصوديوم: أيونية.", "النحاس: فلزية. الزجاج: غير متبلورة."]}], "mcq": [{"q": "تقل لزوجة السائل عند:", "o": ["رفع درجة الحرارة", "زيادة قوى التجاذب بين جزيئاته", "زيادة حجم جزيئاته", "خفض درجة الحرارة"], "a": 0, "e": "ارتفاع درجة الحرارة يزيد الطاقة الحركية فتتغلب الجزيئات على قوى التجاذب بسهولة."}, {"q": "ارتفاع الماء في أنبوب زجاجي ضيق يسمى:", "o": ["الخاصية الشعرية", "التوتر السطحي", "اللزوجة", "التسامي"], "a": 0, "e": "يحدث لأن قوى التلاصق بين الماء والزجاج أكبر من قوى التماسك بين جزيئات الماء."}, {"q": "الألماس مثال على مادة صلبة:", "o": ["تساهمية شبكية", "جزيئية", "أيونية", "غير متبلورة"], "a": 0, "e": "كل ذرة كربون ترتبط تساهمياً بأربع ذرات أخرى في شبكة ممتدة، ولذلك هو صلب جداً."}, {"q": "من المواد الصلبة غير المتبلورة:", "o": ["الزجاج", "ملح الطعام", "الألماس", "الجليد"], "a": 0, "e": "جسيمات الزجاج غير مرتبة في نمط متكرر."}, {"q": "تحدث الخاصية الشعرية عندما تكون:", "o": ["قوى التلاصق أكبر من قوى التماسك", "قوى التماسك أكبر من قوى التلاصق", "القوتان متساويتين", "لا توجد قوى تجاذب"], "a": 0, "e": "إذا كان جذب الزجاج للسائل أقوى من جذب جزيئات السائل لبعضها، يصعد السائل في الأنبوب."}]}, {"id": "6-4", "title": "تغيرات الحالة الفيزيائية", "concept": ["<b>تغيرات ماصة للطاقة<\/b>: الانصهار (صلب إلى سائل)، والتبخر (سائل إلى غاز)، والتسامي (صلب إلى غاز مباشرة) مثل الجليد الجاف \\(\\ce{CO2}\\).", "<b>تغيرات طاردة للطاقة<\/b>: التكاثف (غاز إلى سائل)، والتجمد (سائل إلى صلب)، والترسب (غاز إلى صلب مباشرة).", "<b>التبخر<\/b> يحدث على سطح السائل عند أي درجة حرارة، أما <b>الغليان<\/b> فيحدث عندما يتساوى الضغط البخاري للسائل مع الضغط الجوي.", "<b>الضغط البخاري<\/b>: الضغط الذي يؤثر به بخار السائل فوق سطحه في وعاء مغلق، ويزداد بارتفاع درجة الحرارة.", "<b>منحنى الحالة<\/b>: يوضح حالة المادة عند كل ضغط ودرجة حرارة. <b>النقطة الثلاثية<\/b>: تتواجد عندها الحالات الثلاث في اتزان. <b>النقطة الحرجة<\/b>: لا يمكن بعدها أن توجد المادة سائلة مهما زاد الضغط."], "key": "<div class=\"kv\"><span>ماصة للطاقة:<\/span><span>انصهار · تبخر · تسامٍ<\/span><\/div><div class=\"kv\"><span>طاردة للطاقة:<\/span><span>تجمد · تكاثف · ترسب<\/span><\/div>", "examples": [{"q": "صنّف التغيرات: ذوبان الجليد، تكوّن الندى، تسامي اليود.", "steps": ["ذوبان الجليد انصهار، وتسامي اليود تسامٍ: كلاهما ماص للطاقة.", "تكوّن الندى تكاثف لبخار الماء: طارد للطاقة."]}, {"q": "لماذا يغلي الماء عند درجة أقل من 100°C في المرتفعات مثل أبها؟", "steps": ["الضغط الجوي في المرتفعات أقل منه عند سطح البحر.", "فيتساوى الضغط البخاري للماء مع الضغط الجوي عند درجة حرارة أقل."]}], "mcq": [{"q": "تحوّل المادة من الحالة الصلبة إلى الغازية مباشرة يسمى:", "o": ["التسامي", "الترسب", "التبخر", "الانصهار"], "a": 0, "e": "التسامي مثل الجليد الجاف، والترسب عكسه (غاز إلى صلب)."}, {"q": "أي التغيرات الآتية طارد للطاقة؟", "o": ["التجمد", "الانصهار", "التبخر", "التسامي"], "a": 0, "e": "عند التجمد تفقد الجزيئات طاقة وتقترب لتكوّن الشبكة الصلبة."}, {"q": "يغلي السائل عندما:", "o": ["يتساوى ضغطه البخاري مع الضغط الجوي", "يصبح ضغطه البخاري صفراً", "تتساوى كثافته مع كثافة الهواء", "يتجمد سطحه"], "a": 0, "e": "عندها تستطيع فقاعات البخار أن تتكون داخل السائل وترتفع إلى السطح."}, {"q": "النقطة التي تتواجد عندها حالات المادة الثلاث في اتزان:", "o": ["النقطة الثلاثية", "النقطة الحرجة", "درجة الغليان", "درجة الانصهار"], "a": 0, "e": "النقطة الثلاثية تحددها قيمة واحدة من الضغط ودرجة الحرارة على منحنى الحالة."}, {"q": "عند رفع درجة حرارة سائل فإن ضغطه البخاري:", "o": ["يزداد", "يقل", "يبقى ثابتاً", "ينعدم"], "a": 0, "e": "تزداد الجزيئات التي تملك طاقة كافية للتبخر، فيزداد ضغط البخار."}]}]}, {"n": 7, "title": "الغازات", "lessons": [{"id": "7-1", "title": "قوانين الغازات", "concept": ["<b>قانون بويل<\/b>: عند ثبوت درجة الحرارة وكمية الغاز، يتناسب الحجم عكسياً مع الضغط: \\(P_1V_1=P_2V_2\\).", "<b>قانون شارل<\/b>: عند ثبوت الضغط وكمية الغاز، يتناسب الحجم طردياً مع درجة الحرارة المطلقة: \\(\\dfrac{V_1}{T_1}=\\dfrac{V_2}{T_2}\\).", "<b>قانون جاي-لوساك<\/b>: عند ثبوت الحجم وكمية الغاز، يتناسب الضغط طردياً مع درجة الحرارة المطلقة: \\(\\dfrac{P_1}{T_1}=\\dfrac{P_2}{T_2}\\).", "<b>القانون العام للغازات<\/b> يجمع القوانين الثلاثة. وتُحوّل درجات الحرارة دائماً إلى كلفن: \\(T=t+273\\)."], "key": "\\[\\frac{P_1V_1}{T_1}=\\frac{P_2V_2}{T_2}\\]", "examples": [{"q": "بالون حجمه 4.0 L عند ضغط 1.0 atm. ما حجمه عند 2.5 atm بثبوت درجة الحرارة؟", "steps": ["قانون بويل: \\(V_2=\\dfrac{P_1V_1}{P_2}=\\dfrac{1.0\\times4.0}{2.5}\\).", "\\(V_2=1.6\\ \\text{L}\\)."]}, {"q": "غاز حجمه 2.0 L عند 27°C. ما حجمه عند 127°C بثبوت الضغط؟", "steps": ["\\(T_1=27+273=300\\ \\text{K}\\) و\\(T_2=127+273=400\\ \\text{K}\\).", "قانون شارل: \\(V_2=2.0\\times\\dfrac{400}{300}=2.67\\ \\text{L}\\)."]}], "mcq": [{"q": "غاز حجمه 6.0 L عند 2.0 atm. حجمه عند 3.0 atm بثبوت درجة الحرارة:", "o": ["\\(4.0\\ \\text{L}\\)", "\\(9.0\\ \\text{L}\\)", "\\(1.0\\ \\text{L}\\)", "\\(3.0\\ \\text{L}\\)"], "a": 0, "e": "\\(V_2=\\dfrac{2.0\\times6.0}{3.0}=4.0\\ \\text{L}\\)؛ زيادة الضغط تقلل الحجم."}, {"q": "يشترط قانون شارل ثبوت:", "o": ["الضغط وكمية الغاز", "الحجم وكمية الغاز", "درجة الحرارة وكمية الغاز", "الكثافة فقط"], "a": 0, "e": "قانون شارل يربط الحجم بدرجة الحرارة عند ضغط ثابت."}, {"q": "تساوي درجة الحرارة 25°C بالكلفن:", "o": ["\\(298\\ \\text{K}\\)", "\\(248\\ \\text{K}\\)", "\\(25\\ \\text{K}\\)", "\\(273\\ \\text{K}\\)"], "a": 0, "e": "\\(T=25+273=298\\ \\text{K}\\)."}, {"q": "غاز في وعاء مغلق ضغطه 1.5 atm عند 300 K. ضغطه عند 400 K بثبوت الحجم:", "o": ["\\(2.0\\ \\text{atm}\\)", "\\(1.1\\ \\text{atm}\\)", "\\(1.5\\ \\text{atm}\\)", "\\(3.5\\ \\text{atm}\\)"], "a": 0, "e": "قانون جاي-لوساك: \\(P_2=1.5\\times\\dfrac{400}{300}=2.0\\ \\text{atm}\\)."}, {"q": "غاز حجمه 2.0 L عند 1.0 atm و300 K. حجمه عند 2.0 atm و600 K:", "o": ["\\(2.0\\ \\text{L}\\)", "\\(4.0\\ \\text{L}\\)", "\\(1.0\\ \\text{L}\\)", "\\(8.0\\ \\text{L}\\)"], "a": 0, "e": "\\(V_2=\\dfrac{P_1V_1T_2}{T_1P_2}=\\dfrac{1.0\\times2.0\\times600}{300\\times2.0}=2.0\\ \\text{L}\\)."}]}, {"id": "7-2", "title": "قانون الغاز المثالي", "concept": ["<b>مبدأ أفوجادرو<\/b>: الحجوم المتساوية من الغازات المختلفة تحتوي على العدد نفسه من الجسيمات عند الضغط ودرجة الحرارة نفسيهما.", "<b>الحجم المولاري<\/b>: حجم 1 mol من أي غاز في الظروف المعيارية STP (0°C و1 atm) يساوي 22.4 L.", "<b>قانون الغاز المثالي<\/b>: \\(PV=nRT\\)، حيث \\(R=0.0821\\ \\text{L}\\cdot\\text{atm}/(\\text{mol}\\cdot\\text{K})\\).", "ومنه الكتلة المولية \\(M=\\dfrac{mRT}{PV}\\) والكثافة \\(D=\\dfrac{MP}{RT}\\).", "الغاز المثالي لا قوى تجاذب بين جسيماته ولا حجم لها. وتسلك الغازات الحقيقية سلوكاً مثالياً عند الضغط المنخفض ودرجة الحرارة المرتفعة، وتنحرف عنه عند الضغط المرتفع ودرجة الحرارة المنخفضة."], "key": "\\[PV=nRT\\qquad R=0.0821\\ \\frac{\\text{L}\\cdot\\text{atm}}{\\text{mol}\\cdot\\text{K}}\\]<div class=\"kv\"><span>حجم 1 mol من الغاز في STP<\/span><span class=\"kv-m\">\\(22.4\\ \\text{L}\\)<\/span><\/div>", "examples": [{"q": "ما حجم 2.00 mol من غاز في الظروف المعيارية STP؟", "steps": ["\\(V=2.00\\times22.4\\).", "\\(V=44.8\\ \\text{L}\\)."]}, {"q": "احسب عدد مولات غاز حجمه 12.3 L عند ضغط 2.00 atm ودرجة حرارة 300 K.", "steps": ["\\(n=\\dfrac{PV}{RT}=\\dfrac{2.00\\times12.3}{0.0821\\times300}\\).", "\\(n=1.00\\ \\text{mol}\\)."]}], "mcq": [{"q": "حجم 1 mol من أي غاز في الظروف المعيارية STP:", "o": ["\\(22.4\\ \\text{L}\\)", "\\(24.6\\ \\text{L}\\)", "\\(1.00\\ \\text{L}\\)", "\\(0.0821\\ \\text{L}\\)"], "a": 0, "e": "الحجم المولاري للغاز في STP يساوي 22.4 L."}, {"q": "حجم 0.50 mol من غاز في STP:", "o": ["\\(11.2\\ \\text{L}\\)", "\\(44.8\\ \\text{L}\\)", "\\(22.4\\ \\text{L}\\)", "\\(5.6\\ \\text{L}\\)"], "a": 0, "e": "\\(0.50\\times22.4=11.2\\ \\text{L}\\)."}, {"q": "ضغط 2.00 mol من غاز في وعاء حجمه 24.6 L عند 300 K:", "o": ["\\(2.00\\ \\text{atm}\\)", "\\(1.00\\ \\text{atm}\\)", "\\(4.00\\ \\text{atm}\\)", "\\(0.50\\ \\text{atm}\\)"], "a": 0, "e": "\\(P=\\dfrac{nRT}{V}=\\dfrac{2.00\\times0.0821\\times300}{24.6}=2.00\\ \\text{atm}\\)."}, {"q": "تسلك الغازات الحقيقية سلوكاً مثالياً عند:", "o": ["ضغط منخفض ودرجة حرارة مرتفعة", "ضغط مرتفع ودرجة حرارة منخفضة", "ضغط مرتفع فقط", "درجة حرارة منخفضة فقط"], "a": 0, "e": "عندها تتباعد الجسيمات فيقل تأثير حجمها وقوى التجاذب بينها."}, {"q": "عدد المولات في 67.2 L من غاز في STP:", "o": ["\\(3.00\\)", "\\(1.50\\)", "\\(6.00\\)", "\\(0.333\\)"], "a": 0, "e": "\\(67.2\\div22.4=3.00\\ \\text{mol}\\)."}, {"q": "غاز كتلته 8.0 g يشغل 5.6 L في STP. كتلته المولية:", "o": ["\\(32\\ \\text{g/mol}\\)", "\\(16\\ \\text{g/mol}\\)", "\\(64\\ \\text{g/mol}\\)", "\\(8\\ \\text{g/mol}\\)"], "a": 0, "e": "\\(n=5.6\\div22.4=0.25\\ \\text{mol}\\)، و\\(M=8.0\\div0.25=32\\ \\text{g/mol}\\)."}]}, {"id": "7-3", "title": "الحسابات المتعلقة بالغازات", "concept": ["في التفاعلات بين الغازات عند الضغط ودرجة الحرارة نفسيهما، تتناسب <b>الحجوم<\/b> مع المعاملات في المعادلة الموزونة، فالنسبة الحجمية تساوي النسبة المولية.", "مثال: \\(\\ce{2H2(g) + O2(g) -> 2H2O(g)}\\): يتفاعل 2 L من \\(\\ce{H2}\\) مع 1 L من \\(\\ce{O2}\\) لإنتاج 2 L من بخار الماء.", "للتحويل بين الحجم والكتلة: حوّل الحجم إلى مولات (\\(n=V\\div22.4\\) في STP أو \\(n=\\dfrac{PV}{RT}\\))، ثم استعمل النسبة المولية، ثم حوّل إلى الكتلة."], "key": "<p class=\"kv-text\">عند ثبوت الضغط ودرجة الحرارة: النسبة الحجمية = النسبة المولية<\/p>\\[\\frac{V_A}{V_B}=\\frac{a}{b}\\]", "examples": [{"q": "كم لتراً من \\(\\ce{O2}\\) يلزم لحرق 4.0 L من الميثان: \\(\\ce{CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)}\\)؟", "steps": ["النسبة الحجمية \\(1:2\\).", "\\(V_{\\ce{O2}}=4.0\\times2=8.0\\ \\text{L}\\)."]}, {"q": "كم لتراً من \\(\\ce{H2}\\) في STP ينتج عن تفاعل 6.5 g من الخارصين مع وفرة من HCl: \\(\\ce{Zn + 2HCl -> ZnCl2 + H2}\\)؟ (Zn = 65)", "steps": ["\\(n_{\\ce{Zn}}=6.5\\div65=0.10\\ \\text{mol}\\)، فينتج 0.10 mol من \\(\\ce{H2}\\).", "\\(V=0.10\\times22.4=2.24\\ \\text{L}\\)."]}], "mcq": [{"q": "في التفاعل \\(\\ce{N2(g) + 3H2(g) -> 2NH3(g)}\\)، حجم \\(\\ce{H2}\\) اللازم للتفاعل مع 5 L من \\(\\ce{N2}\\):", "o": ["\\(15\\ \\text{L}\\)", "\\(5\\ \\text{L}\\)", "\\(10\\ \\text{L}\\)", "\\(1.67\\ \\text{L}\\)"], "a": 0, "e": "\\(5\\times3=15\\ \\text{L}\\)."}, {"q": "في التفاعل نفسه، حجم \\(\\ce{NH3}\\) الناتج من 6 L من \\(\\ce{H2}\\):", "o": ["\\(4\\ \\text{L}\\)", "\\(6\\ \\text{L}\\)", "\\(9\\ \\text{L}\\)", "\\(2\\ \\text{L}\\)"], "a": 0, "e": "\\(6\\times\\dfrac{2}{3}=4\\ \\text{L}\\)."}, {"q": "في التفاعل \\(\\ce{2CO(g) + O2(g) -> 2CO2(g)}\\)، حجم \\(\\ce{O2}\\) اللازم لحرق 10 L من CO:", "o": ["\\(5\\ \\text{L}\\)", "\\(10\\ \\text{L}\\)", "\\(20\\ \\text{L}\\)", "\\(2.5\\ \\text{L}\\)"], "a": 0, "e": "\\(10\\times\\dfrac{1}{2}=5\\ \\text{L}\\)."}, {"q": "كتلة 11.2 L من \\(\\ce{CO2}\\) في STP (C = 12، O = 16):", "o": ["\\(22\\ \\text{g}\\)", "\\(44\\ \\text{g}\\)", "\\(11\\ \\text{g}\\)", "\\(88\\ \\text{g}\\)"], "a": 0, "e": "\\(11.2\\div22.4=0.50\\ \\text{mol}\\)، و\\(0.50\\times44=22\\ \\text{g}\\)."}, {"q": "حجم \\(\\ce{O2}\\) في STP الناتج من تحلل 2 mol من \\(\\ce{H2O2}\\): \\(\\ce{2H2O2 -> 2H2O + O2}\\):", "o": ["\\(22.4\\ \\text{L}\\)", "\\(44.8\\ \\text{L}\\)", "\\(11.2\\ \\text{L}\\)", "\\(2.0\\ \\text{L}\\)"], "a": 0, "e": "2 mol من \\(\\ce{H2O2}\\) تنتج 1 mol من \\(\\ce{O2}\\)، أي 22.4 L."}]}]}], "challenges": [{"id": "k1", "ch": 1, "level": "صعب", "title": "طاقة مول من الفوتونات", "q": "احسب طاقة 1 mol من فوتونات ضوء برتقالي طوله الموجي 600 nm بوحدة kJ (\\(h=6.626\\times10^{-34}\\ \\text{J}\\cdot\\text{s}\\)، \\(c=3.00\\times10^{8}\\ \\text{m/s}\\)، \\(N_A=6.02\\times10^{23}\\)).", "hint": "حوّل 600 nm إلى أمتار، واحسب التردد ثم طاقة فوتون واحد، ثم اضرب في عدد أفوجادرو.", "sol": ["\\(\\lambda=600\\times10^{-9}=6.00\\times10^{-7}\\ \\text{m}\\)، و\\(\\nu=\\dfrac{c}{\\lambda}=5.00\\times10^{14}\\ \\text{Hz}\\).", "طاقة الفوتون \\(E=h\\nu=3.31\\times10^{-19}\\ \\text{J}\\).", "لمول واحد: \\(3.31\\times10^{-19}\\times6.02\\times10^{23}=1.99\\times10^{5}\\ \\text{J}\\approx199\\ \\text{kJ}\\)."], "ans": "\\(\\approx199\\ \\text{kJ}\\)", "num": 199}, {"id": "k2", "ch": 1, "level": "متوسط", "title": "عنصر من آخر مستوى", "q": "ينتهي التوزيع الإلكتروني لعنصر بالمستوى الثانوي \\(4p^3\\). ما عدده الذري؟ وكم إلكتروناً منفرداً فيه؟", "hint": "اكتب التوزيع كاملاً بترميز الغاز النبيل، وتذكر أن 3d يمتلئ قبل 4p.", "sol": ["التوزيع: \\(\\mathrm{[Ar]}\\,4s^2 3d^{10} 4p^3\\).", "العدد الذري \\(18+2+10+3=33\\)، وهو الزرنيخ As.", "إلكترونات \\(4p^3\\) منفردة حسب قاعدة هوند: 3 إلكترونات منفردة."], "ans": "\\(Z=33\\)، و3 إلكترونات منفردة.", "num": 33}, {"id": "k3", "ch": 2, "level": "متوسط", "title": "من طاقات التأين إلى المجموعة", "q": "عنصر في الدورة الثالثة طاقات تأينه المتتالية بوحدة kJ/mol: 578، 1817، 2745، 11577. حدد مجموعته وعنصره.", "hint": "ابحث عن القفزة الكبيرة بين طاقتين متتاليتين.", "sol": ["القفزة الكبيرة بين الطاقة الثالثة (2745) والرابعة (11577).", "فللعنصر ثلاثة إلكترونات تكافؤ، وهو في المجموعة 13.", "في الدورة الثالثة: الألومنيوم Al."], "ans": "المجموعة 13 (الألومنيوم).", "num": 13}, {"id": "k4", "ch": 2, "level": "متوسط", "title": "ترتيب أنصاف الأقطار", "q": "رتّب الذرات Mg وCl وNa وK تصاعدياً حسب نصف القطر الذري، وفسّر الترتيب.", "hint": "ثلاث منها في الدورة الثالثة، والرابعة تحت إحداها في المجموعة.", "sol": ["Na وMg وCl في الدورة الثالثة، ونصف القطر يقل من اليسار إلى اليمين: Cl أصغر من Mg، وMg أصغر من Na.", "K تحت Na في المجموعة 1، فيه مستوى طاقة إضافي فهو أكبرها."], "ans": "Cl ثم Mg ثم Na ثم K.", "num": null}, {"id": "k5", "ch": 3, "level": "متوسط", "title": "مركب من الألومنيوم والكبريت", "q": "اكتب صيغة المركب الأيوني الناتج عن تفاعل الألومنيوم مع الكبريت واسمه، ثم حدد عدد الإلكترونات في كل أيون (Al: Z = 13، S: Z = 16).", "hint": "حدد شحنة كل أيون من موقع عنصره في الجدول الدوري، ثم اجعل مجموع الشحنات صفراً.", "sol": ["الأيونان \\(\\ce{Al^3+}\\) و\\(\\ce{S^2-}\\)؛ \\(2(+3)+3(-2)=0\\)، فالصيغة \\(\\ce{Al2S3}\\): كبريتيد الألومنيوم.", "\\(\\ce{Al^3+}\\): \\(13-3=10\\) إلكترونات. \\(\\ce{S^2-}\\): \\(16+2=18\\) إلكتروناً."], "ans": "\\(\\ce{Al2S3}\\) كبريتيد الألومنيوم؛ 10 إلكترونات في \\(\\ce{Al^3+}\\) و18 في \\(\\ce{S^2-}\\).", "num": null}, {"id": "k6", "ch": 3, "level": "صعب", "title": "ترتيب طاقة الشبكة البلورية", "q": "رتّب المركبات \\(\\ce{NaF}\\) و\\(\\ce{MgO}\\) و\\(\\ce{KCl}\\) و\\(\\ce{CaO}\\) تنازلياً حسب طاقة الشبكة البلورية، وفسّر إجابتك.", "hint": "قارن أولاً شحنات الأيونات، ثم أحجامها.", "sol": ["\\(\\ce{MgO}\\) و\\(\\ce{CaO}\\) أيوناتهما ثنائية الشحنة، فطاقتهما أكبر من \\(\\ce{NaF}\\) و\\(\\ce{KCl}\\).", "\\(\\ce{Mg^2+}\\) أصغر من \\(\\ce{Ca^2+}\\)، فـ \\(\\ce{MgO}\\) أكبر من \\(\\ce{CaO}\\).", "أيونا \\(\\ce{NaF}\\) أصغر من أيوني \\(\\ce{KCl}\\)، فـ \\(\\ce{NaF}\\) أكبر من \\(\\ce{KCl}\\)."], "ans": "\\(\\ce{MgO}\\) ثم \\(\\ce{CaO}\\) ثم \\(\\ce{NaF}\\) ثم \\(\\ce{KCl}\\).", "num": null}, {"id": "k7", "ch": 4, "level": "صعب", "title": "رنين أيون الكربونات", "q": "صف تركيب لويس لأيون الكربونات \\(\\ce{CO3^2-}\\): كم إلكترون تكافؤ فيه؟ وكم تركيب رنين له؟ وما شكله وزاويته وتهجين ذرة الكربون؟", "hint": "أضف إلكترونين للشحنة السالبة، وتذكّر أن الرابطة الثنائية يمكن أن تكون مع أي من ذرات الأكسجين الثلاث.", "sol": ["إلكترونات التكافؤ: \\(4+3(6)+2=24\\)، أي 12 زوجاً.", "رابطة ثنائية \\(\\ce{C=O}\\) ورابطتان أحاديتان \\(\\ce{C-O}\\) تحمل كل من ذرتي الأكسجين فيهما شحنة سالبة، وتكتمل الثمانية لكل ذرة.", "يمكن أن تكون الرابطة الثنائية مع أي من ذرات الأكسجين الثلاث: 3 تراكيب رنين.", "ثلاث مناطق إلكترونية حول الكربون: مثلث مستوٍ بزاوية \\(120^\\circ\\) وتهجين \\(sp^2\\)."], "ans": "24 إلكتروناً، 3 تراكيب رنين، مثلث مستوٍ بزاوية \\(120^\\circ\\) وتهجين \\(sp^2\\).", "num": 3}, {"id": "k8", "ch": 4, "level": "متوسط", "title": "قطبية جزيئين متشابهين", "q": "كلا الجزيئين \\(\\ce{SO2}\\) و\\(\\ce{SO3}\\) روابطه قطبية. حدد شكل كل منهما وقطبيته.", "hint": "احسب مناطق الإلكترونات حول ذرة الكبريت، وانتبه للأزواج غير المرتبطة في \\(\\ce{SO2}\\).", "sol": ["\\(\\ce{SO2}\\): رابطتان وزوج غير مرتبط على الكبريت، فالشكل منحنٍ غير متماثل، والجزيء قطبي.", "\\(\\ce{SO3}\\): ثلاث مناطق دون أزواج غير مرتبطة، فالشكل مثلث مستوٍ متماثل، وتلغي الأقطاب بعضها، فالجزيء غير قطبي."], "ans": "\\(\\ce{SO2}\\) منحنٍ وقطبي، و\\(\\ce{SO3}\\) مثلث مستوٍ وغير قطبي.", "num": null}, {"id": "k9", "ch": 5, "level": "صعب", "title": "صيغة غاز من كثافته", "q": "مركب غازي يحتوي على 85.7% C و14.3% H بالكتلة، وكثافته في STP تساوي 1.25 g/L. أوجد صيغته الجزيئية (C = 12، H = 1).", "hint": "احسب الكتلة المولية من الكثافة والحجم المولاري، ثم أوجد الصيغة الأولية.", "sol": ["الكتلة المولية \\(M=1.25\\times22.4=28.0\\ \\text{g/mol}\\).", "المولات في 100 g: \\(85.7\\div12=7.14\\) و\\(14.3\\div1=14.3\\)؛ النسبة \\(1:2\\)، فالصيغة الأولية \\(\\ce{CH2}\\) (14 g/mol).", "\\(n=28.0\\div14=2\\)، فالصيغة الجزيئية \\(\\ce{C2H4}\\) (الإيثين)."], "ans": "\\(\\ce{C2H4}\\)", "num": null}, {"id": "k10", "ch": 5, "level": "صعب", "title": "المادة المحددة ونسبة المردود", "q": "تفاعل 10.0 g من \\(\\ce{H2}\\) مع 64.0 g من \\(\\ce{O2}\\) وفق \\(\\ce{2H2 + O2 -> 2H2O}\\)، فنتج 63.0 g من الماء. احسب نسبة المردود المئوية (H = 1، O = 16).", "hint": "حدد المادة المحددة أولاً، ثم احسب المردود النظري منها.", "sol": ["\\(n_{\\ce{H2}}=10.0\\div2=5.00\\ \\text{mol}\\) و\\(n_{\\ce{O2}}=64.0\\div32=2.00\\ \\text{mol}\\).", "5.00 mol من \\(\\ce{H2}\\) تحتاج إلى 2.50 mol من \\(\\ce{O2}\\)، والمتوفر 2.00 mol، فالمادة المحددة \\(\\ce{O2}\\).", "المردود النظري: \\(2.00\\times2=4.00\\ \\text{mol}\\) من الماء، أي \\(4.00\\times18=72.0\\ \\text{g}\\).", "\\(\\%Y=\\dfrac{63.0}{72.0}\\times100=87.5\\%\\)."], "ans": "\\(87.5\\%\\)", "num": 87.5}, {"id": "k11", "ch": 5, "level": "متوسط", "title": "صيغة كبريتات النحاس المائية", "q": "سُخّن 2.50 g من \\(\\ce{CuSO4*xH2O}\\) حتى ثبتت الكتلة عند 1.60 g. أوجد \\(x\\) (\\(\\ce{CuSO4}\\) = 159.6 g/mol، \\(\\ce{H2O}\\) = 18.0 g/mol).", "hint": "كتلة الماء = الفرق بين الكتلتين.", "sol": ["كتلة الماء \\(2.50-1.60=0.90\\ \\text{g}\\)، أي \\(0.90\\div18.0=0.050\\ \\text{mol}\\).", "مولات \\(\\ce{CuSO4}\\): \\(1.60\\div159.6=0.0100\\ \\text{mol}\\).", "\\(x=0.050\\div0.0100=5\\)، فالصيغة \\(\\ce{CuSO4*5H2O}\\)."], "ans": "\\(x=5\\)", "num": 5}, {"id": "k12", "ch": 5, "level": "متوسط", "title": "أكسجين احتراق البيوتان", "q": "كم جراماً من الأكسجين يلزم لحرق 116 g من البيوتان احتراقاً تاماً: \\(\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}\\)؟ (C = 12، H = 1، O = 16)", "hint": "احسب مولات البيوتان من كتلته المولية 58 g/mol.", "sol": ["\\(n_{\\ce{C4H10}}=116\\div58=2.00\\ \\text{mol}\\).", "\\(n_{\\ce{O2}}=2.00\\times\\dfrac{13}{2}=13.0\\ \\text{mol}\\).", "\\(m=13.0\\times32=416\\ \\text{g}\\)."], "ans": "\\(416\\ \\text{g}\\)", "num": 416}, {"id": "k13", "ch": 6, "level": "متوسط", "title": "غاز مجهول بقانون جراهام", "q": "ينتشر غاز مجهول بمعدل يساوي نصف معدل انتشار الهيليوم (4.0 g/mol) عند الظروف نفسها. احسب الكتلة المولية للغاز المجهول.", "hint": "\\(\\dfrac{r_x}{r_{\\ce{He}}}=\\sqrt{\\dfrac{M_{\\ce{He}}}{M_x}}\\)، ثم ربّع الطرفين.", "sol": ["\\(0.5=\\sqrt{\\dfrac{4.0}{M_x}}\\Rightarrow 0.25=\\dfrac{4.0}{M_x}\\).", "\\(M_x=4.0\\div0.25=16\\ \\text{g/mol}\\)، وقد يكون الميثان \\(\\ce{CH4}\\)."], "ans": "\\(16\\ \\text{g/mol}\\)", "num": 16}, {"id": "k14", "ch": 6, "level": "متوسط", "title": "غاز مجمّع فوق الماء", "q": "جُمع غاز الأكسجين فوق الماء عند 25°C، وكان الضغط الكلي 101.3 kPa والضغط البخاري للماء 3.2 kPa. احسب الضغط الجزئي للأكسجين.", "hint": "الغاز المجمع فوق الماء خليط من الغاز وبخار الماء.", "sol": ["حسب قانون دالتون: \\(P_{\\text{total}}=P_{\\ce{O2}}+P_{\\ce{H2O}}\\).", "\\(P_{\\ce{O2}}=101.3-3.2=98.1\\ \\text{kPa}\\)."], "ans": "\\(98.1\\ \\text{kPa}\\)", "num": 98.1}, {"id": "k15", "ch": 7, "level": "صعب", "title": "إلى الظروف المعيارية", "q": "عينة غاز حجمها 5.00 L عند 27°C وضغط 1.20 atm. احسب حجمها في الظروف المعيارية STP.", "hint": "استعمل القانون العام للغازات بعد تحويل درجات الحرارة إلى كلفن.", "sol": ["\\(T_1=300\\ \\text{K}\\) و\\(T_2=273\\ \\text{K}\\) و\\(P_2=1.00\\ \\text{atm}\\).", "\\(V_2=\\dfrac{P_1V_1T_2}{T_1P_2}=\\dfrac{1.20\\times5.00\\times273}{300\\times1.00}\\).", "\\(V_2=5.46\\ \\text{L}\\)."], "ans": "\\(5.46\\ \\text{L}\\)", "num": 5.46}, {"id": "k16", "ch": 7, "level": "صعب", "title": "حجم غاز من تفكك الحجر الجيري", "q": "احسب حجم \\(\\ce{CO2}\\) الناتج عند 27°C و1.00 atm من تحلل 10.0 g من \\(\\ce{CaCO3}\\) وفق \\(\\ce{CaCO3 -> CaO + CO2}\\) (\\(\\ce{CaCO3}\\) = 100 g/mol).", "hint": "احسب المولات أولاً، ثم استعمل قانون الغاز المثالي لأن الظروف ليست معيارية.", "sol": ["\\(n_{\\ce{CaCO3}}=10.0\\div100=0.100\\ \\text{mol}\\)، فينتج 0.100 mol من \\(\\ce{CO2}\\).", "\\(V=\\dfrac{nRT}{P}=\\dfrac{0.100\\times0.0821\\times300}{1.00}\\).", "\\(V=2.46\\ \\text{L}\\)."], "ans": "\\(2.46\\ \\text{L}\\)", "num": 2.46}], "extras": []}</script>
+<script>
+(function () {
+'use strict';
+var D = JSON.parse(document.getElementById('appdata').textContent);
+var LET = ['أ', 'ب', 'ج', 'د'];
+var chapters = D.chapters, challenges = D.challenges;
+var lessons = [], lessonById = {}, qById = {};
+chapters.forEach(function (c) { c.lessons.forEach(function (l) {
+  l.chapter = c; lessons.push(l); lessonById[l.id] = l;
+  l.mcq.forEach(function (q, i) { q.id = l.id + '_' + i; q.lesson = l; qById[q.id] = q; });
+}); });
+var extras = D.extras || [], extraById = {};
+extras.forEach(function (x) {
+  extraById[x.id] = x;
+  x.questions.forEach(function (q, i) { q.id = 'x-' + x.id + '-' + i; q.lesson = null; qById[q.id] = q; });
+});
+var allQ = [];
+lessons.forEach(function (l) { allQ = allQ.concat(l.mcq); });
+
+function $(s, r) { return (r || document).querySelector(s); }
+function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+var store = {
+  get: function (k) { try { return JSON.parse(localStorage.getItem('tafaul:' + k)); } catch (e) { return null; } },
+  set: function (k, v) { try { localStorage.setItem('tafaul:' + k, JSON.stringify(v)); } catch (e) {} }
+};
+
+/* ---------- LaTeX typesetting (MathJax) */
+var mjChain = Promise.resolve();
+function typeset(node) {
+  if (!node) return;
+  var MJ = window.MathJax;
+  if (MJ && MJ.typesetPromise && MJ.startup && MJ.startup.promise) {
+    mjChain = mjChain.then(function () { return MJ.startup.promise; })
+      .then(function () { return MJ.typesetPromise([node]); }).catch(function () {});
+  } else { window.__mjPending.add(node); }
+}
+
+/* ---------- random helpers */
+function hash(s) { var h = 2166136261; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function shuffle(arr, r) { r = r || Math.random; var a = arr.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+var ICON = {
+  ok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>',
+  bad: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9 9l6 6M15 9l-6 6"/></svg>'
+};
+function plural(n, one, two, few, many) { if (n === 1) return one; if (n === 2) return two; var m = n % 100; if (m >= 3 && m <= 10) return n + ' ' + few; return n + ' ' + many; }
+
+/* ---------- MCQ component */
+function mcqHTML(q, order, num) {
+  return '<div class="mcq" data-q="' + q.id + '">' +
+    '<div class="mcq-stem"><span class="qnum">' + num + '</span><div class="stem">' + q.q + '</div></div>' +
+    '<div class="opts">' + order.map(function (oi, p) {
+      return '<button type="button" class="opt" data-oi="' + oi + '" aria-pressed="false"><span class="let">' + LET[p] + '</span><span class="otext">' + q.o[oi] + '</span></button>';
+    }).join('') + '</div><div class="feedback" hidden aria-live="polite"></div></div>';
+}
+function grade(box, oi) {
+  var q = qById[box.dataset.q], ok = oi === q.a;
+  box.classList.add('done', ok ? 'is-ok' : 'is-bad');
+  $$('.opt', box).forEach(function (b) {
+    var i = +b.dataset.oi; b.disabled = true;
+    if (i === q.a) b.classList.add('correct');
+    if (i === oi && !ok) b.classList.add('wrong');
+    b.setAttribute('aria-pressed', i === oi ? 'true' : 'false');
+  });
+  var fb = $('.feedback', box);
+  fb.innerHTML = '<p class="fb-head">' + (ok ? ICON.ok + 'إجابة صحيحة' : ICON.bad + 'إجابة غير صحيحة') + '</p>' +
+    '<div class="fb-body"><span class="fb-label">الحل</span>' + q.e + '</div>';
+  fb.hidden = false; typeset(fb);
+  return ok;
+}
+function seededOrder(q) { return shuffle([0, 1, 2, 3], rng(hash(q.id))); }
+
+/* ---------- views */
+var VIEWS = ['home', 'lessons', 'test', 'challenge', 'extra', 'vision', 'about'];
+var current = null;
+function setHash(t) { try { history.replaceState(null, '', '#' + t); } catch (e) {} }
+function showView(name, lessonId) {
+  if (VIEWS.indexOf(name) < 0) name = 'home';
+  $$('.view').forEach(function (v) { v.hidden = v.dataset.view !== name; });
+  $$('.nav a').forEach(function (a) {
+    if (a.dataset.go === name) { a.setAttribute('aria-current', 'page'); try { a.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch (e) {} }
+    else a.removeAttribute('aria-current');
+  });
+  if (current !== name) window.scrollTo(0, 0);
+  current = name;
+  if (name === 'lessons') {
+    var id = lessonId || (curLesson && curLesson.id) || store.get('lesson') || lessons[0].id;
+    if (!curLesson || curLesson.id !== id) openLesson(id, true);
+    setHash('lesson-' + curLesson.id);
+  } else if (name === 'extra') {
+    if (lessonId && extraById[lessonId]) { openSet(lessonId); setHash('extra-' + lessonId); }
+    else { showSetList(); setHash('extra'); }
+  } else setHash(name);
+  if (name === 'challenge' && !chalBuilt) buildChallenges();
+  typeset($('.view[data-view="' + name + '"]'));
+}
+
+/* ---------- lessons */
+var curLesson = null;
+var art = $('#lessonArticle'), toc = $('#toc'), sel = $('#lessonSelect');
+function openLesson(id, silent) {
+  var L = lessonById[id] || lessons[0]; curLesson = L; store.set('lesson', L.id);
+  var C = L.chapter, idx = lessons.indexOf(L), prev = lessons[idx - 1], next = lessons[idx + 1];
+  art.innerHTML =
+    '<header class="lesson-head"><p class="crumb"><span>الفصل ' + C.n + '</span><span class="dot"></span><span>' + C.title + '</span></p>' +
+    '<h2><span class="lnum">' + L.id + '</span><span>' + L.title + '</span></h2></header>' +
+    '<section class="block"><h3 class="block-title">الفكرة باختصار</h3><ul class="concepts">' +
+      L.concept.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
+      '<div class="rule"><span class="rule-tag">القاعدة</span><div class="rule-body">' + L.key + '</div></div></section>' +
+    '<section class="block"><h3 class="block-title">أمثلة محلولة</h3><div class="examples">' +
+      L.examples.map(function (e, i) {
+        return '<div class="example"><span class="ex-tag">مثال ' + (i + 1) + '</span><div class="ex-q">' + e.q + '</div>' +
+          '<button type="button" class="btn btn-soft btn-sm reveal" data-ex="' + i + '" aria-expanded="false">اعرض الحل</button><div class="ex-sol" hidden></div></div>';
+      }).join('') + '</div></section>' +
+    '<section class="block"><div class="block-row"><h3 class="block-title">تدرّب على الدرس</h3><span class="lesson-score" id="lessonScore"></span></div>' +
+      '<div class="mcq-list" id="practiceList"></div>' +
+      '<div class="practice-foot"><button type="button" class="btn btn-ghost btn-sm" id="resetPractice">أعد المحاولة</button></div></section>' +
+    extras.filter(function (x) { return x.ch === C.n; }).map(function (x) {
+      return '<aside class="x-callout"><div><p class="kicker">مسائل إضافية على هذا الفصل</p><b>' + x.title + ' · ' + x.questions.length + ' سؤالاً</b></div>' +
+        '<button type="button" class="btn btn-soft btn-sm" data-xset="' + x.id + '">حلّ المسائل</button></aside>';
+    }).join('') +
+    '<nav class="pager" aria-label="التنقل بين الدروس">' +
+      (prev ? '<button type="button" class="pager-btn" data-lesson="' + prev.id + '"><small>→ الدرس السابق</small><span>' + prev.id + ' ' + prev.title + '</span></button>' : '<span></span>') +
+      (next ? '<button type="button" class="pager-btn next" data-lesson="' + next.id + '"><small>الدرس التالي ←</small><span>' + next.id + ' ' + next.title + '</span></button>' : '<span></span>') +
+    '</nav>';
+  renderPractice(false);
+  $$('.toc-l', toc).forEach(function (b) {
+    var on = b.dataset.lesson === L.id; b.classList.toggle('active', on);
+    if (on) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current');
+  });
+  sel.value = L.id;
+  typeset(art);
+  if (!silent) {
+    setHash('lesson-' + L.id);
+    window.scrollTo(0, 0);
+  }
+}
+function renderPractice(doTypeset) {
+  var list = $('#practiceList');
+  list.innerHTML = curLesson.mcq.map(function (q, i) { return mcqHTML(q, seededOrder(q), i + 1); }).join('');
+  updateScore();
+  if (doTypeset) typeset(list);
+}
+function updateScore() {
+  var boxes = $$('#practiceList .mcq'), done = boxes.filter(function (b) { return b.classList.contains('done'); });
+  var ok = boxes.filter(function (b) { return b.classList.contains('is-ok'); }).length;
+  var el = $('#lessonScore');
+  if (!done.length) { el.textContent = plural(boxes.length, 'سؤال واحد', 'سؤالان', 'أسئلة', 'سؤالاً'); el.classList.remove('full'); }
+  else if (done.length < boxes.length) { el.textContent = 'أجبت عن ' + done.length + ' من ' + boxes.length; el.classList.remove('full'); }
+  else { el.textContent = 'النتيجة: ' + ok + ' من ' + boxes.length; el.classList.toggle('full', ok === boxes.length); }
+}
+art.addEventListener('click', function (e) {
+  var rb = e.target.closest('.reveal');
+  if (rb) {
+    var box = rb.nextElementSibling, ex = curLesson.examples[+rb.dataset.ex];
+    if (box.hidden) {
+      if (!box.dataset.filled) {
+        box.innerHTML = '<ol class="steps">' + ex.steps.map(function (s) { return '<li><div>' + s + '</div></li>'; }).join('') + '</ol>';
+        box.dataset.filled = '1';
+      }
+      box.hidden = false; rb.textContent = 'أخفِ الحل'; rb.setAttribute('aria-expanded', 'true'); typeset(box);
+    } else { box.hidden = true; rb.textContent = 'اعرض الحل'; rb.setAttribute('aria-expanded', 'false'); }
+    return;
+  }
+  var ob = e.target.closest('.opt');
+  if (ob) { var m = ob.closest('.mcq'); if (m.classList.contains('done')) return; grade(m, +ob.dataset.oi); updateScore(); return; }
+  if (e.target.closest('#resetPractice')) renderPractice(true);
+});
+sel.addEventListener('change', function () { openLesson(sel.value); });
+
+/* ---------- random test */
+var T = { qs: [], i: 0, res: [], t0: 0, timer: null, picked: null, elapsed: 0 };
+var setupEl = $('#testSetup'), runEl = $('#testRun'), resEl = $('#testResult');
+function fmt(s) { var m = Math.floor(s / 60), r = s % 60; return (m < 10 ? '0' : '') + m + ':' + (r < 10 ? '0' : '') + r; }
+function tick() { T.elapsed = Math.floor((Date.now() - T.t0) / 1000); $('#runTimer').textContent = fmt(T.elapsed); }
+function showBest() {
+  var b = store.get('best');
+  $('#bestScore').textContent = b ? 'أفضل نتيجة لك: ' + b.pct + '% (' + b.c + ' من ' + b.n + ')' : 'يحتوي البنك على ' + allQ.length + ' سؤالاً محلولاً.';
+}
+function startTest(pool) {
+  T.qs = pool.map(function (q) { return { q: q, order: shuffle([0, 1, 2, 3]) }; });
+  T.i = 0; T.res = []; T.t0 = Date.now(); clearInterval(T.timer); T.timer = setInterval(tick, 1000); tick();
+  setupEl.hidden = true; resEl.hidden = true; runEl.hidden = false;
+  renderRunQ();
+}
+function renderRunQ() {
+  var it = T.qs[T.i], n = T.qs.length;
+  $('#runCount').textContent = 'السؤال ' + (T.i + 1) + ' من ' + n;
+  $('#runTag').textContent = 'الدرس ' + it.q.lesson.id + ': ' + it.q.lesson.title;
+  $('#runBar').style.width = (T.i / n * 100) + '%';
+  var rq = $('#runQ'); rq.innerHTML = mcqHTML(it.q, it.order, T.i + 1);
+  T.picked = null;
+  var c = $('#runConfirm'); c.hidden = false; c.disabled = true; $('#runNext').hidden = true;
+  typeset(rq);
+}
+$('#runQ').addEventListener('click', function (e) {
+  var ob = e.target.closest('.opt'); if (!ob) return;
+  var box = ob.closest('.mcq'); if (box.classList.contains('done')) return;
+  T.picked = +ob.dataset.oi;
+  $$('.opt', box).forEach(function (b) { b.setAttribute('aria-pressed', b === ob ? 'true' : 'false'); });
+  $('#runConfirm').disabled = false;
+});
+$('#runConfirm').addEventListener('click', function () {
+  if (T.picked === null) return;
+  var it = T.qs[T.i], ok = grade($('#runQ .mcq'), T.picked);
+  T.res[T.i] = { picked: T.picked, ok: ok };
+  this.hidden = true;
+  var nx = $('#runNext'); nx.hidden = false; nx.textContent = T.i === T.qs.length - 1 ? 'عرض النتيجة' : 'السؤال التالي'; nx.focus();
+  $('#runBar').style.width = ((T.i + 1) / T.qs.length * 100) + '%';
+});
+$('#runNext').addEventListener('click', function () {
+  if (T.i >= T.qs.length - 1) { finish(); return; }
+  T.i++; renderRunQ(); runEl.scrollIntoView({ block: 'start' }); window.scrollBy(0, -90);
+});
+$('#runQuit').addEventListener('click', finish);
+function finish() {
+  clearInterval(T.timer); tick();
+  var n = T.qs.length, c = T.res.filter(function (r) { return r && r.ok; }).length, pct = Math.round(c / n * 100);
+  runEl.hidden = true; resEl.hidden = false;
+  $('#resPct').textContent = pct + '%';
+  var C = 326.73; requestAnimationFrame(function () { $('#ringVal').style.strokeDashoffset = (C * (1 - pct / 100)).toFixed(2); });
+  $('#resMsg').textContent = pct >= 90 ? 'أداء متميز، تفاعلٌ يصنع المستقبل!' : pct >= 75 ? 'أداء رائع، واصل التقدّم' : pct >= 50 ? 'بداية جيدة، راجع أخطاءك وأعد المحاولة' : 'لا بأس، راجع الدروس ثم أعد الاختبار';
+  $('#resCorrect').textContent = c + ' من ' + n;
+  $('#resTime').textContent = fmt(T.elapsed);
+  var wrong = T.qs.filter(function (it, i) { return !(T.res[i] && T.res[i].ok); });
+  $('#resRetry').hidden = !wrong.length;
+  var b = store.get('best'); if (!b || pct > b.pct) store.set('best', { pct: pct, c: c, n: n });
+  var rv = $('#resReview');
+  rv.innerHTML = '<h3 class="block-title" style="margin-top:10px">مراجعة الإجابات</h3>' + T.qs.map(function (it, i) {
+    var r = T.res[i], q = it.q;
+    var st = !r ? '<span class="pill skip">لم تُجب</span>' : r.ok ? '<span class="pill ok">صحيحة</span>' : '<span class="pill bad">خاطئة</span>';
+    return '<div class="rv"><div class="rv-head"><span class="rv-lesson">' + (i + 1) + ' · الدرس ' + q.lesson.id + ' ' + q.lesson.title + '</span>' + st + '</div>' +
+      '<div class="rv-q">' + q.q + '</div><div class="rv-a">' +
+      (r && !r.ok ? '<div class="mine">إجابتك: ' + q.o[r.picked] + '</div>' : '') +
+      '<div class="right">الإجابة الصحيحة: ' + q.o[q.a] + '</div></div>' +
+      '<div class="rv-e"><span class="fb-label">الحل</span>' + q.e + '</div></div>';
+  }).join('');
+  typeset(resEl);
+  resEl.scrollIntoView({ block: 'start' }); window.scrollBy(0, -90);
+  showBest();
+}
+$('#startTest').addEventListener('click', function () {
+  var chs = $$('input[name="tch"]:checked').map(function (i) { return +i.value; });
+  var count = +($('input[name="tcount"]:checked') || { value: 10 }).value;
+  if (!chs.length) { $('#setupMsg').textContent = 'اختر فصلاً واحداً على الأقل.'; return; }
+  $('#setupMsg').textContent = '';
+  var pool = shuffle(allQ.filter(function (q) { return chs.indexOf(q.lesson.chapter.n) >= 0; })).slice(0, count);
+  startTest(pool);
+});
+$('#resNew').addEventListener('click', function () { resEl.hidden = true; setupEl.hidden = false; window.scrollTo(0, 0); });
+$('#resRetry').addEventListener('click', function () {
+  var wrong = T.qs.filter(function (it, i) { return !(T.res[i] && T.res[i].ok); }).map(function (it) { return it.q; });
+  if (wrong.length) { startTest(shuffle(wrong)); window.scrollTo(0, 0); }
+});
+
+/* ---------- challenges */
+var chalBuilt = false, LV = { 'متوسط': '', 'صعب': 'hard', 'تحدٍّ': 'max' };
+function chTitle(n) { for (var i = 0; i < chapters.length; i++) if (chapters[i].n === n) return chapters[i].title; return ''; }
+function buildChallenges() {
+  chalBuilt = true;
+  $('#chalGrid').innerHTML = challenges.map(function (c) {
+    var hasNum = typeof c.num === 'number';
+    return '<article class="chal" data-c="' + c.id + '" data-ch="' + c.ch + '">' +
+      '<div class="chal-top"><span class="lvl ' + LV[c.level] + '">' + c.level + '</span><span class="chal-ch">الفصل ' + c.ch + ' · ' + chTitle(c.ch) + '</span></div>' +
+      '<h3>' + c.title + '</h3><div class="chal-q">' + c.q + '</div>' +
+      '<div><label for="ans-' + c.id + '">' + (hasNum ? 'اكتب الناتج النهائي للتحقق' : 'اكتب إجابتك ثم قارنها بالحل') + '</label>' +
+      '<div class="ans-row"><input id="ans-' + c.id + '" type="text" inputmode="' + (hasNum ? 'decimal' : 'text') + '" autocomplete="off" placeholder="' + (hasNum ? 'مثال: 12' : 'إجابتك') + '">' +
+      '<button type="button" class="btn btn-primary btn-sm" data-act="check">' + (hasNum ? 'تحقّق' : 'قارن') + '</button></div>' +
+      '<p class="chal-msg" aria-live="polite"></p></div>' +
+      '<div class="chal-actions"><button type="button" class="btn btn-soft btn-sm" data-act="hint" aria-expanded="false">تلميح</button>' +
+      '<button type="button" class="btn btn-ghost btn-sm" data-act="sol" aria-expanded="false">الحل التفصيلي</button></div>' +
+      '<div class="chal-hint" hidden></div><div class="chal-sol" hidden></div></article>';
+  }).join('');
+  applyFilter('all');
+}
+function parseNum(s) {
+  s = String(s).replace(/[٠-٩]/g, function (d) { return '٠١٢٣٤٥٦٧٨٩'.indexOf(d); }).replace(/[۰-۹]/g, function (d) { return '۰۱۲۳۴۵۶۷۸۹'.indexOf(d); })
+    .replace(/٫/g, '.').replace(/[−–]/g, '-').replace(/[,،٬\s]/g, '').replace(/[^0-9.\-\/]/g, '');
+  if (!s) return NaN;
+  if (s.indexOf('/') >= 0) { var p = s.split('/'); return parseFloat(p[0]) / parseFloat(p[1]); }
+  return parseFloat(s);
+}
+function findChal(id) { for (var i = 0; i < challenges.length; i++) if (challenges[i].id === id) return challenges[i]; }
+function revealSol(card, c) {
+  var box = $('.chal-sol', card), btn = $('[data-act="sol"]', card);
+  if (!box.dataset.filled) {
+    box.innerHTML = '<ol class="steps">' + c.sol.map(function (s) { return '<li><div>' + s + '</div></li>'; }).join('') + '</ol>' +
+      '<div class="answer-line"><span class="fb-label">الإجابة</span>' + c.ans + '</div>';
+    box.dataset.filled = '1';
+  }
+  box.hidden = false; btn.textContent = 'أخفِ الحل'; btn.setAttribute('aria-expanded', 'true'); typeset(box);
+}
+$('#chalGrid').addEventListener('click', function (e) {
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var card = b.closest('.chal'), c = findChal(card.dataset.c), act = b.dataset.act;
+  if (act === 'hint') {
+    var h = $('.chal-hint', card);
+    if (h.hidden) { if (!h.dataset.filled) { h.innerHTML = '<span class="fb-label">تلميح</span>' + c.hint; h.dataset.filled = '1'; } h.hidden = false; b.setAttribute('aria-expanded', 'true'); typeset(h); }
+    else { h.hidden = true; b.setAttribute('aria-expanded', 'false'); }
+  } else if (act === 'sol') {
+    var s = $('.chal-sol', card);
+    if (s.hidden) revealSol(card, c); else { s.hidden = true; b.textContent = 'الحل التفصيلي'; b.setAttribute('aria-expanded', 'false'); }
+  } else if (act === 'check') {
+    var msg = $('.chal-msg', card), val = $('input', card).value;
+    msg.className = 'chal-msg';
+    if (typeof c.num === 'number') {
+      var v = parseNum(val);
+      if (isNaN(v)) { msg.textContent = 'اكتب عدداً للتحقق، مثل 12 أو 2.5'; msg.classList.add('info'); return; }
+      if (Math.abs(v - c.num) <= Math.max(1e-6, Math.abs(c.num) * 1e-6)) { msg.textContent = 'إجابة صحيحة! راجع الحل لتقارن طريقتك.'; msg.classList.add('ok'); }
+      else { msg.textContent = 'ليست صحيحة بعد. جرّب التلميح ثم أعد المحاولة.'; msg.classList.add('bad'); }
+    } else {
+      msg.textContent = 'قارن إجابتك بالحل التفصيلي أدناه.'; msg.classList.add('info'); revealSol(card, c);
+    }
+  }
+});
+$('#chalGrid').addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' && e.target.matches('input')) { e.preventDefault(); var b = $('[data-act="check"]', e.target.closest('.chal')); if (b) b.click(); }
+});
+function applyFilter(f) {
+  $$('#chalFilters .filter').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.filter === f ? 'true' : 'false'); });
+  $$('#chalGrid .chal').forEach(function (c) { c.hidden = !(f === 'all' || c.dataset.ch === f); });
+  $$('#chalGrid .chal').forEach(function (c) { if (!c.hidden) typeset(c); });
+}
+$('#chalFilters').addEventListener('click', function (e) { var b = e.target.closest('.filter'); if (b) applyFilter(b.dataset.filter); });
+
+/* ---------- additional problem sets */
+var xList = $('#xList'), xSet = $('#xSet'), curSet = null;
+function xSaved(id) { return store.get('x:' + id) || {}; }
+function showSetList() {
+  curSet = null; xSet.hidden = true; xList.hidden = false;
+  $$('[data-xprog]').forEach(function (el) {
+    var x = extraById[el.dataset.xprog], sv = xSaved(x.id), n = 0, ok = 0;
+    x.questions.forEach(function (q) { if (q.id in sv) { n++; if (sv[q.id] === q.a) ok++; } });
+    el.textContent = n ? (n === x.questions.length ? 'أنهيت الملف: ' + ok + ' من ' + n + ' صحيحة' : 'أجبت عن ' + n + ' من ' + x.questions.length) : '';
+  });
+}
+function openSet(id) {
+  var x = extraById[id]; curSet = x; xList.hidden = true; xSet.hidden = false;
+  var lesson = null; chapters.forEach(function (c) { if (c.n === x.ch) lesson = c.lessons[0]; });
+  xSet.innerHTML = '<div class="x-wrap"><button type="button" class="x-back" data-xback>→ كل الملفات</button>' +
+    '<header class="x-head"><p class="crumb"><span>مسائل إضافية</span><span class="dot"></span><span>الفصل ' + x.ch + '</span></p>' +
+    '<h2>' + x.title + '</h2><p class="x-src">المصدر: ' + x.source + ' · ' + x.questions.length + ' سؤالاً</p></header>' +
+    '<div class="x-status"><div class="x-status-row"><span class="x-count" id="xCount"></span>' +
+    '<button type="button" class="btn btn-ghost btn-sm" id="xReset">ابدأ من جديد</button></div><div class="bar"><span id="xBar"></span></div></div>' +
+    (x.note ? '<div class="x-note"><span class="fb-label">ملاحظة</span>' + x.note + '</div>' : '') +
+    '<div class="mcq-list" id="xQs">' + x.questions.map(function (q, i) { return mcqHTML(q, [0, 1, 2, 3], i + 1); }).join('') + '</div>' +
+    '<div class="x-foot"><button type="button" class="x-back" data-xback>→ كل الملفات</button>' +
+    (lesson ? '<button type="button" class="btn btn-soft btn-sm" data-lesson="' + lesson.id + '">راجع دروس الفصل ' + x.ch + '</button>' : '') + '</div></div>';
+  var sv = xSaved(x.id);
+  $$('#xQs .mcq').forEach(function (box) { var qid = box.dataset.q; if (qid in sv) grade(box, sv[qid]); });
+  xStatus();
+  typeset(xSet);
+}
+function xStatus() {
+  var x = curSet, sv = xSaved(x.id), n = 0, ok = 0, tot = x.questions.length;
+  x.questions.forEach(function (q) { if (q.id in sv) { n++; if (sv[q.id] === q.a) ok++; } });
+  var el = $('#xCount');
+  el.textContent = !n ? tot + ' سؤالاً · اختر إجابة لترى الحل' : n < tot ? 'أجبت عن ' + n + ' من ' + tot + ' · الصحيح ' + ok : 'النتيجة: ' + ok + ' من ' + tot;
+  el.classList.toggle('full', n === tot && ok === tot);
+  $('#xBar').style.width = (n / tot * 100) + '%';
+}
+xSet.addEventListener('click', function (e) {
+  var ob = e.target.closest('.opt');
+  if (ob) {
+    var box = ob.closest('.mcq'); if (box.classList.contains('done')) return;
+    var oi = +ob.dataset.oi; grade(box, oi);
+    var sv = xSaved(curSet.id); sv[box.dataset.q] = oi; store.set('x:' + curSet.id, sv);
+    xStatus(); return;
+  }
+  if (e.target.closest('#xReset')) { store.set('x:' + curSet.id, {}); openSet(curSet.id); }
+});
+
+/* ---------- global navigation */
+document.addEventListener('click', function (e) {
+  var xs = e.target.closest('[data-xset]');
+  if (xs) { e.preventDefault(); showView('extra', xs.dataset.xset); window.scrollTo(0, 0); return; }
+  if (e.target.closest('[data-xback]')) { e.preventDefault(); showView('extra'); window.scrollTo(0, 0); return; }
+  var l = e.target.closest('[data-lesson]');
+  if (l && !e.target.closest('#lessonArticle .mcq')) {
+    e.preventDefault();
+    if (current === 'lessons') openLesson(l.dataset.lesson); else showView('lessons', l.dataset.lesson);
+    return;
+  }
+  var g = e.target.closest('[data-go]');
+  if (g) { e.preventDefault(); showView(g.dataset.go); }
+});
+
+showBest();
+var h = (location.hash || '').replace('#', '');
+if (h.indexOf('lesson-') === 0 && lessonById[h.slice(7)]) showView('lessons', h.slice(7));
+else if (h.indexOf('extra-') === 0 && extraById[h.slice(6)]) showView('extra', h.slice(6));
+else showView(VIEWS.indexOf(h) >= 0 ? h : 'home');
+})();
+</script>
+
+</body>
+</html>
